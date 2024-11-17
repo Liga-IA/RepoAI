@@ -1,4 +1,4 @@
-![banner-inicial](content/RepoAI.png)
+![banner-inicial](/content/capa)
 
 # Template - RepoAI (Repositório de Conhecimento em IA)
 
