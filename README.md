@@ -1,13 +1,12 @@
 ![banner-inicial](/content/capa)
 
-# Template - RepoAI (Repositório de Conhecimento em IA)
+# Guia prático para algoritmos genéticos
 
 
-Esse repositório é um modelo (template) para a criação de repositórios do projeto RepoAI. 
-Ao mesmo tempo, ele também é um repositório que demonstra como participar do projeto e produzir outros repositórios :D
+Este repositório é um guia prático para quem deseja entender e implementar os principais passos na programação de um algoritmo genético. Ele aborda desde conceitos fundamentais, como a criação de populações iniciais, até etapas críticas, como seleção, cruzamento e mutação. O objetivo é oferecer um recurso acessível e estruturado para quem está iniciando ou deseja aprimorar seus conhecimentos na área de otimização evolutiva.
 
 ## Conteúdo
-  - [Estilo Visual do Repositório](#estilo-visual-do-reposit%C3%B3rio)
+  - [Principais peças do quebra-cabeças](#estilo-visual-do-reposit%C3%B3rio)
   - [Repositório em Construção](#reposit%C3%B3rio-em-constru%C3%A7%C3%A3o)
   - [Pré-Requisitos e Instalações Necessárias](#se%C3%A7%C3%A3o-de-pr%C3%A9-requisitos-e-instala%C3%A7%C3%B5es-necess%C3%A1rias)
   - [Licença 📝](#licen%C3%A7a-)
