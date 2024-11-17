@@ -6,7 +6,7 @@
 Este repositório é um guia prático para quem deseja entender e implementar os principais passos na programação de um algoritmo genético. Ele aborda desde conceitos fundamentais, como a criação de populações iniciais, até etapas críticas, como seleção, cruzamento e mutação. O objetivo é oferecer um recurso acessível e estruturado para quem está iniciando ou deseja aprimorar seus conhecimentos na área de otimização evolutiva.
 
 ## Conteúdo
-  - [Principais peças do quebra-cabeças](Principais-peças-do-quebra-cabeças)
+  - [Principais peças do quebra-cabeças](#principais-pe%C3%A7as-do-quebra-cabe%C3%A7as)
   - [Repositório em Construção](#reposit%C3%B3rio-em-constru%C3%A7%C3%A3o)
   - [Pré-Requisitos e Instalações Necessárias](#se%C3%A7%C3%A3o-de-pr%C3%A9-requisitos-e-instala%C3%A7%C3%B5es-necess%C3%A1rias)
   - [Licença 📝](#licen%C3%A7a-)
