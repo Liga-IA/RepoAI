@@ -6,7 +6,7 @@
 Neste tutorial você encontrará o passo-a-passo para a implementação do seu algoritmo genético em Python. Tire um tempo para leitura, ela é importante para assimilar conceitos e você levará eles para o resto da vida. Ao final dessa leitura tenho certeza que você estará mais perto de programar seu próprio algoritmo em qualquer linguagem, saberá identificar quais problemas podem ser resolvidos com esse tipo de abordagem e terá uma base para explorar variações e melhorias, adaptando-os a diferentes contextos.
 
 ## Conteúdo
-  - [Principais peças do quebra-cabeças](https://github.com/ITA-LOW/Primeiros-passos-em-algoritmos-geneticos/edit/template/README.md#principais-pe%C3%A7as-do-quebra-cabe%C3%A7as)
+  - [Principais peças do quebra-cabeças](#principais-pe%C3%A7as-do-quebra-cabe%C3%A7as)
   - Estrutura do Repositório
 ## Principais peças do quebra-cabeças
 Um algoritmo genético é composto por elementos fundamentais que simulam o processo de evolução natural. Aqui estão os principais:  
