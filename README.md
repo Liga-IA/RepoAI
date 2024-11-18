@@ -155,7 +155,7 @@ RepoAI/
     ├── content/
     │   └── imagens
     ├── code/
-    |   └── estudo de caso 1 - acertando uma string
+    |   └── estudo de caso 1 - [acertando uma string](code/acertando uma string.md)
     ├── README.md
     └── license    
 ```
