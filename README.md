@@ -165,10 +165,3 @@ RepoAI/
 
  | [<img loading="lazy" src="https://avatars.githubusercontent.com/u/91793807?v=4" width=115><br><sub>Ítalo Silva</sub>](https://github.com/ITA-LOW) |  [<img loading="lazy" src="https://avatars.githubusercontent.com/u/11313404?v=4" width=115><br><sub>Alison R. Panisson</sub>](https://github.com/AlisonPanisson) |
 | :---: | :---: |
-
-## Licença 📝
-Ao final edite o arquivo de licença, atualizando o ano e seu nome, depois adicione uma breve descrição de que seu projeto está sobre a licença CC-BY, por exemplo:
-
-"Esse projeto está sob licença CC-BY 4.0." 
-
-Veja o arquivo [Licença](LICENSE) para mais detalhes.
