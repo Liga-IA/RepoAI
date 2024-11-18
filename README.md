@@ -11,7 +11,7 @@ Neste tutorial você encontrará o passo-a-passo para a implementação do seu a
 ## Principais peças do quebra-cabeças
 Um algoritmo genético é composto por elementos fundamentais que simulam o processo de evolução natural. Aqui estão os principais:  
 
-- [**Cromossomo**](#o-que-%C3%A9-um-indiv%C3%ADduo): Representam as soluções candidatas de forma codificada (por exemplo, um vetor ou string).  
+- [**Cromossomo**](#o-que-%C3%A9-um-cromossomo)): Representam as soluções candidatas de forma codificada (por exemplo, um vetor ou string).  
 - [**População**](#popula%C3%A7%C3%A3o): Conjunto de indivíduos que evoluem ao longo das gerações.  
 - **Função de Aptidão**: Mede o desempenho de cada solução, indicando sua qualidade para o problema em questão.  
 - **Seleção**: Processo que escolhe os indivíduos mais aptos para se reproduzirem.  
