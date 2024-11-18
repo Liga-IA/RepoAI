@@ -1,1 +1,1 @@
-Aqui você deve colocar todo o código do seu repositório.
+Este código implementa um **algoritmo genético** para gerar uma string que se aproxime ou seja idêntica a uma string alvo. Ele começa com uma população de strings aleatórias e, através de seleção, cruzamento e mutação, evolui as strings até que uma solução exata seja encontrada.
