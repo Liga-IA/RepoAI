@@ -11,8 +11,8 @@ Neste tutorial você encontrará o passo-a-passo para a implementação do seu a
 ## Principais peças do quebra-cabeças
 Um algoritmo genético é composto por elementos fundamentais que simulam o processo de evolução natural. Aqui estão os principais:  
 
-- **indivíduos**: Representam as soluções candidatas de forma codificada (por exemplo, um vetor ou string).  
-- **População**: Conjunto de indivíduos que evoluem ao longo das gerações.  
+- [**Cromossomo**](#o-que-%C3%A9-um-indiv%C3%ADduo): Representam as soluções candidatas de forma codificada (por exemplo, um vetor ou string).  
+- [**População**](#popula%C3%A7%C3%A3o): Conjunto de indivíduos que evoluem ao longo das gerações.  
 - **Função de Aptidão**: Mede o desempenho de cada solução, indicando sua qualidade para o problema em questão.  
 - **Seleção**: Processo que escolhe os indivíduos mais aptos para se reproduzirem.  
 - **Cruzamento**: Combina soluções (pais) para gerar novas soluções (filhos), promovendo variação.  
@@ -23,11 +23,11 @@ Esses componentes interagem em ciclos, permitindo que a população evolua e enc
 
 ---
 
-### O que é um indivíduo?
+### O que é um cromossomo?
 
-Um **indivíduo** é uma representação codificada de uma solução para o problema que você está tentando resolver. Abaixo, apresento alguns exemplos de diferentes tipos de indivíduos e como eles podem ser usados:
+Um **cromossomo** é uma representação codificada de uma solução para o problema que você está tentando resolver. Abaixo, apresento alguns exemplos de diferentes tipos de indivíduos e como eles podem ser usados:
 
-#### 1. indivíduo Numérico
+#### Cromossomo Numérico
 Um indivíduo numérico é uma sequência de números reais ou inteiros que representam os valores de variáveis de uma solução.
 
 **Exemplo**: Suponha que você tenha uma equação que precisa ser otimizada (maximizada ou minimizada), como uma função matemática com várias variáveis:
@@ -37,14 +37,14 @@ f(x1, x2, x3) = x1² + x2³ + x3
 ```plaintext
 [1.5, -2.3, 4.0] <- esse indivíduo representa uma possível resposta
 ```
-#### 2. indivíduo Binário
+#### Cromossomo Binário
 indivíduos binários são representações em formato de 0s e 1s, frequentemente usados para problemas de otimização combinatória, como o problema da mochila ou para representar decisões binárias.
 
 **Exemplo**: Vamos considerar um problema em que você tem várias opções de objetos para carregar em uma mochila, e cada objeto pode ser incluído ou não. Suponha que temos 5 objetos e a sequência binária indica se o objeto está ou não na mochila.
 ```plaintext
 [1, 0, 1, 0, 1]
 ```
-#### 3. indivíduo de String
+#### Cromossomo de String
 
 Em problemas onde a solução é representada por uma sequência de caracteres, como na otimização de strings ou em problemas de reconhecimento de padrões, indivíduos de string são utilizados. Eles representam uma sequência de caracteres que, ao longo das gerações, podem evoluir para uma solução desejada.
 
