@@ -7,7 +7,7 @@ Neste tutorial você encontrará o passo-a-passo para a implementação do seu a
 
 ## Conteúdo
   - [Principais peças do quebra-cabeças](#principais-pe%C3%A7as-do-quebra-cabe%C3%A7as)
-  - Estrutura do Repositório
+  - [Estrutura do Repositório](#estrutura-do-reposit%C3%B3rio)
 ## Principais peças do quebra-cabeças
 Um algoritmo genético é composto por elementos fundamentais que simulam o processo de evolução natural. Aqui estão os principais:  
 
