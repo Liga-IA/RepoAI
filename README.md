@@ -11,12 +11,10 @@ Neste tutorial você encontrará o passo-a-passo para a implementação do seu a
 ## Principais peças do quebra-cabeças
 Um algoritmo genético é composto por elementos fundamentais que simulam o processo de evolução natural. Aqui estão os principais:  
 
-- [**Cromossomo**](#o-que-%C3%A9-um-cromossomo)): Representam as soluções candidatas de forma codificada (por exemplo, um vetor ou string).  
+- [**Cromossomo**](#o-que-%C3%A9-um-cromossomo): Representam as soluções candidatas de forma codificada (por exemplo, um vetor ou string).  
 - [**População**](#popula%C3%A7%C3%A3o): Conjunto de indivíduos que evoluem ao longo das gerações.  
-- **Função de Aptidão**: Mede o desempenho de cada solução, indicando sua qualidade para o problema em questão.  
-- **Seleção**: Processo que escolhe os indivíduos mais aptos para se reproduzirem.  
-- **Cruzamento**: Combina soluções (pais) para gerar novas soluções (filhos), promovendo variação.  
-- **Mutação**: Introduz pequenas mudanças nos indivíduos para evitar estagnação e explorar novas áreas do espaço de busca.  
+- [**Função de Aptidão**](#fun%C3%A7%C3%A3o-de-aptid%C3%A3o): Mede o desempenho de cada solução, indicando sua qualidade para o problema em questão.
+- [Operadores Genéticos](#operadores-gen%C3%A9ticos)  
 - **Critério de Parada**: Define quando o algoritmo deve parar, seja por atingir uma solução satisfatória ou um limite de gerações.  
 
 Esses componentes interagem em ciclos, permitindo que a população evolua e encontre soluções otimizadas de forma inspirada na seleção natural.
@@ -73,13 +71,11 @@ Perceba que a população inicializada tem indivíduos semelhantes (são da mesm
 
 A **função de aptidão** avalia a qualidade das soluções geradas pelos indivíduos. Ela atribui um valor numérico que indica o quão próxima a solução está da ideal, guiando o algoritmo na seleção dos melhores indivíduos para a próxima geração.
 
-#### 1. Função de Aptidão para o Problema "Olá, Mundo!"
+#### Função de Aptidão para o Problema "Olá, Mundo!"
 
 Suponha que o objetivo seja evoluir uma população de strings até que elas correspondam à frase "Olá, Mundo!". Neste caso, a função de aptidão pode contar o número de caracteres corretos na posição correta, comparando a string do indivíduo com a frase desejada.
 
 **Frase desejada**: `Olá, Mundo!`
-
-**indivíduos e suas aptidões**:
 
 - **indivíduo 1**: `Ola, Mundo!`  
   - **Aptidão**: 10/11 (Faltando apenas um caractere, o á em "Olá")
@@ -94,7 +90,7 @@ Neste caso, o indivíduo `Ola, Mundo!` tem a maior aptidão porque está mais pr
 
 ---
 
-#### 2. Função de Aptidão para o Problema do Caixeiro Viajante (TSP)
+#### Função de Aptidão para o Problema do Caixeiro Viajante (TSP)
 
 Em problemas como o **Problema do Caixeiro Viajante (TSP)**, onde o objetivo é encontrar a rota mais curta para visitar todas as cidades, a função de aptidão pode ser definida com base na **distância total percorrida**. Quanto menor a distância total de uma solução, maior sua aptidão.
 
