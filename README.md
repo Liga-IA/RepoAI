@@ -14,7 +14,7 @@ Um algoritmo genético é composto por elementos fundamentais que simulam o proc
 - [**Cromossomo**](#o-que-%C3%A9-um-cromossomo): Representam as soluções candidatas de forma codificada (por exemplo, um vetor ou string).  
 - [**População**](#popula%C3%A7%C3%A3o): Conjunto de indivíduos que evoluem ao longo das gerações.  
 - [**Função de Aptidão**](#fun%C3%A7%C3%A3o-de-aptid%C3%A3o): Mede o desempenho de cada solução, indicando sua qualidade para o problema em questão.
-- [Operadores Genéticos](#operadores-gen%C3%A9ticos): Os operadores de seleção, cruzamento e mutação são a chave do processo evolutivo.
+- [**Operadores Genéticos**](#operadores-gen%C3%A9ticos): Os operadores de seleção, cruzamento e mutação são a chave do processo evolutivo.
 - [**Critério de Parada**](#crit%C3%A9rios-de-parada): Define quando o algoritmo deve parar, seja por atingir uma solução satisfatória ou um limite de gerações.  
 
 Esses componentes interagem em ciclos, permitindo que a população evolua e encontre soluções otimizadas de forma inspirada na seleção natural.
