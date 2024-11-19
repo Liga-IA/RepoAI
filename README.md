@@ -145,7 +145,7 @@ Se uma solução ótima ou satisfatória for encontrada (isto é, uma solução 
 
 ---
 
-Agora você tem todas as peças de que precisa para montar seu quebra-cabeça. Abaixo você pode conferir na estrutura desse repositório vários exemplos de aplicação de algoritmos genéticos. (ou quem sabe não)
+Agora você tem todas as peças de que precisa para montar seu quebra-cabeça. Abaixo você pode conferir na estrutura desse repositório vários exemplos de aplicação de algoritmos genéticos.
 
 ## Estrutura do Repositório
 
@@ -161,7 +161,6 @@ RepoAI/
 ```
 
 ## Contribuidores
- Você pode listar todos os contribuidores do seu projeto. Adicione a si mesmo. 
 
  | [<img loading="lazy" src="https://avatars.githubusercontent.com/u/91793807?v=4" width=115><br><sub>Ítalo Silva</sub>](https://github.com/ITA-LOW) |  [<img loading="lazy" src="https://avatars.githubusercontent.com/u/11313404?v=4" width=115><br><sub>Alison R. Panisson</sub>](https://github.com/AlisonPanisson) |
 | :---: | :---: |
