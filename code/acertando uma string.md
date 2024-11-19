@@ -1,4 +1,4 @@
-## Este código implementa um **algoritmo genético** para gerar uma string que seja idêntica a uma string alvo. Ele começa com uma população de strings aleatórias e, através de seleção, cruzamento e mutação, evolui as strings até que uma solução exata seja encontrada.
+### Este código implementa um **algoritmo genético** para gerar uma string que seja idêntica a uma string alvo. Ele começa com uma população de strings aleatórias e, através de seleção, cruzamento e mutação, evolui as strings até que uma solução exata seja encontrada.
 
 ### 1. Definindo o alfabeto e a classe `Agent`
 ```python
