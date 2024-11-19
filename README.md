@@ -61,7 +61,7 @@ Para nosso algoritmo genético funcionar precisamos "inicializar uma população
 4. `"Ola Mundo!"`  
 5. `"Xlã, Mwndo!"`
 
-Perceba que a população inicializada tem indivíduos semelhantes (são da mesma espécie). Todos os "genes" desse indivíduo são caracteres alfabéticos e os "indivíduos" possuem a mesma quantidade de genes em cada indivíduo.
+Perceba que a população inicializada tem indivíduos semelhantes (são da mesma espécie). Todos os "genes" desse indivíduo são caracteres alfabéticos e os "indivíduos" possuem a mesma quantidade de genes no cromossomo.
 > [!NOTE]
 > Em algoritmos genéticos computacionais, não é possível cruzar espécies diferentes. Isso é sempre assim? Pense sobre isso!
 
