@@ -1,4 +1,4 @@
-![banner-inicial](/content/capa)
+![banner-inicial](https://drive.google.com/uc?id=1183khnF6xugzbAgJEDHEjd0R9x3UxrTS)
 
 # Guia prático para algoritmos genéticos
 
