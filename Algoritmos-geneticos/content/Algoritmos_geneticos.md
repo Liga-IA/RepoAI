@@ -153,7 +153,7 @@ Agora você tem todas as peças de que precisa para montar seu quebra-cabeça. A
 RepoAI/
 └── Primeiros passos em algoritmos genéticos/
     ├── content/
-    │   └── imagens
+    │   └── Algoritmos_geneticos.md
     ├── code/
     |   └── estudo de caso 1 - acertando uma string
     ├── README.md
