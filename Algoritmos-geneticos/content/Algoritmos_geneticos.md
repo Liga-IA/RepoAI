@@ -36,7 +36,7 @@ f(x1, x2, x3) = x1² + x2³ + x3
 [1.5, -2.3, 4.0] <- esse indivíduo representa uma possível resposta
 ```
 #### Cromossomo Binário
-indivíduos binários são representações em formato de 0s e 1s, frequentemente usados para problemas de otimização combinatória, como o problema da mochila ou para representar decisões binárias.
+Indivíduos binários são representações em formato de 0s e 1s, frequentemente usados para problemas de otimização combinatória, como o problema da mochila ou para representar decisões binárias.
 
 **Exemplo**: Vamos considerar um problema em que você tem várias opções de objetos para carregar em uma mochila, e cada objeto pode ser incluído ou não. Suponha que temos 5 objetos e a sequência binária indica se o objeto está ou não na mochila.
 ```plaintext
@@ -92,7 +92,7 @@ Neste caso, o indivíduo `Ola, Mundo!` tem a maior aptidão porque está mais pr
 
 #### Função de Aptidão para o Problema do Caixeiro Viajante (TSP)
 
-Em problemas como o **Problema do Caixeiro Viajante (TSP)**, onde o objetivo é encontrar a rota mais curta para visitar todas as cidades, a função de aptidão pode ser definida com base na **distância total percorrida**. Quanto menor a distância total de uma solução, maior sua aptidão.
+Em problemas como o **Problema do Caixeiro Viajante**, Travelling salesman problem (TSP), onde o objetivo é encontrar a rota mais curta para visitar todas as cidades, a função de aptidão pode ser definida com base na **distância total percorrida**. Quanto menor a distância total de uma solução, maior sua aptidão.
 
 **Exemplo de distâncias entre cidades**:
 
@@ -145,17 +145,17 @@ Se uma solução ótima ou satisfatória for encontrada (isto é, uma solução 
 
 ---
 
-Agora você tem todas as peças de que precisa para montar seu quebra-cabeça. Abaixo você pode conferir na estrutura desse repositório vários exemplos de aplicação de algoritmos genéticos. Acesse esse [link](https://github.com/ITA-LOW/Primeiros-passos-em-algoritmos-geneticos/tree/template/code) para ir diretamente para a pasta "code"
+Agora você tem todas as peças de que precisa para montar seu quebra-cabeça. Abaixo você pode conferir na estrutura desse repositório vários exemplos de aplicação de algoritmos genéticos. Acesse esse [link](./code/acertando_uma_string.md) para ir diretamente para a pasta "code"
 
 ## Estrutura do Repositório
 
 ```text
 RepoAI/
-└── Primeiros passos em algoritmos genéticos/
+└── Algoritmos-geneticos/
     ├── content/
     │   └── Algoritmos_geneticos.md
     ├── code/
-    |   └── estudo de caso 1 - acertando uma string
+    |   └── Acertando_uma_string.md
     ├── README.md
     └── license    
 ```

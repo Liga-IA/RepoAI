@@ -1,4 +1,6 @@
-### Este código implementa um **algoritmo genético** para gerar uma string que seja idêntica a uma string alvo. Ele começa com uma população de strings aleatórias e, através de seleção, cruzamento e mutação, evolui as strings até que uma solução exata seja encontrada.
+# Exemplo de Algoritmo Genético: Acertando uma String em Python
+
+Este código implementa um **algoritmo genético** para gerar uma string que seja idêntica a uma string alvo. Ele começa com uma população de strings aleatórias e, através de seleção, cruzamento e mutação, evolui as strings até que uma solução exata seja encontrada.
 
 ### 1. Definindo o alfabeto e a classe `Agent`
 ```python
@@ -125,4 +127,4 @@ if __name__ == '__main__':
     ga()
 ```
 
-Se você chegou até aqui, pode testar essa implementação diretamente no [Google Colab](https://colab.research.google.com/drive/1Swfo0E4IUXoHBbH06Pf5UgxG9duQb0zt?usp=sharing)
+Se você chegou até aqui, pode testar essa implementação diretamente no [Google Colab](https://colab.research.google.com/drive/1Swfo0E4IUXoHBbH06Pf5UgxG9duQb0zt?usp=sharing).
