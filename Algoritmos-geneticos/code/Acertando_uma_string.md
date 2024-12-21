@@ -127,4 +127,4 @@ if __name__ == '__main__':
     ga()
 ```
 
-Se você chegou até aqui, pode testar essa implementação diretamente no [Google Colab](https://colab.research.google.com/drive/1Swfo0E4IUXoHBbH06Pf5UgxG9duQb0zt?usp=sharing).
+Agora, basta seguir esse tutorial na sua máquina e testar seu algoritmo genético alterando valores para estudar como performa sua implementação!!
