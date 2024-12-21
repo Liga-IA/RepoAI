@@ -1,4 +1,4 @@
-![banner-inicial](Algoritmos-geneticos/content/capa.png)
+![banner-inicial](../content/capa.png)
 
 # Guia prático para algoritmos genéticos
 
