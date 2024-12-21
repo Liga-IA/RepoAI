@@ -153,9 +153,10 @@ Agora você tem todas as peças de que precisa para montar seu quebra-cabeça. A
 RepoAI/
 └── Algoritmos-geneticos/
     ├── content/
-    │   └── Algoritmos_geneticos.md
+    │   └── Capa.png
     ├── code/
     |   └── Acertando_uma_string.md
+    |   └── Algoritmos_geneticos.md
     ├── README.md
     └── license    
 ```
