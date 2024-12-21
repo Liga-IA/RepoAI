@@ -1,4 +1,4 @@
-![banner-inicial](../content/capa.png)
+![banner-inicial](../content/Capa.png)
 
 # Guia prático para algoritmos genéticos
 
@@ -145,8 +145,7 @@ Se uma solução ótima ou satisfatória for encontrada (isto é, uma solução 
 
 ---
 
-Agora você tem todas as peças de que precisa para montar seu quebra-cabeça. Abaixo você pode conferir na estrutura desse repositório vários exemplos de aplicação de algoritmos genéticos. Acesse esse [link](../code/Acertando_uma_string.md) para ir diretamente para a pasta "code"
-
+Agora você tem todas as peças de que precisa para montar seu quebra-cabeça. Abaixo você pode conferir na estrutura desse repositório vários exemplos de aplicação de algoritmos genéticos.
 ## Estrutura do Repositório
 
 ```text
