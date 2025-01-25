@@ -40,12 +40,12 @@ A ideia é que estruturas como olhos (escuros) vs testa e bochecas (claras) poss
 
  
 
-![Imagem na pasta Imagens](/content\imagens\haar.png)
+![Imagem na pasta Imagens](/deteccao_facial/content/imagens/haar.png)
 
 ## Yunet
 O Yunet é um modelo de detecção facial mais moderno, que utiliza redes neurais convolucionais para realizar a detecção. Ele é mais preciso que o Haar Cascade e também mais novo, sendo mais utilizado em aplicações modernas.
 
-![Imagem na pasta Imagens](/content\imagens\yunet_vs_haarcascade.png)
+![Imagem na pasta Imagens](/deteccao_facial/content/imagens/yunet_vs_haarcascade.png)
 
 ## DeepFace
 A biblioteca DeepFace do python permite que você faça reconhecimento facial em imagens com poucas linhas de codigo. Ela é uma biblioteca de código aberto que utiliza redes neurais para realizar a detecção facial.
@@ -53,8 +53,8 @@ Ela também permite que você faça reconhecimento facial juntamente com uma an�
 
 Além disso, a biblioteca permite que você utilize outros modelos de detecção facial no backend, como VGG-Face , FaceNet, OpenFace, DeepFace, DeepID, ArcFace, Dlib, SFace e GhostFaceNet. O modelo padrão é o VGG-Face.
 
-![Imagem na pasta Imagens](/content\imagens\angelina.jpg)
-![Imagem na pasta Imagens](/content\imagens\emotions_age.jpg)
+![Imagem na pasta Imagens](/deteccao_facial/content/imagens/angelina.jpg)
+![Imagem na pasta Imagens](/deteccao_facial/content/imagens/emotions_age.jpg)
 
 
 
