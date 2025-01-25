@@ -1,6 +1,6 @@
 # Detecção Facial e visão computacional
 
-![Imagem na pasta Imagens](/content\imagens\baixados.png)
+![Imagem na pasta Imagens](\content\imagens\baixados.png)
 
 Neste artigo vamos falar sobre detecção facial e visão computacional, e como podemos utilizar essas tecnologias para criar aplicações.
 Abordaremos alguns dos principais metodos  de detecção facial, como o Haar Cascade, e os mais modernos, como o Yunet e DeepFace.
