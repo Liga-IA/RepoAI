@@ -55,12 +55,17 @@ Let's say we want to determine the straight line equation of the linear regressi
 
 The most common method for determining the best equation to represent the predictions is the least squares method, in which we minimize the sum of squared errors: **$e_1^2 + e_2^2 + \dots + e_n^2$**
 
-> Important: think about why we minimize the squared errors instead of simply minimizing the sum of the errors ($|e_1| + |e_2| + \dots + |e_n^|$).
+> Important: think about why we minimize the squared errors instead of simply minimizing the sum of the errors ($|e_1| + |e_2| + \dots + |e_n|$).
 <details>
   <summary>Click to see the answer</summary>
   One reason is that squaring the errors makes bigger ones count more, helping the model focus on fixing those larger errors and giving a better overall fit to the data 
 </details>
 
+## How to find the equation based on a data set
+
+(explicacao geral)
+
+(exemplo:)
 
 From one of the coding examples, let's analyze the relationship between hours studied and grades of a student.
 
@@ -76,7 +81,7 @@ From one of the coding examples, let's analyze the relationship between hours st
 
 ## Exercise 2
 
-2. 
+2. (pergunta sobre encontrar equacao a partir de dados. Calcular o erro tambem.)
 <details>
   <summary>Click to see the answer</summary>
   
