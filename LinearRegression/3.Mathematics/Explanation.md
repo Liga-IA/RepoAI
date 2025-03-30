@@ -8,10 +8,10 @@ $$
 \hat{y} = \beta_0 + \beta_1 x_1 + \beta_2 x_2 + \dots + \beta_n x_n
 $$
 
-- $\hat{y}$: The dependent variable or the predicted value.
-- $\beta_n$: The intercept term, which corresponds to the value of $y$ when all $x$ values are zero.
-- $\beta_1, \beta_2, \dots, \beta_n$: The coefficients for each independent variable, which represent how much each variable influences the prediction of y.
-- $x_1, x_2, \dots, x_n$: The independent variables or features that are used to predict y.
+- **$\hat{y}$**: The dependent variable or the predicted value.
+- **$\beta_0$**: The intercept term, which corresponds to the value of $y$ when all $x$ values are zero.
+- **$\beta_1, \beta_2, \dots, \beta_n$**: The coefficients for each independent variable, which represent how much each variable influences the prediction of y.
+- **$x_1, x_2, \dots, x_n$**: The independent variables or features that are used to predict y.
 
 If a model has two or more independent values, it is called **multiple linear regression**. However, this explanation will focus more on the simplest case, in which there is only one independent variable (**simple linear regression**).
 
@@ -23,10 +23,10 @@ $$
 \hat{y} = \beta_0 + \beta_1 x_1
 $$
 
-- $\hat{y}$: Dependent variable (response).
-- $\beta_0$: Intercept.
-- $\beta_1$: Coefficient of the independent variable.
-- $x_1$: Independent variable (feature).
+- **$\hat{y}$**: Dependent variable (response).
+- **$\beta_0$**: Intercept.
+- **$\beta_1$**: Coefficient of the independent variable.
+- **$x_1$**: Independent variable (feature).
 
 This representation can be viewed in figure 1:
 
@@ -38,8 +38,8 @@ The blue dots represent the actual values collected from real-world data. The st
 $
 error = y - \hat{y} 
 $
-- $\hat{y}$: Predicted value from the model.
-- $y$: Real-world value. 
+- **$\hat{y}$**: Predicted value from the model.
+- **$y$**: Real-world value. 
 
 ## Exercise 1
 
@@ -53,10 +53,13 @@ By analyzing a graph, such as the figure 1 one, how can we determine which blue 
 
 Let's say we want to determine the straight line equation of the linear regression model. It would be wise to think that we should have an equation that minimizes errors.
 
-The most common method for determining the best equation to represent the predictions is the least squares method.
+The most common method for determining the best equation to represent the predictions is the least squares method, in which we minimize the sum of squared errors: **$e_1^2 + e_2^2 + \dots + e_n^2$**
 
-> Important: 
-
+> Important: think about why we minimize the squared errors instead of simply minimizing the sum of the errors ($|e_1| + |e_2| + \dots + |e_n^|$).
+<details>
+  <summary>Click to see the answer</summary>
+  One reason is that squaring the errors makes bigger ones count more, helping the model focus on fixing those larger errors and giving a better overall fit to the data 
+</details>
 
 
 From one of the coding examples, let's analyze the relationship between hours studied and grades of a student.
