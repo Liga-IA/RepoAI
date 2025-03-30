@@ -89,5 +89,4 @@ EXEMPLO DE RETA E MODELO!!
 
 # References
 https://www.ufrgs.br/probabilidade-estatistica/livro/livro_completo/ch7-reg-simples.html
-https://www.youtube.com/watch?v=pg6cUaNi3EE
 
