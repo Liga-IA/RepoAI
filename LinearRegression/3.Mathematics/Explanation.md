@@ -87,13 +87,7 @@ From one of the coding examples, let's analyze the relationship between hours st
   
 </details>
 
-# 
 
-EXEMPLO DE RETA E MODELO!!
-
--> Calculo do erro.
-
--> Como minimizar os erros no modelo.
 
 # References
 https://www.ufrgs.br/probabilidade-estatistica/livro/livro_completo/ch7-reg-simples.html
