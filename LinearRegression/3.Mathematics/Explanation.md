@@ -34,7 +34,8 @@ This representation can be viewed in figure 1:
 
 The blue dots represent the actual values collected from real-world data. The straight line shows the model's predictions.
 
-> Important: Since the blue dots are not exactly where the straight line is, there is an associated error that we must consider when using linear regression. In order to calculate the error, do the following: 
+> [!IMPORTANT]
+> Since the blue dots are not exactly where the straight line is, there is an associated error that we must consider when using linear regression. In order to calculate the error, do the following: 
 $
 error = y - \hat{y} 
 $
@@ -55,7 +56,8 @@ Let's say we want to determine the straight line equation of the linear regressi
 
 The most common method for determining the best equation to represent the predictions is the least squares method, in which we minimize the sum of squared errors: **$e_1^2 + e_2^2 + \dots + e_n^2$**
 
-> Important: think about why we minimize the squared errors instead of simply minimizing the sum of the errors ($|e_1| + |e_2| + \dots + |e_n|$).
+> [!IMPORTANT]
+> Think about why we minimize the squared errors instead of simply minimizing the sum of the errors ($|e_1| + |e_2| + \dots + |e_n|$).
 <details>
   <summary>Click to see the answer</summary>
   One reason is that squaring the errors makes bigger ones count more, helping the model focus on fixing those larger errors and giving a better overall fit to the data 
