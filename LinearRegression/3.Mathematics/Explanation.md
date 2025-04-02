@@ -65,9 +65,36 @@ The most common method for determining the best equation to represent the predic
 
 ## How to find the equation based on a data set
 
-(explicacao geral)
+As previously explained, linear regression can be represented by the equation of a straight line: 
 
-(exemplo:)
+$$
+\hat{y} = \beta_0 + \beta_1 x
+$$
+
+The values β₁ and β₀ are unknown parameters, where β₁ represents the slope of the line and β₀ represents the y-intercept.
+
+Therefore, to determine the values of β₁ and β₀, we must first collect all training data and organize it into pairs of coordinates (x, y). Ultimately, we will have a set of coordinates as represented below:
+
+$$
+\(x1, y1), (x2, y2),..., (xn, yn)
+$$
+
+Where n represents the total number of data points collected. Finally, we can calculate the values of β₁ and β₀ using the equations below:
+
+$$
+\hat{\beta}_1 = \frac{\sum_{i=1}^{n} (X_i - \bar{X}) (Y_i - \bar{Y})}{\sum_{i=1}^{n} (X_i - \bar{X})^2}
+$$
+
+$$
+\hat{\beta}_0 = \bar{Y} - \hat{\beta}_1\bar{X}
+$$
+
+- xi: x values of each coordinate
+- yi: y values of each coordinate
+- x̄: simple arithmetic mean of the x values 
+- ȳ: simple arithmetic mean of the y values
+
+(exemplo:) (aqui não sei se a gente faz alguma introdução ou só coloca como titulo exemplo)
 
 From one of the coding examples, let's analyze the relationship between hours studied and grades of a student.
 
@@ -80,6 +107,32 @@ From one of the coding examples, let's analyze the relationship between hours st
 | 7.5          | 80         |
 | 9.0          | 85         |
 
+Based on the data shown in the table above, we can calculate the values of β₁ and β₀ and define the equation of the line. For this purpose, we will define Hours Studied as x values and Exam Scores as y values. Thus, organizing all the data into pairs of coordinates, we will have the following points: (1.5, 50), (3.0, 55), (4.5, 65), (6.0, 70), (7.5, 80), (9.0, 85).
+
+To facilitate the development of the β₁ calculation, we will compute the variables and the summations independently, as exemplified below:
+
+- x̄ = (1.5 + 3.0 + 4.5 + 6.0 + 7.5 + 9.0)/6 = 5.25
+- ȳ =(50 + 55 + 65 + 70 + 80 + 85)/6 = 67.5
+- \sum_{i=1}^{n} (X_i - \bar{X}) (Y_i - \bar{Y}) = (1.5 - 5.25)(50 - 67.5) + (3.0 - 5.25)(55 - 67.5) + (4.5 - 5.25)(65 - 67.5) + (6.0 - 5.25)(70 - 67.5) + (7.5 - 5.25)(80 - 67.5) + (9.0 - 5.25)(85 - 67.5) = 191.25
+- \sum_{i=1}^{n} (X_i - \bar{X})^2 = (1.5 - 5.25)^2 + (3.0 - 5.25)^2 + (4.5 - 5.25)^2 + (6.0 - 5.25)^2 + (7.5 - 5.25)^2 + (9.0 - 5.25)^2 = 39.375
+
+By substituting the values into the original equation, we will arrive at:
+
+$$
+\hat{\beta}_1 = \frac{191.25}{39.375} = 4.85
+$$
+
+With the preceding steps completed, we are now able to calculate the value of β₀, as indicated below:
+
+$$
+\hat{\beta}_0 = \67.5 - 4.85*5.25 = 42.03
+$$
+
+Upon substitution of the β₁ and β₀ values into the linear equation, the following expression is obtained:
+
+$$
+\hat{y} = 42.05 + 4.85 x
+$$
 
 ## Exercise 2
 
