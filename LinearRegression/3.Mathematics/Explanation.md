@@ -82,8 +82,9 @@ $$
 Where n represents the total number of data points collected. Finally, we can calculate the values of β₁ and β₀ using the equations below:
 
 $$
-\hat{\beta}_1 = \frac{\sum_{i=1}^{n} (X_i - \bar{X}) (Y_i - \bar{Y})}{\sum_{i=1}^{n} (X_i - \bar{X})^2}
+\beta_1 = \frac{\sum_{i = 1}^{n} (X_i – X ) ( Y_i – Y )  -}{\sum_{i = 1}^{n} ( x - 2 )^2}
 $$
+
 
 $$
 \hat{\beta}_0 = \bar{Y} - \hat{\beta}_1\bar{X}
