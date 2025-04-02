@@ -125,7 +125,7 @@ $$
 With the preceding steps completed, we are now able to calculate the value of β₀, as indicated below:
 
 $$
-\hat{\beta}_0 = \67.5 - 4.85*5.25 = 42.03
+\hat{\beta}_0 = 67.5 - 4.85*5.25 = 42.03
 $$
 
 Upon substitution of the β₁ and β₀ values into the linear equation, the following expression is obtained:
