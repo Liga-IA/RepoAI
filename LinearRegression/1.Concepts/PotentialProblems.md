@@ -33,7 +33,8 @@ When training a Linear Regression model with a specific dataset, many problems m
 
 &nbsp;&nbsp;&nbsp;&nbsp; In the figure above, the residual plot on the left clearly shows the outlier (20). However, it may be difficult to determine when a point should be considered an outlier or not. Even though mathematical definitions and criteria exist to identify outliers (such as values above 3 and standard deviations), the decision may depend on the application context, the nature of the data, and the model used.
 
-> **OBSERVATION**
+> **Observation**
+>
 > Since the blue dots are not exactly where the straight line is, there is an associated error that we must consider when using linear regression. In order to calculate the error, do the following:
 
 ### References
