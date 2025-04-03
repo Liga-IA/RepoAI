@@ -15,6 +15,8 @@ $$
 
 If a model has two or more independent values, it is called **multiple linear regression**. However, this explanation will focus more on the simplest case, in which there is only one independent variable (**simple linear regression**).
 
+![Gif1](Figures/gif1.gif)
+
 ## Simple Linear Regression (two dimensions)
 
 In two dimensions, we can think about linear regression as a straight line, which follows the equation:
