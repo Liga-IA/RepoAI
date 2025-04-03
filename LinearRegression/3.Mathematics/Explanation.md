@@ -119,7 +119,7 @@ $$
 - x̄: simple arithmetic mean of the x values 
 - ȳ: simple arithmetic mean of the y values
 
-(exemplo:) (aqui não sei se a gente faz alguma introdução ou só coloca como titulo exemplo)
+## Example
 
 From one of the coding examples, let's analyze the relationship between hours studied and grades of a student.
 
@@ -213,7 +213,83 @@ $
 - **$\hat{y}$**: Predicted value from the model.
 - **$y$**: Real-world value. 
 
-  
+## Como encontrar a equação com base em um conjunto de dados
+
+Como explicado anteriormente, a regressão linear pode ser representada pela equação de uma reta:
+
+$$
+\hat{y} = \beta_0 + \beta_1 x
+$$
+
+Os valores β₁ e β₀ são parâmetros desconhecidos, onde β₁ representa a inclinação da reta e β₀ representa a intersecção com o eixo y.
+
+Portanto, para determinar os valores de β₁ e β₀, devemos primeiro coletar todos os dados de treinamento e organizá-los em pares de coordenadas (x, y). No final, teremos um conjunto de coordenadas assim como representado abaixo:
+
+$$
+\(x1, y1), (x2, y2),..., (xn, yn)
+$$
+
+Em que n representa o número total de ponto de dados coletados. Enfim, podemos calcular os valores β1 e β0 utilizando as duas equações abaixo:
+
+$$
+\hat{\beta_1} = \frac{\sum_{i = 1}^{n} (x_i – \bar{x} ) ( y_i – \bar{y} )}{\sum_{i = 1}^{n} ( x_i - \bar{x} )^2}
+$$
+
+$$
+\hat{\beta}_0 = \bar{Y} - \hat{\beta}_1\bar{X}
+$$
+
+- xi: valores x de cada coordenada
+- yi: valores y de cada coordenada
+- x̄: média aritmética simples dos valores x
+- ȳ: média aritmética simples dos valores y
+
+  ## Example
+
+  A partir de um dos exemplos de código, vamos analisar a relação entre horas de estudo e notas de um aluno.
+
+| Horas Estudadas | Nota do exame |
+|-----------------|---------------|
+| 1.5             | 50            |
+| 3.0             | 55            |
+| 4.5             | 65            |
+| 6.0             | 70            |
+| 7.5             | 80            |
+| 9.0             | 85            |
+
+Com base nos dados mostrados na tabela acima, podemos calcular os valores de β₁ e β₀ e definir a equação da reta. Para isso, definiremos Horas de Estudo como valores x e Notas do Exame como valores y. Assim, organizando todos os dados em pares de coordenadas, teremos os seguintes pontos: (1.5, 50), (3.0, 55), (4.5, 65), (6.0, 70), (7.5, 80), (9.0, 85).
+
+Para facilitar o desenvolvimento do cálculo de β₁, calcularemos as variáveis e os somatórios separadamente, conforme exemplificado abaixo:
+
+- x̄ = (1.5 + 3.0 + 4.5 + 6.0 + 7.5 + 9.0)/6 = 5.25
+- ȳ = (50 + 55 + 65 + 70 + 80 + 85)/6 = 67.5
+
+$$
+\sum_{i = 1}^{n} (x_i – \bar{x} ) ( y_i – \bar{y} ) = (1.5 - 5.25)(50 - 67.5) + (3.0 - 5.25)(55 - 67.5) + (4.5 - 5.25)(65  67.5) + (6.0 - 5.25)(70 - 67.5) + (7.5 - 5.25)(80 - 67.5) + (9.0 - 5.25)(85 - 67.5) = 191.25
+$$
+
+$$
+\sum_{i = 1}^{n} ( x - \bar{x} )^2 = (1.5 - 5.25)^2 + (3.0 - 5.25)^2 + (4.5 - 5.25)^2 + (6.0 - 5.25)^2 + (7.5 - 5.25)^2 + (9.0 - 5.25)^2 = 39.375
+$$
+
+Substituindo os valores na equação original, chegaremos a:
+
+$$
+\hat{\beta}_1 = \frac{191.25}{39.375} = 4.85
+$$
+
+Com os passos anteriores concluídos, agora podemos calcular o valor de β₀, conforme indicado abaixo:
+
+$$
+\hat{\beta}_0 = 67.5 - 4.85*5.25 = 42.03
+$$
+
+Após a substituição dos valores de β₁ e β₀ na equação linear, a seguinte expressão é obtida:
+
+$$
+\hat{y} = 42.05 + 4.85 x
+$$
+ 
 </details>
 
 # References
