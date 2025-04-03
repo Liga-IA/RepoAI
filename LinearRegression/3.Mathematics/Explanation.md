@@ -96,6 +96,50 @@ Here:
 
 * $\hat{B}$ is the vector with the coefficients we want (values of $A$, $B$, etc.).
 
+Another way to express the error is through the equation of the line. The error at a given point is defined as the difference between the real value ($y$) and the estimated value ($\hat{y}$), given by:
+
+$$ 
+e = y - \hat{y}
+$$
+
+As mentioned, the estimated value can be expressed using the equation of the regression line:
+
+$$
+\hat{y} = \beta_0 + \beta_1 x_1
+$$
+
+By substituting this equation into the error expression, the result is:
+
+$$
+e = y - (\beta_0 + \beta_1 x_1)
+$$
+
+Therefore, the general equation for the sum of squared residuals is expressed as:
+
+$$ S = \sum_{i=1}^{N} (y - [\beta_0 + \beta_1 x_1])^2 $$
+
+To determine the values of $\beta_0$ and $\beta_0$, partial derivatives are taken with respect to each parameter and set to zero. The partial derivative with respect to $\beta_0$ is:
+
+$$
+\frac{\partial S}{\partial B_0} = -2 \sum_{i=1}^{N} (y_i - B_0 - B_1 x_i) = 0
+$$
+
+Solving for $\beta_0$, the equation simplifies to:
+
+$$
+\hat{\beta}_0 = \bar{Y} - \hat{\beta}_1\bar{X}
+$$
+ 
+For $\beta_1$, the partial derivative is given by:
+
+$$
+\frac{\partial S}{\partial B_1} = -2 \sum_{i=1}^{N} (y_i - B_0 - B_1 x_i) x_i = 0
+$$
+
+Rearranging the equation leads to:
+$$
+\hat{\beta_1} = \frac{\sum_{i = 1}^{N} (x_i – \bar{x} ) ( y_i – \bar{y} )}{\sum_{i = 1}^{N} ( x_i - \bar{x} )^2}
+$$
 
 ---------------------------------
 
