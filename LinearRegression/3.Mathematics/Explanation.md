@@ -66,24 +66,16 @@ Let's say we want to determine the straight line equation of the linear regressi
    One reason is that squaring the errors makes bigger ones count more, helping the model focus on fixing those larger errors and giving a better overall fit to the data 
  </details>
 -------------------------------------------
-
-This directly connects the least squares method with linear regression, as it provides the exact way to find the parameters of the line or hyperplane that best fit the observed data.
-
-The general equation of the sum of squared residuals is given by:
+More formally, the equation can be represented as:
 $S = \sum_{i=1}^{N} (E_i - \hat{E}_i)^2$
 
 In this equation:
 
-
 * $E_i$ represents the observed value of the dependent variable for each observation $i$;
-
 * $\hat{E}_i$ represents the value estimated by the model;
-
 * $S$ is the total sum of squared residuals, which we want to minimize;
-
 * $N$ is the total number of observations.
-
-
+-------------------------------------
 The mathematical solution that minimizes this sum and, therefore, provides the best values for the model coefficients, is given by the matrix equation:
 
 $\hat{B} = (X^TX)^{-1}X^TE$
