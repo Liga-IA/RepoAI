@@ -150,7 +150,25 @@ $$
 
 <details>
   <summary>Portuguese version</summary>
-  VERSAO EM PORTUGUES AQUI!!!!
+
+# Representação geral da regressão linear
+
+Matematicamente, a regressão linear é um modelo usado para prever um valor numérico baseado em uma ou mais variáveis independentes. Ele assume que a relação entre a variável dependente e as caracteríticas é linear.
+
+Portanto, é representado por uma equação linear:
+
+$$
+\hat{y} = \beta_0 + \beta_1 x_1 + \beta_2 x_2 + \dots + \beta_n x_n
+$$
+
+- **$\hat{y}$**: Variável dependente ou valor previsto.
+- **$\beta_0$**: Valor de intersecção em $y$ para quando todos os valores de $x$ são zero.
+- **$\beta_1, \beta_2, \dots, \beta_n$**: Coeficientes de cada variável independente, que representam o quanto cada variável influencia na predição de y.
+- **$x_1, x_2, \dots, x_n$**: Variáveis independentes ou características que são usadas para prever y.
+
+Se um modelo tem dois ou mais valores independentes, é chamado de **regressão linear múltipla**. No entanto, esta explicação focará no caso mais simples, em que há apenas uma variável independente (**regressão linear simples**).
+
+  
 </details>
 
 # References
