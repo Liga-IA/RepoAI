@@ -3,6 +3,13 @@
 ### Regression model in a business example
 &nbsp;&nbsp;&nbsp;&nbsp; This example is about a paper that analysed the effect variation of temperature has on iced products sales. They colleted data of forecast temperature from one year prior and the sale of iced products and set up mathematical regression analysis model using data mining theory with the treated data. They were able to learn how to adjust their production to avoid overproduction when the sales are low and prevent lack of stock when demand increased by the prediction that the model made.  
 &nbsp;&nbsp;&nbsp;&nbsp; Therefore, with this model a business would be more prepared to deal with the connection between temperature and sales of a specific product. In essence, this model provides the business with better planning and more accurate price labeling to manage their profits more effectively.
+### Linear Regression on Astronomy  
+&nbsp;&nbsp;&nbsp;&nbsp; According to The Astrophysical Journal, linear regression is one of the most frequently applied statistical procedures in observational astronomy. It is used to:
+- Quantify a correlation between two properties of a sample object like the brightness of a star or the speed at which a galaxy is moving away from Earth and its distance.
+- Compare the astrophysical theories and the data, this way validate or refine their theories about how the universe works.
+- Maybe the prime one, Quantify the "cosmic distance scale", which is essencial for understand better the shape, size and the evolution of the universe, or, in other words, its structure.  
+&nbsp;&nbsp;&nbsp;&nbsp; Historically, astronomers used one single linear regression method for all this purposes: ordinary least-square regression with two variables, which serves to estimate the parameters of a linear regression model.  
+&nbsp;&nbsp;&nbsp;&nbsp; Illustrating the power of regression methods in astronomy, a data set published in The Astrophysical Journal showed that the distance ratio between the Coma and Virgo clusters could be determined to within approximately 1% accuracy.
 
 <details>
   <summary>Portuguese version</summary>
@@ -11,10 +18,19 @@ Campos de Uso
 Modelo de Regressão em um Exemplo de Negócio  
 &nbsp;&nbsp;&nbsp;&nbsp; Este exemplo trata de um artigo que analisou o efeito da variação da temperatura nas vendas de produtos gelados. Eles coletaram dados de previsão de temperatura de um ano antes e as vendas de produtos gelados, e estabeleceram um modelo matemático de análise de regressão usando a teoria de mineração de dados com os dados tratados. Eles foram capazes de aprender como ajustar sua produção para evitar superprodução quando as vendas estão baixas e prevenir a falta de estoque quando a demanda aumentou pela previsão que o modelo fez.  
 &nbsp;&nbsp;&nbsp;&nbsp; Portanto, com este modelo, uma empresa estaria mais preparada para lidar com a conexão entre a temperatura e as vendas de um produto específico. Em essência, este modelo fornece à empresa um melhor planejamento e uma rotulagem de preços mais precisa para gerenciar seus lucros de forma mais eficaz.  
+&nbsp;&nbsp;&nbsp;&nbsp; Regressão Linear em Astronomia
+&nbsp;&nbsp;&nbsp;&nbsp; De acordo com o The Astrophysical Journal, a regressão linear é um dos procedimentos estatísticos mais frequentemente aplicados em astronomia observacional. Ela é usada para:
+- Quantificar uma correlação entre duas propriedades de um objeto amostral, como o brilho de uma estrela ou a velocidade com que uma galáxia está se afastando da Terra e sua distância.
+- Comparar as teorias astrofísicas e os dados, validando ou refinando assim suas teorias sobre como o universo funciona.
+- Talvez o principal deles, quantificar a "escala de distância cósmica", que é essencial para entender melhor a forma, o tamanho e a evolução do universo ou, em outras palavras, sua estrutura.
+&nbsp;&nbsp;&nbsp;&nbsp; Historicamente, os astrônomos usaram um único método de regressão linear para todos esses propósitos: a regressão de mínimos quadrados ordinários com duas variáveis, que serve para estimar os parâmetros de um modelo de regressão linear.
+&nbsp;&nbsp;&nbsp;&nbsp; Ilustrando o poder dos métodos de regressão em astronomia, um conjunto de dados publicado no The Astrophysical Journal mostrou que a razão de distância entre os aglomerados de Coma e Virgem pôde ser determinada com uma precisão de aproximadamente 1%.
 </details>
 
 
 ### References
 - <[Introduction to Linear Regression Analysis](https://books.google.com.br/books?hl=en&lr=&id=tCIgEAAAQBAJ&oi=fnd&pg=PR13&dq=linear+regression+fields&ots=lgvaXse3Sr&sig=rQK8TmbQaqhnqulgKh6aNe3C1vc&redir_esc=y#v=onepage&q=%20field&f=false)>. Acess 01 april 2025 
 
-- <[The research of regression model in machine learning field](https://www.matec-conferences.org/articles/matecconf/abs/2018/35/matecconf_ifid2018_01033/matecconf_ifid2018_01033.html)>. Acess 01 april 2025 
+- <[The research of regression model in machine learning field](https://www.matec-conferences.org/articles/matecconf/abs/2018/35/matecconf_ifid2018_01033/matecconf_ifid2018_01033.html)>. Acess 01 april 2025  
+- <[Linear regression in astronomy I](https://articles.adsabs.harvard.edu/cgi-bin/nph-iarticle_query?bibcode=1990ApJ...364..104I&db_key=AST&page_ind=0&data_type=GIF&type=SCREEN_VIEW&classic=YES)>. Acess 03 april 2025
+- - <[Linear regression in astronomy II](https://articles.adsabs.harvard.edu//full/1992ApJ...397...55F/0000055.000.html)>. Acess 03 april 2025
