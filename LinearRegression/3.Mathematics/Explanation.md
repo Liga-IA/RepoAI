@@ -35,10 +35,10 @@ This representation can be viewed in figure 1:
 The blue dots represent the actual values collected from real-world data. The straight line shows the model's predictions.
 
 > [!IMPORTANT]
-> Since the blue dots are not exactly where the straight line is, there is an associated error that we must consider when using linear regression. In order to calculate the error, do the following: 
-$$
-error = y - \hat{y} 
-$$
+> Since the blue dots are not exactly where the straight line is, there is an associated error that we must consider when using linear regression. In order to calculate the error, do the following:
+ 
+$error = y - \hat{y}$
+
 - **$\hat{y}$**: Predicted value from the model.
 - **$y$**: Real-world value. 
 
