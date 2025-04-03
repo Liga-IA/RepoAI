@@ -165,13 +165,6 @@ $$
 \hat{y} = 42.05 + 4.85 x
 $$
 
-## Exercise 2
-
-2. (pergunta sobre encontrar equacao a partir de dados. Calcular o erro tambem.)
-<details>
-  <summary>Click to see the answer</summary>
-  
-</details>
 
 <details>
   <summary>Portuguese version</summary>
