@@ -310,4 +310,5 @@ Nota prevista para 10 horas de estudo: 90.17
 Isso mostra que, de acordo com nosso modelo, um estudante que estuda por 10 horas provavelmente obteria cerca de 90.17 no exame. A previsão segue nossa equação linear: Nota = 4.67 × Horas + 43.5.
 
 Este recurso permite que você faça previsões para qualquer número de horas de estudo!
+
 </details>
