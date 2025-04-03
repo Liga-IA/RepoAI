@@ -152,3 +152,8 @@ Predicted score for 10 hours of studying: 90.17
 This shows that, according to our model, a student who studies for 10 hours would likely score around 90.17 on the exam. The prediction follows our linear equation: Score = 4.67 × Hours + 43.5.
 
 This feature allows you to make predictions for any number of study hours!
+
+<details>
+  <summary>Portuguese version</summary>
+  VERSAO EM PORTUGUES AQUI!!!!
+</details>
