@@ -33,9 +33,8 @@ When training a Linear Regression model with a specific dataset, many problems m
 
 &nbsp;&nbsp;&nbsp;&nbsp; In the figure above, the residual plot on the left clearly shows the outlier (20). However, it may be difficult to determine when a point should be considered an outlier or not. Even though mathematical definitions and criteria exist to identify outliers (such as values above 3 and standard deviations), the decision may depend on the application context, the nature of the data, and the model used.
 
-***Observations*** 
-
-&nbsp;&nbsp;&nbsp;&nbsp; The *residual plot* mentioned in the topics above is a tool used to assess the quality of the model fit. It plots the residuals (differences between observed and predicted values) against the fitted values. The presence of evident patterns, such as clusters or trends, indicates problems with the model.
+> [!Observation]
+> The *residual plot* mentioned in the topics above is a tool used to assess the quality of the model fit. It plots the residuals (differences between observed and predicted values) against the fitted values. The presence of evident patterns, such as clusters or trends, indicates problems with the model.
 
 ### References
 
