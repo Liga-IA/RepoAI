@@ -67,7 +67,9 @@ Let's say we want to determine the straight line equation of the linear regressi
  </details>
 -------------------------------------------
 More formally, the equation can be represented as:
-$S = \sum_{i=1}^{N} (E_i - \hat{E}_i)^2$
+$$
+S = \sum_{i=1}^{N} (E_i - \hat{E}_i)^2
+$$
 
 In this equation:
 
