@@ -1,7 +1,7 @@
 ## Potencial Problems
 When training a Linear Regression model with a specific dataset, many problems may arise. The most common ones are:
 
-***1. Nonlinearity of the data***
+***1. Non-linearity of the data***
 
 &nbsp;&nbsp;&nbsp;&nbsp; The linear regression model assumes that there is a strong relationship between the predictors and the response. If this relationship is very different from linear, it is concluded that the model cannot capture the true relationship, leading to inaccurate predictions and incorrect conclusions, significantly reducing its accuracy.
 
