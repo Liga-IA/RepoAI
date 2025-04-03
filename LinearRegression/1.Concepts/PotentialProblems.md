@@ -1,9 +1,9 @@
 ## Potencial Problems
 When training a Linear Regression model with a specific dataset, many problems may arise. The most common ones are:
-1. Nonlinearity of the data
+###1. Nonlinearity of the data
    The linear regression model assumes that there is a strong relationship between the predictors and the response. If this relationship is very different from linear, it is concluded that the model cannot capture the true relationship, leading to inaccurate predictions and incorrect conclusions, significantly reducing its accuracy.
    Residual plots are a great tool for identifying the nonlinearity of the model, as one can plot the residuals (formula) versus the predictor (formula). In the case of many models, with multiple predictors, the predicted values (formula) should be used.
-   [![Captura-de-tela-2025-04-03-105017.png](https://i.postimg.cc/sDCh8zQb/Captura-de-tela-2025-04-03-105017.png)](https://postimg.cc/RqGh6jTT)
+   <img src="https://i.postimg.cc/sDCh8zQb/Captura-de-tela-2025-04-03-105017.png" alt="nonlinearity-of-the-data" width="200">
    The figure above shows a residual plot using a linear regression model. The red line represents a smooth fit of the residuals and aims to facilitate the identification of trends. It is noted to exhibit a U-shape, indicating a lack of standardization of the residuals, suggesting nonlinearity in the data.
    
 3. Correlation of error terms
