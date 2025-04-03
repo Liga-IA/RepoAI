@@ -13,11 +13,11 @@ When training a Linear Regression model with a specific dataset, many problems m
    
 ***3. Correlation of error terms***
 
-&nbsp;&nbsp;&nbsp;&nbsp; An important deduction to be made about linear regression models is that error terms (formula) are not correlated. If correlation exists among errors, the standard errors estimated for regression coefficients will tend to underestimate the true standard errors. For example, an 80% confidence interval may have a much lower probability than 0.8 of containing the true parameter value. Furthermore, this may result in lower p-values, leading to undue confidence in the model and incorrect conclusions regarding whether a parameter is statistically significant.
+&nbsp;&nbsp;&nbsp;&nbsp; An important deduction to be made about linear regression models is that error terms $e_1, e_2, ..., e_n$ are not correlated. If correlation exists among errors, the standard errors estimated for regression coefficients will tend to underestimate the true standard errors. For example, an 80% confidence interval may have a much lower probability than 0.8 of containing the true parameter value. Furthermore, this may result in lower p-values, leading to undue confidence in the model and incorrect conclusions regarding whether a parameter is statistically significant.
    
 ***5. Heteroscedasticity***
 
-&nbsp;&nbsp;&nbsp;&nbsp; An important assumption is that error terms have a constant variance (formula), meaning they are uniformly distributed across all observations. When heteroscedasticity occurs, it means the variance is not constant. Thus, the dispersion of residuals may vary depending on the values of the predictor variables or other conditions in the model.
+&nbsp;&nbsp;&nbsp;&nbsp; An important assumption is that error terms have a constant variance $Var(e_i) = \sigma^2$, meaning they are uniformly distributed across all observations. When heteroscedasticity occurs, it means the variance is not constant. Thus, the dispersion of residuals may vary depending on the values of the predictor variables or other conditions in the model.
 
    <img src="https://i.postimg.cc/NML6gxBV/Captura-de-tela-2025-04-03-144532.png" alt="nonlinearity-of-the-data" width="400">
    
