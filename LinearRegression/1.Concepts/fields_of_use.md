@@ -6,7 +6,7 @@
 
 <details>
   <summary>Portuguese version</summary>
-  ## Campos de Uso  
+## Campos de Uso  
 &nbsp;&nbsp;&nbsp;&nbsp; De acordo com o livro "Introduction to Linear Regression Analysis" (Introdução à Análise de Regressão Linear), a Regressão Linear é utilizada em muitos campos, como engenharia, ciências físicas e químicas, economia, gestão, ciências da vida e biológicas, e ciências sociais. A análise de regressão é amplamente utilizada em mineração de dados e é uma ferramenta da ciência de dados.  
 ### Modelo de Regressão em um Exemplo de Negócio  
 &nbsp;&nbsp;&nbsp;&nbsp; Este exemplo trata de um artigo que analisou o efeito da variação da temperatura nas vendas de produtos gelados. Eles coletaram dados de previsão de temperatura de um ano antes e as vendas de produtos gelados, e estabeleceram um modelo matemático de análise de regressão usando a teoria de mineração de dados com os dados tratados. Eles foram capazes de aprender como ajustar sua produção para evitar superprodução quando as vendas estão baixas e prevenir a falta de estoque quando a demanda aumentou pela previsão que o modelo fez.  
