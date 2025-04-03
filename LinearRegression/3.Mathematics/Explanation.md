@@ -148,8 +148,9 @@ $$
   
 </details>
 
-<summary>Portuguese version</summary>
-  VERSAO EM PORTUGUES AQUI!!!!!
+<details>
+  <summary>Portuguese version</summary>
+  VERSAO EM PORTUGUES AQUI!!!!
 </details>
 
 # References
