@@ -115,6 +115,7 @@ $$
 
 ---------------------------------
 
+
 ## How to find the equation based on a data set
 
 As previously explained, linear regression can be represented by the equation of a straight line: 
