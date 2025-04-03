@@ -33,4 +33,4 @@ Modelo de Regressão em um Exemplo de Negócio
 
 - <[The research of regression model in machine learning field](https://www.matec-conferences.org/articles/matecconf/abs/2018/35/matecconf_ifid2018_01033/matecconf_ifid2018_01033.html)>. Acess 01 april 2025  
 - <[Linear regression in astronomy I](https://articles.adsabs.harvard.edu/cgi-bin/nph-iarticle_query?bibcode=1990ApJ...364..104I&db_key=AST&page_ind=0&data_type=GIF&type=SCREEN_VIEW&classic=YES)>. Acess 03 april 2025
-- - <[Linear regression in astronomy II](https://articles.adsabs.harvard.edu//full/1992ApJ...397...55F/0000055.000.html)>. Acess 03 april 2025
+- <[Linear regression in astronomy II](https://articles.adsabs.harvard.edu//full/1992ApJ...397...55F/0000055.000.html)>. Acess 03 april 2025
