@@ -87,3 +87,8 @@ plt.show()
 - **MSE (Mean Squared Error):** Penalizes larger errors due to squaring.
 - **RMSE (Root Mean Squared Error):** Similar interpretation to MAE but more sensitive to outliers.
 - **R² (Coefficient of Determination):** Measures the proportion of variance explained by the model (closer to 1 is better).
+
+<details>
+  <summary>Portuguese version</summary>
+  VERSAO EM PORTUGUES AQUI!!!!
+</details>
