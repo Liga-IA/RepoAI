@@ -148,7 +148,9 @@ $$
   
 </details>
 
-
+<summary>Portuguese version</summary>
+  VERSAO EM PORTUGUES AQUI!!!!!
+</details>
 
 # References
 https://www.ufrgs.br/probabilidade-estatistica/livro/livro_completo/ch7-reg-simples.html
