@@ -168,6 +168,33 @@ $$
 
 Se um modelo tem dois ou mais valores independentes, é chamado de **regressão linear múltipla**. No entanto, esta explicação focará no caso mais simples, em que há apenas uma variável independente (**regressão linear simples**).
 
+## Regressão linear simples (duas dimensões)
+
+Em duas dimensões, podemos pensar na regressão linear como sendo uma linha reta, que segue a equação:
+
+$$
+\hat{y} = \beta_0 + \beta_1 x_1
+$$
+
+- **$\hat{y}$**: Variável dependente
+- **$\beta_0$**: Intercepto.
+- **$\beta_1$**: Coeficiente da variável independente.
+- **$x_1$**: Variável independente (característica).
+
+This representation can be viewed in figure 1:
+
+![Figure1-pt](Figures/figure1.png)
+
+Os pontos em azul representam os valores coletados de dados reais. A linha reta mostra a predição do modelo.
+
+> [!IMPORTANTE]
+> Tendo em vista que os pontos azuis não estão exatamente onde a linha reta está, há um erro associado que devemos considerar quando utilizarmos regressão linear. Para calcular o erro, faça o seguinte: 
+$
+error = y - \hat{y} 
+$
+- **$\hat{y}$**: Predicted value from the model.
+- **$y$**: Real-world value. 
+
   
 </details>
 
