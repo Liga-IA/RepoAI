@@ -4,6 +4,11 @@
 &nbsp;&nbsp;&nbsp;&nbsp; This example is about a paper that analysed the effect variation of temperature has on iced products sales. They colleted data of forecast temperature from one year prior and the sale of iced products and set up mathematical regression analysis model using data mining theory with the treated data. They were able to learn how to adjust their production to avoid overproduction when the sales are low and prevent lack of stock when demand increased by the prediction that the model made.  
 &nbsp;&nbsp;&nbsp;&nbsp; Therefore, with this model a business would be more prepared to deal with the connection between temperature and sales of a specific product. In essence, this model provides the business with better planning and more accurate price labeling to manage their profits more effectively.
 
+<details>
+  <summary>Portuguese version</summary>
+  VERSAO EM PORTUGUES AQUI!!!!
+</details>
+
 
 ### References
 - <[Introduction to Linear Regression Analysis](https://books.google.com.br/books?hl=en&lr=&id=tCIgEAAAQBAJ&oi=fnd&pg=PR13&dq=linear+regression+fields&ots=lgvaXse3Sr&sig=rQK8TmbQaqhnqulgKh6aNe3C1vc&redir_esc=y#v=onepage&q=%20field&f=false)>. Acess 01 april 2025 
