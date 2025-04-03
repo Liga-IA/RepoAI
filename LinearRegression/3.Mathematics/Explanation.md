@@ -150,7 +150,52 @@ $$
 
 <details>
   <summary>Portuguese version</summary>
-  VERSAO EM PORTUGUES AQUI!!!!
+
+# Representação geral da regressão linear
+
+Matematicamente, a regressão linear é um modelo usado para prever um valor numérico baseado em uma ou mais variáveis independentes. Ele assume que a relação entre a variável dependente e as caracteríticas é linear.
+
+Portanto, é representado por uma equação linear:
+
+$$
+\hat{y} = \beta_0 + \beta_1 x_1 + \beta_2 x_2 + \dots + \beta_n x_n
+$$
+
+- **$\hat{y}$**: Variável dependente ou valor previsto.
+- **$\beta_0$**: Valor de intersecção em $y$ para quando todos os valores de $x$ são zero.
+- **$\beta_1, \beta_2, \dots, \beta_n$**: Coeficientes de cada variável independente, que representam o quanto cada variável influencia na predição de y.
+- **$x_1, x_2, \dots, x_n$**: Variáveis independentes ou características que são usadas para prever y.
+
+Se um modelo tem dois ou mais valores independentes, é chamado de **regressão linear múltipla**. No entanto, esta explicação focará no caso mais simples, em que há apenas uma variável independente (**regressão linear simples**).
+
+## Regressão linear simples (duas dimensões)
+
+Em duas dimensões, podemos pensar na regressão linear como sendo uma linha reta, que segue a equação:
+
+$$
+\hat{y} = \beta_0 + \beta_1 x_1
+$$
+
+- **$\hat{y}$**: Variável dependente
+- **$\beta_0$**: Intercepto.
+- **$\beta_1$**: Coeficiente da variável independente.
+- **$x_1$**: Variável independente (característica).
+
+This representation can be viewed in figure 1:
+
+![Figure1-pt](Figures/figure1.png)
+
+Os pontos em azul representam os valores coletados de dados reais. A linha reta mostra a predição do modelo.
+
+> [!IMPORTANTE]
+> Tendo em vista que os pontos azuis não estão exatamente onde a linha reta está, há um erro associado que devemos considerar quando utilizarmos regressão linear. Para calcular o erro, faça o seguinte: 
+$
+error = y - \hat{y} 
+$
+- **$\hat{y}$**: Predicted value from the model.
+- **$y$**: Real-world value. 
+
+  
 </details>
 
 # References
