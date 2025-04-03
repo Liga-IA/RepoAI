@@ -188,6 +188,8 @@ $$
 
 Se um modelo tem dois ou mais valores independentes, é chamado de **regressão linear múltipla**. No entanto, esta explicação focará no caso mais simples, em que há apenas uma variável independente (**regressão linear simples**).
 
+![Gif1](Figures/gif1.gif)
+
 ## Regressão linear simples (duas dimensões)
 
 Em duas dimensões, podemos pensar na regressão linear como sendo uma linha reta, que segue a equação:
