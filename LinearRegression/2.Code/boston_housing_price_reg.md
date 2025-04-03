@@ -3,6 +3,10 @@
 The **Boston Housing** dataset was widely used for regression learning. However, it has been discontinued in Scikit-Learn due to ethical concerns, so we will use **California Housing** as an alternative.
 
 ---
+![Image description](https://www.google.com/url?sa=i&url=https%3A%2F%2Fmedium.com%2Fdata-science%2Flinear-regression-on-boston-housing-dataset-f409b7e4a155&psig=AOvVaw1MUsPtXZnwlEW73aAMGssL&ust=1743776954908000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCJCzlsaJvIwDFQAAAAAdAAAAABAR)
+
+
+---
 
 ### **1. Import Libraries**
 ```python
@@ -79,6 +83,11 @@ plt.ylabel("Predicted Values")
 plt.title("Linear Regression: Actual vs Predicted Values")
 plt.show()
 ```
+
+---
+
+### **Video about boston housing**
+[Complimentary video](https://youtu.be/gOXoFDrseis?si=k3Z9j-r5DjFQeem0)
 
 ---
 
