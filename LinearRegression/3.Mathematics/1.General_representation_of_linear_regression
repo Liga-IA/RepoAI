@@ -5,7 +5,7 @@ Mathematically, linear regression is a model used to predict numerical values ba
 Therefore, it is represented by a linear equation, such as:
 
 $$
-\hat{y} = \beta_0 + \beta_1 x_1 + \beta_2 x_2 + \dots + \beta_n x_n
+\hat{y} = \beta_0 + \beta_1 x_1 + \beta_2 x_2 + \cdots + \beta_n x_n
 $$
 
 - **$\hat{y}$**: The dependent variable or the predicted value.
