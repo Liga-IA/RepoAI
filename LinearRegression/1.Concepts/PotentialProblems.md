@@ -29,9 +29,9 @@ When training a Linear Regression model with a specific dataset, many problems m
 
 &nbsp;&nbsp;&nbsp;&nbsp; An outlier is a point that significantly deviates from the value predicted by the model.
 
-&nbsp;&nbsp;&nbsp;&nbsp; In the figure above, the residual plot on the left clearly shows the outlier (20). However, it may be difficult to determine when a point should be considered an outlier or not. Even though mathematical definitions and criteria exist to identify outliers (such as values above 3 and standard deviations), the decision may depend on the application context, the nature of the data, and the model used.
-
    <img src="https://i.postimg.cc/QCL1D9SZ/Captura-de-tela-2025-04-03-135113.png" alt="nonlinearity-of-the-data" width="300">
+
+&nbsp;&nbsp;&nbsp;&nbsp; In the figure above, the residual plot on the left clearly shows the outlier (20). However, it may be difficult to determine when a point should be considered an outlier or not. Even though mathematical definitions and criteria exist to identify outliers (such as values above 3 and standard deviations), the decision may depend on the application context, the nature of the data, and the model used.
 
 ***Observations*** 
 
