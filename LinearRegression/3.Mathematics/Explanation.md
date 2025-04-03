@@ -55,10 +55,17 @@ By analyzing a graph, such as the figure 1 one, how can we determine which blue 
 
 # The least squares method
 
-
-This technique is extremely important because it has many applications in exact sciences, especially in engineering and data analysis.
-
-The least squares method is the mathematical foundation of linear regression. Its goal is to minimize the sum of the squares of the differences between observed and predicted values by the model (errors). 
+Let's say we want to determine the straight line equation of the linear regression model. It would be wise to think that we should have an equation that minimizes errors.
+ 
+ The most common method for determining the best equation to represent the predictions is the least squares method, in which we minimize the sum of squared errors: $e_1^2 + e_2^2 + \dots + e_n^2$
+ 
+ > [!IMPORTANT]
+ > Think about why we minimize the squared errors instead of simply minimizing the sum of the errors ($|e_1| + |e_2| + \dots + |e_n|$).
+ <details>
+   <summary>Click to see the answer</summary>
+   One reason is that squaring the errors makes bigger ones count more, helping the model focus on fixing those larger errors and giving a better overall fit to the data 
+ </details>
+-------------------------------------------
 
 This directly connects the least squares method with linear regression, as it provides the exact way to find the parameters of the line or hyperplane that best fit the observed data.
 
@@ -90,7 +97,7 @@ Here:
 * $\hat{B}$ is the vector with the coefficients we want (values of $A$, $B$, etc.).
 
 
-
+---------------------------------
 
 
 
