@@ -50,18 +50,49 @@ By analyzing a graph, such as the figure 1 one, how can we determine which blue 
   The farther from the straight line the dot is, the bigger the error. Our goal is to have the blue dots as close as possible to the line, as this makes the model more accurate.
 </details>
 
+
+
+
 # The least squares method
 
-Let's say we want to determine the straight line equation of the linear regression model. It would be wise to think that we should have an equation that minimizes errors.
 
-The most common method for determining the best equation to represent the predictions is the least squares method, in which we minimize the sum of squared errors: **$e_1^2 + e_2^2 + \dots + e_n^2$**
+This technique is extremely important because it has many applications in exact sciences, especially in engineering and data analysis.
 
-> [!IMPORTANT]
-> Think about why we minimize the squared errors instead of simply minimizing the sum of the errors ($|e_1| + |e_2| + \dots + |e_n|$).
-<details>
-  <summary>Click to see the answer</summary>
-  One reason is that squaring the errors makes bigger ones count more, helping the model focus on fixing those larger errors and giving a better overall fit to the data 
-</details>
+The least squares method is the mathematical foundation of linear regression. Its goal is to minimize the sum of the squares of the differences between observed and predicted values by the model (errors). 
+
+This directly connects the least squares method with linear regression, as it provides the exact way to find the parameters of the line or hyperplane that best fit the observed data.
+
+The general equation of the sum of squared residuals is given by:
+$S = \sum_{i=1}^{N} (E_i - \hat{E}_i)^2$
+
+In this equation:
+
+
+* $E_i$ represents the observed value of the dependent variable for each observation $i$;
+
+* $\hat{E}_i$ represents the value estimated by the model;
+
+* $S$ is the total sum of squared residuals, which we want to minimize;
+
+* $N$ is the total number of observations.
+
+
+The mathematical solution that minimizes this sum and, therefore, provides the best values for the model coefficients, is given by the matrix equation:
+
+$\hat{B} = (X^TX)^{-1}X^TE$
+
+Here:
+
+* $X$ is a matrix containing the independent variables;
+
+* $E$ is the vector with the dependent variable values;
+
+* $\hat{B}$ is the vector with the coefficients we want (values of $A$, $B$, etc.).
+
+
+
+
+
 
 ## How to find the equation based on a data set
 
