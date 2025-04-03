@@ -248,9 +248,9 @@ $$
 - x̄: média aritmética simples dos valores x
 - ȳ: média aritmética simples dos valores y
 
-  ## Example
+## Exemplo
 
-  A partir de um dos exemplos de código, vamos analisar a relação entre horas de estudo e notas de um aluno.
+A partir de um dos exemplos de código, vamos analisar a relação entre horas de estudo e notas de um aluno.
 
 | Horas Estudadas | Nota do exame |
 |-----------------|---------------|
