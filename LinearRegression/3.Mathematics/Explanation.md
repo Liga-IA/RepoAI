@@ -66,6 +66,8 @@ Let's say we want to determine the straight line equation of the linear regressi
    One reason is that squaring the errors makes bigger ones count more, helping the model focus on fixing those larger errors and giving a better overall fit to the data 
  </details>
 -------------------------------------------
+
+
 More formally, the equation can be represented as:
 $$S = \sum_{i=1}^{N} (E_i - \hat{E}_i)^2$$
 
