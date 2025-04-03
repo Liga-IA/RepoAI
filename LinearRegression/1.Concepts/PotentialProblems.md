@@ -5,7 +5,7 @@ When training a Linear Regression model with a specific dataset, many problems m
 
 &nbsp;&nbsp;&nbsp;&nbsp; The linear regression model assumes that there is a strong relationship between the predictors and the response. If this relationship is very different from linear, it is concluded that the model cannot capture the true relationship, leading to inaccurate predictions and incorrect conclusions, significantly reducing its accuracy.
 
-&nbsp;&nbsp;&nbsp;&nbsp; Residual plots are a great tool for identifying the nonlinearity of the model, as one can plot the residuals (formula) versus the predictor (formula). In the case of many models, with multiple predictors, the predicted values (formula) should be used.
+&nbsp;&nbsp;&nbsp;&nbsp; Residual plots are a great tool for identifying the nonlinearity of the model, as one can plot the residuals $e_i = y_i - \hat{y}_i$ versus the predictor $x_i$. In the case of many models, with multiple predictors, the predicted values $\hat{y}_i$ should be used.
    
    <img src="https://i.postimg.cc/sDCh8zQb/Captura-de-tela-2025-04-03-105017.png" alt="nonlinearity-of-the-data" width="300">
    
