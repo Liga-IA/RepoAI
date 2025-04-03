@@ -1,5 +1,5 @@
 ## Potencial Problems
-&nbsp;&nbsp;&nbsp;&nbsp; When training a Linear Regression model with a specific dataset, many problems may arise. The most common ones are:
+When training a Linear Regression model with a specific dataset, many problems may arise. The most common ones are:
 
 ***1. Nonlinearity of the data***
 
@@ -20,11 +20,14 @@
 
    <img src="https://i.postimg.cc/NML6gxBV/Captura-de-tela-2025-04-03-144532.png" alt="nonlinearity-of-the-data" width="400">
    
-&nbsp;&nbsp;&nbsp;&nbsp; Left: Funnel shape indicates heteroscedasticity. Right: The response was transformed to a logarithmic scale, and now there is no evidence of heteroscedasticity.
+&nbsp;&nbsp;&nbsp;&nbsp; Left: Funnel shape indicates heteroscedasticity. 
+
+&nbsp;&nbsp;&nbsp;&nbsp;Right: The response was transformed to a logarithmic scale, and now there is no evidence of heteroscedasticity.
    
 ***7. Outliers***
 
 &nbsp;&nbsp;&nbsp;&nbsp; An outlier is a point that significantly deviates from the value predicted by the model.
+
 &nbsp;&nbsp;&nbsp;&nbsp; In the figure above, the residual plot on the left clearly shows the outlier (20). However, it may be difficult to determine when a point should be considered an outlier or not. Even though mathematical definitions and criteria exist to identify outliers (such as values above 3 and standard deviations), the decision may depend on the application context, the nature of the data, and the model used.
 
    <img src="https://i.postimg.cc/QCL1D9SZ/Captura-de-tela-2025-04-03-135113.png" alt="nonlinearity-of-the-data" width="300">
