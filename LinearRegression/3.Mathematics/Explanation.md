@@ -77,7 +77,7 @@ In this equation:
 * $\hat{E}_i$ represents the value estimated by the model;
 * $S$ is the total sum of squared residuals, which we want to minimize;
 * $N$ is the total number of observations.
--------------------------------------
+
 The mathematical solution that minimizes this sum and, therefore, provides the best values for the model coefficients, is given by the matrix equation:
 
 $\hat{B} = (X^TX)^{-1}X^TE$
@@ -89,11 +89,6 @@ Here:
 * $E$ is the vector with the dependent variable values;
 
 * $\hat{B}$ is the vector with the coefficients we want (values of $A$, $B$, etc.).
-
-
----------------------------------
-
-
 
 ## How to find the equation based on a data set
 
