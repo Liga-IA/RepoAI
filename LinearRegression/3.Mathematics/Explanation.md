@@ -198,7 +198,7 @@ $$
 \hat{y} = 42.05 + 4.85 x
 $$
 
-### Least Squares Error Calculation for the Exam Score Example
+## Least Squares Error Calculation for the Exam Score Example
 
 In this example, we calculate the least squares error for a simple linear regression model based on the relationship between hours studied and exam scores. The dataset and regression line are provided below.
 
@@ -227,18 +227,19 @@ $$
 S = \sum_{i=1}^{n} (y_i - \hat{y}_i)^2
 $$
 
-## Step 1: Calculate Predicted Values (\(\hat{y}_i\))
+## Step 1: Calculate Predicted Values ($(\hat{y}_i$\))
 
-For each \( x_i \), compute \(\hat{y}_i\):
 
-- \( x = 1.5 \): \(\hat{y} = 42.05 + 4.85 \times 1.5 = 49.325\)
-- \( x = 3.0 \): \(\hat{y} = 42.05 + 4.85 \times 3.0 = 56.6\)
-- \( x = 4.5 \): \(\hat{y} = 42.05 + 4.85 \times 4.5 = 63.875\)
-- \( x = 6.0 \): \(\hat{y} = 42.05 + 4.85 \times 6.0 = 71.15\)
-- \( x = 7.5 \): \(\hat{y} = 42.05 + 4.85 \times 7.5 = 78.425\)
-- \( x = 9.0 \): \(\hat{y} = 42.05 + 4.85 \times 9.0 = 85.7\)
+For each $x_i$, compute $\hat{y}_i$:
 
-## Step 2: Compute Differences (\( y_i - \hat{y}_i \))
+- $x = 1.5$: $\hat{y} = 42.05 + 4.85 \times 1.5 = 49.325$
+- $x = 3.0$: $\hat{y} = 42.05 + 4.85 \times 3.0 = 56.6$
+- $x = 4.5$: $\hat{y} = 42.05 + 4.85 \times 4.5 = 63.875$
+- $x = 6.0$: $\hat{y} = 42.05 + 4.85 \times 6.0 = 71.15$
+- $x = 7.5$: $\hat{y} = 42.05 + 4.85 \times 7.5 = 78.425$
+- $x = 9.0$: $\hat{y} = 42.05 + 4.85 \times 9.0 = 85.7$
+
+## Step 2: Compute Differences (( y_i - $\hat{y}_i$\))
 
 Subtract the predicted values from the observed values:
 
