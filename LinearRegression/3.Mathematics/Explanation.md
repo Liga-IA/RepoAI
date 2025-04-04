@@ -198,6 +198,80 @@ $$
 \hat{y} = 42.05 + 4.85 x
 $$
 
+### Least Squares Error Calculation for the Exam Score Example
+
+In this example, we calculate the least squares error for a simple linear regression model based on the relationship between hours studied and exam scores. The dataset and regression line are provided below.
+
+## Data and Regression Equation
+
+The dataset is:
+
+| Hours Studied (x) | Exam Score (y) |
+|-------------------|----------------|
+| 1.5               | 50             |
+| 3.0               | 55             |
+| 4.5               | 65             |
+| 6.0               | 70             |
+| 7.5               | 80             |
+| 9.0               | 85             |
+
+The regression equation is:
+
+$$
+\hat{y} = 42.05 + 4.85x
+$$
+
+The least squares error \( S \) is calculated as:
+
+$$
+S = \sum_{i=1}^{n} (y_i - \hat{y}_i)^2
+$$
+
+## Step 1: Calculate Predicted Values (\(\hat{y}_i\))
+
+For each \( x_i \), compute \(\hat{y}_i\):
+
+- \( x = 1.5 \): \(\hat{y} = 42.05 + 4.85 \times 1.5 = 49.325\)
+- \( x = 3.0 \): \(\hat{y} = 42.05 + 4.85 \times 3.0 = 56.6\)
+- \( x = 4.5 \): \(\hat{y} = 42.05 + 4.85 \times 4.5 = 63.875\)
+- \( x = 6.0 \): \(\hat{y} = 42.05 + 4.85 \times 6.0 = 71.15\)
+- \( x = 7.5 \): \(\hat{y} = 42.05 + 4.85 \times 7.5 = 78.425\)
+- \( x = 9.0 \): \(\hat{y} = 42.05 + 4.85 \times 9.0 = 85.7\)
+
+## Step 2: Compute Differences (\( y_i - \hat{y}_i \))
+
+Subtract the predicted values from the observed values:
+
+- \( 50 - 49.325 = 0.675 \)
+- \( 55 - 56.6 = -1.6 \)
+- \( 65 - 63.875 = 1.125 \)
+- \( 70 - 71.15 = -1.15 \)
+- \( 80 - 78.425 = 1.575 \)
+- \( 85 - 85.7 = -0.7 \)
+
+## Step 3: Square the Differences
+
+Square each difference:
+
+- \( (0.675)^2 = 0.455625 \)
+- \( (-1.6)^2 = 2.56 \)
+- \( (1.125)^2 = 1.265625 \)
+- \( (-1.15)^2 = 1.3225 \)
+- \( (1.575)^2 = 2.480625 \)
+- \( (-0.7)^2 = 0.49 \)
+
+## Step 4: Sum the Squared Differences
+
+Add the squared differences to find \( S \):
+
+$$
+S = 0.455625 + 2.56 + 1.265625 + 1.3225 + 2.480625 + 0.49 = 8.574375
+$$
+
+## Result
+
+The least squares error for this model is approximately **8.57**.
+
 
 <details>
   <summary>Portuguese version</summary>
