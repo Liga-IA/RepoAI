@@ -294,7 +294,7 @@ $$
 
 Os valores β₁ e β₀ são parâmetros desconhecidos, onde β₁ representa a inclinação da reta e β₀ representa a intersecção com o eixo y.
 
-Portanto, para determinar os valores de β₁ e β₀, devemos primeiro coletar todos os dados de treinamento e organizá-los em pares de coordenadas (x, y). No final, teremos um conjunto de coordenadas assim como representado abaixo:
+Portanto, para determinar os valores de β₁ e β₀, devemos primeiramente coletar todos os dados de treinamento e organizá-los em pares de coordenadas (x, y). No final, teremos um conjunto de coordenadas assim como representado abaixo:
 
 $$
 \(x1, y1), (x2, y2),..., (xn, yn)
