@@ -365,4 +365,5 @@ $$
 
 # References
 https://www.ufrgs.br/probabilidade-estatistica/livro/livro_completo/ch7-reg-simples.html
+HASTIE, Trevor; TIBSHIRANI, Robert; FRIEDMAN, Jerome. An introduction to statistical learning. 2009.
 
