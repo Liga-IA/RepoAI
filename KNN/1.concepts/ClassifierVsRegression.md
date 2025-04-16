@@ -1,0 +1,148 @@
+# English version
+
+The k-Nearest Neighbors (kNN) machine learning model can be divided into two main categories: classification kNN and regression kNN.
+
+## KNN Classifier
+
+In classification kNN, the model assigns a categorical label to a new input based on the K nearest neighbors in the dataset. It checks the classes of these neighbors and selects the most frequent one through a majority vote mechanism.
+
+## Example:
+
+Based on the following dataset, let's analyze and understand how the kNN Classifier model works.
+
+| Patient ID | Resting Heart Rate (bpm) | Cholesterol Level (mg/dL) | Diagnosis     |
+|------------|---------------------------|--------------------------|---------------|
+| 001        | 82                        | 220                      | Heart Disease |
+| 002        | 70                        | 190                      | No Disease    |
+| 003        | 90                        | 210                      | Heart Disease |
+| 004        | 72                        | 180                      | No Disease    |
+| 005        | 85                        | 220                      | Heart Disease |
+
+*Table 1 - Heart Diagnosis*
+
+Let us consider a new patient whose clinical measurements include a resting heart rate of 78 bpm and a cholesterol level of 200 mg/dL. Our goal is to predict this patient's diagnosis by comparing these values to those in the existing training dataset. 
+
+Defining K=3, the three nearest neighbors are:
+
+- Patient 001 → Heart Disease (distance: 20.4)
+- Patient 002 → No Disease (distance: 12.8)
+- Patient 003 → Heart Disease (distance: 15.6)
+
+Next, we compute the votes and determine which label received the majority: 
+
+Votes:
+
+- Heart Disease: 2 votes
+- No Disease: 1 vote
+
+Thus, the classification of the new data point is 'Heart Disease'
+
+## KNN Regression
+
+In regression kNN, the model predicts a continuous numerical value. To do this, the algorithm identifies the K nearest neighbors and computes the average of their values to produce the prediction.
+
+## Example: 
+
+Based on the following dataset, let's analyze and understand how the kNN Regression model works.
+
+| ID | Size (m²) | Rooms | Price ($) |
+|----|-----------|--------|-------------|
+| 01 | 110       | 3      | 550,000     |
+| 02 | 80        | 2      | 400,000     |
+| 03 | 140       | 4      | 650,000     |
+| 04 | 70        | 2      | 300,000     |
+| 05 | 90        | 3      | 450,000     |
+
+*Table 2 - House Price Prediction*
+
+Let's consider a new house with 100 m² and 3 bedrooms.
+
+the three nearest neighbors are:
+
+- House 01 -> 550 (distance: 10)
+- House 02 -> 400 (distance: 20.02)
+- House 05 -> 450 (distance: 10)
+
+Thus, the predicted price will be the average of these three values.
+
+$$
+\{predicted price} = \$466.666,67
+$$
+
+
+> [!IMPORTANT]
+> To better understand the mathematical foundation, visit:
+
+# Portuguese version
+
+O modelo de aprendizado de máquina k-Nearest Neighbors (kNN) pode ser dividido em duas categorias principais: kNN de classificação e kNN de regressão.
+
+## KNN Classificador
+
+No kNN de classificação, o modelo atribui um rótulo categórico a uma nova entrada com base nos K vizinhos mais próximos do conjunto de dados. Ele verifica as classes desses vizinhos e seleciona a mais frequente por meio de um mecanismo de "votação majoritária".
+
+## Exemplo:
+
+Com base no seguinte conjunto de dados, vamos analisar e entender como funciona o modelo kNN Classificador.
+
+| ID do Paciente | Frequência Cardíaca de Repouso (bpm) | Nível de Colesterol (mg/dL) | Diagnóstico     |
+|----------------|---------------------------------------|------------------------------|------------------|
+| 001            | 82                                    | 220                          | Doença Cardíaca  |
+| 002            | 70                                    | 190                          | Sem Doença       |
+| 003            | 90                                    | 210                          | Doença Cardíaca  |
+| 004            | 72                                    | 180                          | Sem Doença       |
+| 005            | 85                                    | 220                          | Doença Cardíaca  |
+
+*Tabela 1 - Diagnóstico Cardíaco*
+
+Vamos considerar um novo paciente cujas medições clínicas incluem uma frequência cardíaca de repouso de 78 bpm e um nível de colesterol de 200 mg/dL. Nosso objetivo é prever o diagnóstico desse paciente comparando esses valores com os do conjunto de dados de treinamento existente.
+
+Definindo K = 3, os três vizinhos mais próximos são:
+
+- Paciente 001 → Doença Cardíaca ( distancia: 20,4)
+- Paciente 002 → Sem Doença (distancia: 12,8)
+- Paciente 003 → Doença Cardíaca (distancia: 15,6)
+
+Em seguida, computamos os votos e verificamos qual rótulo recebeu a maioria:
+
+Votos:
+
+- Doença Cardíaca: 2 votos  
+- Sem Doença: 1 voto  
+
+Dessa forma, a classificação do novo dado é 'Doença Cardíaca'.
+
+## KNN Regressão
+
+No kNN de regressão, o modelo prevê um valor numérico contínuo. Para isso, o algoritmo identifica os K vizinhos mais próximos e calcula a média de seus valores para gerar a previsão.
+
+## Exemplo:
+
+Com base no seguinte conjunto de dados, vamos analisar e entender como funciona o modelo kNN Regressor.
+
+| ID  | Tamanho (m²) | Quartos | Preço (R$)  |
+|-----|--------------|---------|-------------|
+| 01  | 110          | 3       | 550.000     |
+| 02  | 80           | 2       | 400.000     |
+| 03  | 140          | 4       | 650.000     |
+| 04  | 70           | 2       | 300.000     |
+| 05  | 90           | 3       | 450.000     |
+
+*Tabela 2 - Previsão de Preço de Casa*
+
+Vamos considerar uma nova casa com 100 m² e 3 quartos.
+
+Os três vizinhos mais próximos são:
+
+- Casa 01 → 550.000 (distância: 10)  
+- Casa 02 → 400.000 (distância: 20,02)  
+- Casa 05 → 450.000 (distância: 10)  
+
+Desse modo, o preço previsto será a média desses três valores.
+
+$$
+\{preço previsto} = R$ 466.666,67
+$$
+
+> [!IMPORTANT]
+> Para compreender melhor a fundamentação matemática, visite:
