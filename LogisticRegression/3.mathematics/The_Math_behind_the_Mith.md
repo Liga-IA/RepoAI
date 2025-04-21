@@ -7,15 +7,12 @@
 - **Goal**  
   Estimate the probability of a binary outcome $y\in {0,1}$ by passing a linear score through the **sigmoid** (logistic) function.
 
-- **How It Works**  
-  Compute  
+- **How It Works**
+  
+  Compute
 
-  $$
-    P(y=1 \mid x)
-    = \sigma({\theta}^T x)
-    = \frac{1}{1 + e^{-(\beta_0 + \beta_1 x)}}
-  $$ 
-
+  $$P(y=1 \mid x) = \sigma({\theta}^T x) = \frac{1}{1 + e^{-(\beta_0 + \beta_1 x)}}$$
+  
   then classify by thresholding at 0.5.
 ---
 ## **Index**
@@ -41,10 +38,10 @@
   The ratio $\frac{P(y=1)}{P(y=0)}$, which expresses how much more likely the positive outcome is compared to the negative one.
 
 - **Log-Odds (Logit)**  
-  The natural logarithm of the odds. In logistic regression, the log-odds are modeled as a linear function of the input:  
-  $$
-  \log\frac{P(y=1\mid x)}{P(y=0\mid x)} = \boldsymbol\theta^T x.
-  $$
+  The natural logarithm of the odds. In logistic regression, the log-odds are modeled as a linear function of the input:
+    
+  $$\log\frac{P(y=1\mid x)}{P(y=0\mid x)} = \boldsymbol\theta^T x$$
+
   The log‑odds tells you how the logarithm of an event’s odds changes for each one‑unit change in a variable, providing a linear measure of effect; for example, if a model’s log‑odds coefficient for “hours studied” is 0.4, then each extra hour increases the log‑odds of passing by 0.4 equivalently, the odds of passing are multiplied by $\exp{0.4} = 1.49$ (a $49\%$ increase).
 
 - **Maximum Likelihood Estimation (MLE)**  
@@ -55,9 +52,9 @@
 
 - **Cost Function (Log-Loss)**  
   The negative log-likelihood averaged over the dataset. It measures the difference between predicted probabilities and actual outcomes. In logistic regression, it is convex, ensuring a single global minimum. This convexity means that optimization algorithms like gradient descent won’t get stuck in bad local minima—they are guaranteed to find the best possible solution within the parameter space.
-  $$
-    J(\boldsymbol\theta) = -\frac{1}{m} \sum_{i=1}^m \left[ y^{(i)} \log\left(h_{\boldsymbol\theta}(\mathbf{x}^{(i)})\right) + \left(1 - y^{(i)}\right) \log\left(1 - h_{\boldsymbol\theta}(\mathbf{x}^{(i)})\right) \right]
-  $$
+  
+  $$J(\boldsymbol\theta) = -\frac{1}{m} \sum_{i=1}^m \left[ y^{(i)} \log\left(h_{\boldsymbol\theta}(\mathbf{x}^{(i)})\right) + \left(1 - y^{(i)}\right) \log\left(1 - h_{\boldsymbol\theta}(\mathbf{x}^{(i)})\right) \right]$$
+
   where
   - $m$ is the number of training examples
   - $y^i \in 0,1$ is the true label
@@ -78,32 +75,31 @@
 
 - **Deviance**  
   A measure of how well the model fits the data, defined as twice the difference between the log-likelihood of a saturated model (perfect fit) and the current model.
-  $$
-  D = 2 \left( \ell_{\text{saturated}} - \ell_{\text{model}} \right)
-  $$
+
+  $$D = 2 \left( \ell_{\text{saturated}} - \ell_{\text{model}} \right)$$
+  
   where
   - $\ell_{\text{saturated}}$​ is the log-likelihood of the saturated model
   - $\ell_{\text{model}}$ is the log-likelihood of the current fitted model
 
-- **Pseudo-$R^2$**  
+- **Pseudo- $R^2$**  
   Analogues to the $R^2$ metric from linear regression. Common variants include Cox–Snell and McFadden, used to evaluate the explanatory power of logistic models.
 
-  1) MCFadden's
+  MCFadden's
 
     $$R^2_{\mathrm{McF}} = 1 - \frac{\ell_{\mathrm{full}}}{\ell_{0}}$$
     - $\ell_{0}$ log‑likelihood of the null model (intercept only)
     - $\ell_{\mathrm{full}}$ log‑likelihood of the fitted model
 
-  McFadden’s pseudo‑$R^2$ measures the proportional improvement in log‐likelihood of the fitted model over the null model. Values closer to 1 indicate a better fit, though typical values are much lower than linear $R^2$.
+  McFadden’s pseudo‑ $R^2$ measures the proportional improvement in log‐likelihood of the fitted model over the null model. Values closer to 1 indicate a better fit, though typical values are much lower than linear $R^2$.
 
 - **Multiclass Logistic Regression**  
   Extensions of logistic regression to handle more than two classes, either by fitting multiple binary classifiers (one-vs-rest) or using the multinomial logistic model.
 
 - **Softmax Function**  
   A generalization of the sigmoid function for multiclass classification. It transforms a vector of real-valued scores into a probability distribution over multiple classes:
-  $$
-    \mathrm{softmax}(z)_k = \frac{e^{z_k}}{\sum_{j=1}^K e^{z_j}}.
-  $$
+  
+  $\mathrm{softmax}(z_k) = \frac{e^{z_k}}{\sum_{j=1}^K e^{z_j}}$
 
 >[!Warning] Do not overheat, it was just a first handshake!
 ---
