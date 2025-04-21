@@ -108,9 +108,9 @@
 ## What is Logistic Regression?
 
 Logistic regression is a **classification algorithm** used to predict the probability of a binary outcome (e.g., success/failure, spam/not spam, disease/no disease) based on one or more input features.
-### The Idea in One Sentence:
-
+> [!TIP]
 > Logistic regression fits a **sigmoid curve** to a **linear combination** of inputs to model the probability of a binary outcome.
+
 
 ---
 
