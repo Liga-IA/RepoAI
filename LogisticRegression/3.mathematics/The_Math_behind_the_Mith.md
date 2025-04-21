@@ -9,11 +9,13 @@
 
 - **How It Works**  
   Compute  
+
     $$
-    P(y=1 \mid x)
-    = \sigma\bigl(\boldsymbol{\theta}^T x\bigr)
-    = \frac{1}{1 + e^{-(\beta_0 + \beta_1 x)}}
+      P(y=1 \mid x)
+      = \sigma\bigl(\boldsymbol{\theta}^T x\bigr)
+      = \frac{1}{1 + e^{-(\beta_0 + \beta_1 x)}}
     $$ 
+
   then classify by thresholding at 0.5.
 ---
 ## **Index**
