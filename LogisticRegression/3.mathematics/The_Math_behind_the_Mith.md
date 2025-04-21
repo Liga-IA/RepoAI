@@ -10,7 +10,7 @@
 - **How It Works**  
   Compute  
   $$
-    P(y=1\mid x)=\sigma(\boldsymbol\theta^T x)=\frac{1+e^{- \beta_0 + \beta_1x}},
+    P(y=1\mid x)=\sigma(\boldsymbol\theta^T x)=\frac{1}{1+e^{- \beta_0 + \beta_1x}}
   $$  
   then classify by thresholding at 0.5.
 ---
