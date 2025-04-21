@@ -100,8 +100,9 @@
   A generalization of the sigmoid function for multiclass classification. It transforms a vector of real-valued scores into a probability distribution over multiple classes:
   
   $\mathrm{softmax}(z_k) = \frac{e^{z_k}}{\sum_{j=1}^K e^{z_j}}$
-
->[!Warning] Do not overheat, it was just a first handshake!
+---
+> [!WARNING]
+> Do not get overheated, it was just the first handshake.
 ---
 
 ## What is Logistic Regression?
