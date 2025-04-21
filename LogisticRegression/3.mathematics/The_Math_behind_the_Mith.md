@@ -12,7 +12,7 @@
 
     $$
       P(y=1 \mid x)
-      = \sigma\bigl(\boldsymbol{\theta}^T x\bigr)
+      = \sigma({\theta}^T x)
       = \frac{1}{1 + e^{-(\beta_0 + \beta_1 x)}}
     $$ 
 
