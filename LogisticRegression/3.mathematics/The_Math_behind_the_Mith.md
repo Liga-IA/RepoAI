@@ -156,6 +156,11 @@ $$y = \theta_0 + \theta_1 x + \epsilon,\quad \epsilon \sim \mathcal{N}(0, \sigma
 
 What does this mean? For each value of $\(x\)$, the observed $\(y\)$ is a random variable normally distributed around $\(\theta_0 + \theta_1 x\)$.
 
+<div align="center">
+  <img src="./Figures/erro_distr.png" alt="logistic-summary-banner" width="1000">
+</div>
+
+
 Thus, the likelihood function (the probability of observing the data given the parameters) is:  
 
 $$L(\theta) \;=\; \prod_{i=1}^m \frac{1}{\sqrt{2\pi\sigma^2}}
