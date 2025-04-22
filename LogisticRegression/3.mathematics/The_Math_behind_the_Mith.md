@@ -19,7 +19,7 @@
 
 1. [Glossary of Key Terms](#glossary-of-key-terms)  
 2. [What is Logistic Regression?](#what-is-logistic-regression)  
-3. [The Logistic Function (a.k.a Sigmoid)](#setting-up-the-model-like-a-boss)  
+3. [Maximum Likelihood Estimation](#maximum-likelihood-estimation)  
 4. [Step-by-Step Math (No Nonsense)](#step-by-step-math-no-nonsense)  
 5. [Workflow (Like a Cake Recipe)](#workflow-like-a-cake-recipe)  
 6. [Pro Tips (The Ones No One Tells You)](#pro-tips-the-ones-no-one-tells-you)  
@@ -138,13 +138,13 @@ Where:
 
 ---
 
-## 5. Maximum Likelihood Estimation
+## Maximum Likelihood Estimation
 
 Logistic regression is typically trained via **maximum likelihood estimation (MLE)**, which seeks the parameter vector $\( \boldsymbol\theta \)$ that **maximizes the probability** of observing the data.
 
 ---
 
-### 5.1 Likelihood Function
+### Likelihood Function
 
 Given a dataset with $\( m \)$ independent samples $\( \{(\mathbf{x}^{(i)}, y^{(i)})\}_{i=1}^m \)$, the likelihood is the product of probabilities:
 
@@ -154,7 +154,7 @@ This formulation combines the probability of $\( y=1 \)$ and $\( y=0 \)$ into a 
 
 ---
 
-### 5.2 Log-Likelihood Function
+### Log-Likelihood Function
 
 Since the product can be numerically unstable, we work with the **log-likelihood**:
 
@@ -164,7 +164,7 @@ Maximizing this log-likelihood is equivalent to finding the best-fitting paramet
 
 ---
 
-### 5.3 Gradient for Optimization
+### Gradient for Optimization
 
 To optimize $\( \ell(\boldsymbol\theta) \)$, we compute the gradient:
 
@@ -178,7 +178,7 @@ Alternatively, if minimizing the **negative log-likelihood**, we use gradient **
 
 ---
 
-### 5.4 Interpretation
+### Interpretation
 
 - The log-likelihood captures the model’s fit to observed labels.
 - Each sample contributes a term weighted by its probability under the model.
@@ -189,7 +189,7 @@ Alternatively, if minimizing the **negative log-likelihood**, we use gradient **
 
 ---
 
-## 5. Convex Cost Function
+## Convex Cost Function
 
 In logistic regression, the cost function (also called **log-loss** or **cross-entropy**) is convex. This means that there is a single global minimum, which guarantees that optimization techniques like gradient descent will converge to the optimal solution.
 
@@ -201,7 +201,7 @@ Since the function is convex, gradient descent can reliably find the best parame
 
 ---
 
-## 6. Decision Boundary & Interpretation
+## Decision Boundary & Interpretation
 
 The **decision boundary** in logistic regression is the surface where the model is equally likely to predict class 0 or class 1. In other words, it's where the predicted probability is 0.5. Mathematically, this occurs when:
 
@@ -219,7 +219,7 @@ This means that the decision boundary is a linear function of the input features
 
 ---
 
-## 7. Regularization
+## Regularization
 
 To prevent overfitting, **regularization** is often applied to logistic regression models. Regularization penalizes large coefficients, forcing the model to use only the most important features.
 
@@ -237,9 +237,9 @@ To prevent overfitting, **regularization** is often applied to logistic regressi
 
 ---
 
-## 8. Goodness-of-Fit & Extensions
+## Goodness-of-Fit & Extensions
 
-### 8.1 Goodness-of-Fit
+### Goodness-of-Fit
 
 There are several metrics used to evaluate the performance of a logistic regression model:
 
@@ -247,9 +247,9 @@ There are several metrics used to evaluate the performance of a logistic regress
   
 - **Hosmer–Lemeshow Test**: A statistical test that assesses the goodness-of-fit by comparing observed and expected frequencies across different deciles of predicted probabilities. A significant result (low p-value) suggests poor fit.
 
-- **Pseudo-\(R^2\)**: A measure analogous to \(R^2\) in linear regression. It quantifies the proportion of variability in the outcome explained by the model. Common variants include **McFadden's \(R^2\)** and **Cox-Snell's \(R^2\)**.
+- **Pseudo-\(R^2\)**: A measure analogous to \(R^2\) in linear regression. It quantifies the proportion of variability in the outcome explained by the model. Common variants include **McFadden's $\(R^2\)$** and **Cox-Snell's $\(R^2\)$**.
 
-### 8.2 Extensions
+### Extensions
 
 - **Multiclass Logistic Regression**: Logistic regression can be extended to handle multiple classes using techniques like the **one-vs-rest** approach or the **softmax function**.
 
@@ -276,8 +276,6 @@ There are several metrics used to evaluate the performance of a logistic regress
 - Nelder, J. A., & Wedderburn, R. W. M. (1972). *Generalized linear models*. Journal of the Royal Statistical Society: Series A (General), 135(3), 370-384.
 
 
-## Summary:
-
-Logistic regression is a **foundational model in supervised machine learning**. It is mathematically elegant, interpretable, and works well as a baseline classifier. It’s also the **basis for many advanced models**, including neural networks and generalized linear models.
+## Logistic regression is a **foundational model in supervised machine learning**. It is mathematically elegant, interpretable, and works well as a baseline classifier. It’s also the **basis for many advanced models**, including neural networks and generalized linear models.
 
 
