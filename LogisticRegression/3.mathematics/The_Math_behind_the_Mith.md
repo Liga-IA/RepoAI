@@ -20,9 +20,11 @@
 1. [Glossary of Key Terms](#glossary-of-key-terms)  
 2. [What is Logistic Regression?](#what-is-logistic-regression)  
 3. [Maximum Likelihood Estimation](#maximum-likelihood-estimation)  
-4. [Step-by-Step Math (No Nonsense)](#step-by-step-math-no-nonsense)  
-5. [Workflow (Like a Cake Recipe)](#workflow-like-a-cake-recipe)  
-6. [Pro Tips (The Ones No One Tells You)](#pro-tips-the-ones-no-one-tells-you)  
+4. [Convex Cost Function](#convex-cost-function)  
+5. [Decision Boundary & Interpretation](#decision-boundary--interpretation)  
+6. [Regularization)](#regularization)
+7. [Goodness-of-Fit & Extensions](#goodness-of-fit--extensions)  
+8. [Final References](#final-references)
 7. [Contributors](#contributors)
 
 ---
