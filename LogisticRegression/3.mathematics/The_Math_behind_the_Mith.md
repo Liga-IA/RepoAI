@@ -301,5 +301,7 @@ RepoAI/
     |   └── 2.xxxxx.md 
     |   └── 3.xxxxx.md   
 ```
-
+## **Contributors**  
+| [<img loading="lazy" src="https://avatars.githubusercontent.com/u/91793807?v=4" width=115><br><sub>Ítalo Silva</sub>](https://github.com/ITA-LOW) |  [<img loading="lazy" src="https://avatars.githubusercontent.com/u/171816351?v=4" width=115><br><sub>Arthur xxxx</sub>](https://github.com/mateuskramer) | 
+| :---: | :---: | 
 
