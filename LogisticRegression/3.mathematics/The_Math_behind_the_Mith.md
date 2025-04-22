@@ -108,29 +108,22 @@
 ## What is Logistic Regression?
 
 Logistic regression is a **classification algorithm** used to predict the probability of a binary outcome (e.g., success/failure, spam/not spam, disease/no disease) based on one or more input features.
-> [!TIP]
-> Logistic regression fits a **sigmoid curve** to a **linear combination** of inputs to model the probability of a binary outcome.
-
-
 ---
 
 ### The Logistic Function:
-
-\[
-\sigma(z) = \frac{1}{1 + e^{-z}}
-\]
+$$\sigma(z) = \frac{1}{1 + e^{-z}}$$
 
 Where:
-- \(z = \boldsymbol\theta^T \mathbf{x}\) is a linear combination of the input features and model parameters.
-- The function \(\sigma(z)\) maps any real number to a value between 0 and 1, representing a probability.
+- $\(z = \boldsymbol\theta^T \mathbf{x}\)$ is a linear combination of the input features and model parameters.
+- The function $\(\sigma(z)\)$ maps any real number to a value between 0 and 1, representing a probability.
 
 ---
 
 ### Interpretation:
 
-- If \(\sigma(z) \approx 1\), the model strongly predicts class 1.
-- If \(\sigma(z) \approx 0\), the model strongly predicts class 0.
-- If \(\sigma(z) \approx 0.5\), the model is uncertain.
+- If $\(\sigma(z) \approx 1\)$, the model strongly predicts class 1.
+- If $\(\sigma(z) \approx 0\)$, the model strongly predicts class 0.
+- If $\(\sigma(z) \approx 0.5\)$, the model is uncertain.
 
 ---
 
@@ -145,105 +138,19 @@ Where:
 
 ---
 
-## 3. The Logistic (Sigmoid) Function
-
-### 3.1 Definition
-
-The logistic function—commonly referred to as the **sigmoid function**—is a smooth, differentiable function defined as:
-
-\[
-\sigma(z) = \frac{1}{1 + e^{-z}}
-\]
-
-It transforms real-valued inputs \( z \in \mathbb{R} \) into values within the interval \( (0, 1) \), making it especially suited for modeling probabilities in binary classification problems (Brunner, 2011).
-
----
-
-### 3.2 Properties
-
-Key mathematical properties of the sigmoid function include:
-
-- **Range**: \( \sigma(z) \in (0, 1) \)
-- **Symmetry**: \( \sigma(-z) = 1 - \sigma(z) \)
-- **Midpoint**: \( \sigma(0) = 0.5 \)
-- **Limit behavior**:
-  \[
-  \lim_{z \to -\infty} \sigma(z) = 0, \quad \lim_{z \to +\infty} \sigma(z) = 1
-  \]
-- **Smoothness**: Infinitely differentiable, which is critical for gradient-based methods
-
-These properties make \(\sigma(z)\) ideal for use in models where the output must be interpreted as a probability (Kunovich, 2015).
-
----
-
-### 3.3 Derivative
-
-The derivative of the sigmoid function is elegant and computationally efficient:
-
-\[
-\sigma'(z) = \frac{d\sigma}{dz} = \sigma(z)\left(1 - \sigma(z)\right)
-\]
-
-This identity allows for simplified gradient expressions in optimization algorithms such as gradient descent (Brunner, 2011).
-
----
-## 4. Model Specification
-
-In logistic regression, the probability that a binary response variable \( y \in \{0, 1\} \) equals 1 given a feature vector \( \mathbf{x} \in \mathbb{R}^n \) is modeled using the sigmoid function:
-
-\[
-h_{\boldsymbol\theta}(\mathbf{x}) = \sigma(\boldsymbol\theta^T \mathbf{x}) = \frac{1}{1 + e^{-\boldsymbol\theta^T \mathbf{x}}}
-\]
-
-Here, \( \boldsymbol\theta = [\theta_0, \theta_1, \dots, \theta_n]^T \) is the parameter vector, and \( \mathbf{x} = [1, x_1, \dots, x_n]^T \) includes the intercept term \( x_0 = 1 \). This formulation ensures a **linear combination of inputs**, passed through a **nonlinear activation** \( \sigma(z) \), outputs a probability (Brunner, 2011).
-
----
-
-### 4.1 Log-Odds Interpretation
-
-The logistic model is derived from the assumption that the **log-odds** (logit) of the outcome is linear in the features:
-
-\[
-\log\left(\frac{P(y = 1 \mid \mathbf{x})}{P(y = 0 \mid \mathbf{x})}\right) = \boldsymbol\theta^T \mathbf{x}
-\]
-
-This leads to:
-
-\[
-P(y = 1 \mid \mathbf{x}) = \frac{1}{1 + e^{-\boldsymbol\theta^T \mathbf{x}}}
-\]
-
-Thus, the **logit function** maps probabilities back to a linear form. From this, the exponentiated coefficient \( \exp(\theta_j) \) represents the **odds ratio** for a one-unit increase in feature \( x_j \), holding others constant (Cox, 1958).
-
----
-
-### 4.2 Probabilistic Model
-
-Given this setup, the model outputs:
-
-\[
-P(y = 1 \mid \mathbf{x}) = h_{\boldsymbol\theta}(\mathbf{x}), \quad P(y = 0 \mid \mathbf{x}) = 1 - h_{\boldsymbol\theta}(\mathbf{x})
-\]
-
-This makes logistic regression a **probabilistic discriminative model**, estimating class probabilities directly (Kunovich, 2015).
-
----
-
 ## 5. Maximum Likelihood Estimation
 
-Logistic regression is typically trained via **maximum likelihood estimation (MLE)**, which seeks the parameter vector \( \boldsymbol\theta \) that **maximizes the probability** of observing the data.
+Logistic regression is typically trained via **maximum likelihood estimation (MLE)**, which seeks the parameter vector $\( \boldsymbol\theta \)$ that **maximizes the probability** of observing the data.
 
 ---
 
 ### 5.1 Likelihood Function
 
-Given a dataset with \( m \) independent samples \( \{(\mathbf{x}^{(i)}, y^{(i)})\}_{i=1}^m \), the likelihood is the product of probabilities:
+Given a dataset with $\( m \)$ independent samples $\( \{(\mathbf{x}^{(i)}, y^{(i)})\}_{i=1}^m \)$, the likelihood is the product of probabilities:
 
-\[
-L(\boldsymbol\theta) = \prod_{i=1}^m \left[h_{\boldsymbol\theta}(\mathbf{x}^{(i)})\right]^{y^{(i)}} \left[1 - h_{\boldsymbol\theta}(\mathbf{x}^{(i)})\right]^{1 - y^{(i)}}
-\]
+$$L(\boldsymbol\theta) = \prod_{i=1}^m \left[h_{\boldsymbol\theta}(\mathbf{x}^{(i)})\right]^{y^{(i)}} \left[1 - h_{\boldsymbol\theta}(\mathbf{x}^{(i)})\right]^{1 - y^{(i)}}$$
 
-This formulation combines the probability of \( y=1 \) and \( y=0 \) into a single expression using exponents.
+This formulation combines the probability of $\( y=1 \)$ and $\( y=0 \)$ into a single expression using exponents.
 
 ---
 
@@ -251,9 +158,7 @@ This formulation combines the probability of \( y=1 \) and \( y=0 \) into a sing
 
 Since the product can be numerically unstable, we work with the **log-likelihood**:
 
-\[
-\ell(\boldsymbol\theta) = \sum_{i=1}^m \left[ y^{(i)} \ln h_{\boldsymbol\theta}(\mathbf{x}^{(i)}) + (1 - y^{(i)}) \ln(1 - h_{\boldsymbol\theta}(\mathbf{x}^{(i)})) \right]
-\]
+$$\ell(\boldsymbol\theta) = \sum_{i=1}^m \left[ y^{(i)} \ln h_{\boldsymbol\theta}(\mathbf{x}^{(i)}) + (1 - y^{(i)}) \ln(1 - h_{\boldsymbol\theta}(\mathbf{x}^{(i)})) \right]$$
 
 Maximizing this log-likelihood is equivalent to finding the best-fitting parameters for the logistic model.
 
@@ -261,17 +166,13 @@ Maximizing this log-likelihood is equivalent to finding the best-fitting paramet
 
 ### 5.3 Gradient for Optimization
 
-To optimize \( \ell(\boldsymbol\theta) \), we compute the gradient:
+To optimize $\( \ell(\boldsymbol\theta) \)$, we compute the gradient:
 
-\[
-\nabla_{\boldsymbol\theta}\,\ell(\boldsymbol\theta) = \sum_{i=1}^m \left( y^{(i)} - h_{\boldsymbol\theta}(\mathbf{x}^{(i)}) \right) \mathbf{x}^{(i)}
-\]
+$$\nabla_{\boldsymbol\theta}\,\ell(\boldsymbol\theta) = \sum_{i=1}^m \left( y^{(i)} - h_{\boldsymbol\theta}(\mathbf{x}^{(i)}) \right) \mathbf{x}^{(i)}$$
 
 This expression is used in **gradient ascent**, where each update moves in the direction of the gradient:
 
-\[
-\boldsymbol\theta := \boldsymbol\theta + \alpha \nabla_{\boldsymbol\theta}\,\ell(\boldsymbol\theta)
-\]
+$$\boldsymbol\theta := \boldsymbol\theta + \alpha \nabla_{\boldsymbol\theta}\,\ell(\boldsymbol\theta)$$
 
 Alternatively, if minimizing the **negative log-likelihood**, we use gradient **descent**.
 
@@ -283,7 +184,8 @@ Alternatively, if minimizing the **negative log-likelihood**, we use gradient **
 - Each sample contributes a term weighted by its probability under the model.
 - The gradient reflects the **error** between prediction and label.
 
-MLE ensures that we are choosing the parameters that best explain the data under the logistic model assumptions.
+> [!TIP]
+> MLE ensures that we are choosing the parameters that best explain the data under the logistic model assumptions.
 
 ---
 
@@ -293,11 +195,9 @@ In logistic regression, the cost function (also called **log-loss** or **cross-e
 
 The log-loss cost function for logistic regression is defined as:
 
-\[
-J(\boldsymbol\theta) = - \frac{1}{m} \sum_{i=1}^m \left[ y^{(i)} \ln h_{\boldsymbol\theta}(\mathbf{x}^{(i)}) + (1 - y^{(i)}) \ln(1 - h_{\boldsymbol\theta}(\mathbf{x}^{(i)})) \right]
-\]
+$$J(\boldsymbol\theta) = - \frac{1}{m} \sum_{i=1}^m \left[ y^{(i)} \ln h_{\boldsymbol\theta}(\mathbf{x}^{(i)}) + (1 - y^{(i)}) \ln(1 - h_{\boldsymbol\theta}(\mathbf{x}^{(i)})) \right]$$
 
-Since the function is convex, gradient descent can reliably find the best parameters \(\boldsymbol\theta\) that minimize the cost function.
+Since the function is convex, gradient descent can reliably find the best parameters $\(\boldsymbol\theta\)$ that minimize the cost function.
 
 ---
 
@@ -305,21 +205,17 @@ Since the function is convex, gradient descent can reliably find the best parame
 
 The **decision boundary** in logistic regression is the surface where the model is equally likely to predict class 0 or class 1. In other words, it's where the predicted probability is 0.5. Mathematically, this occurs when:
 
-\[
-\sigma(\boldsymbol\theta^T \mathbf{x}) = 0.5
-\]
+$$\sigma(\boldsymbol\theta^T \mathbf{x}) = 0.5$$
 
-Solving for \( \mathbf{x} \), we find the decision boundary occurs when:
+Solving for $\( \mathbf{x} \)$, we find the decision boundary occurs when:
 
-\[
-\boldsymbol\theta^T \mathbf{x} = 0
-\]
+$$\boldsymbol\theta^T \mathbf{x} = 0$$
 
 This means that the decision boundary is a linear function of the input features. For a 2D dataset, the decision boundary is a straight line, and for higher dimensions, it becomes a hyperplane.
 
 ### Interpretation:
-- **Coefficients**: The magnitude of each coefficient \(\theta_j\) represents how much the corresponding feature \(x_j\) influences the model's prediction. A larger magnitude means the feature has a more significant impact on the prediction.
-- **Odds Ratio**: The odds ratio for a feature is given by \(\exp(\theta_j)\), which tells us how the odds of the outcome change when the feature increases by one unit.
+- **Coefficients**: The magnitude of each coefficient $\(\theta_j\)$ represents how much the corresponding feature $\(x_j\)$ influences the model's prediction. A larger magnitude means the feature has a more significant impact on the prediction.
+- **Odds Ratio**: The odds ratio for a feature is given by $\(\exp(\theta_j)\)$, which tells us how the odds of the outcome change when the feature increases by one unit.
 
 ---
 
@@ -328,15 +224,15 @@ This means that the decision boundary is a linear function of the input features
 To prevent overfitting, **regularization** is often applied to logistic regression models. Regularization penalizes large coefficients, forcing the model to use only the most important features.
 
 - **L1 Regularization (Lasso)**: Adds a penalty equal to the absolute value of the coefficients:
-  \[
-  J(\boldsymbol\theta) = - \frac{1}{m} \sum_{i=1}^m \left[ y^{(i)} \ln h_{\boldsymbol\theta}(\mathbf{x}^{(i)}) + (1 - y^{(i)}) \ln(1 - h_{\boldsymbol\theta}(\mathbf{x}^{(i)})) \right] + \lambda \sum_{j=1}^n |\theta_j|
-  \]
+
+  $$J(\boldsymbol\theta) = - \frac{1}{m} \sum_{i=1}^m \left[ y^{(i)} \ln h_{\boldsymbol\theta}(\mathbf{x}^{(i)}) + (1 - y^{(i)}) \ln(1 - h_{\boldsymbol\theta}(\mathbf{x}^{(i)})) \right] + \lambda \sum_{j=1}^n |\theta_j|$$
+
   L1 regularization encourages sparsity, meaning some coefficients may become exactly zero, effectively performing feature selection.
 
 - **L2 Regularization (Ridge)**: Adds a penalty equal to the square of the coefficients:
-  \[
-  J(\boldsymbol\theta) = - \frac{1}{m} \sum_{i=1}^m \left[ y^{(i)} \ln h_{\boldsymbol\theta}(\mathbf{x}^{(i)}) + (1 - y^{(i)}) \ln(1 - h_{\boldsymbol\theta}(\mathbf{x}^{(i)})) \right] + \lambda \sum_{j=1}^n \theta_j^2
-  \]
+  
+  $$J(\boldsymbol\theta) = - \frac{1}{m} \sum_{i=1}^m \left[ y^{(i)} \ln h_{\boldsymbol\theta}(\mathbf{x}^{(i)}) + (1 - y^{(i)}) \ln(1 - h_{\boldsymbol\theta}(\mathbf{x}^{(i)})) \right] + \lambda \sum_{j=1}^n \theta_j^2$$
+
   L2 regularization discourages large coefficients but does not necessarily set them to zero, allowing for all features to be included in the model.
 
 ---
