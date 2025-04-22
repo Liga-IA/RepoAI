@@ -144,6 +144,88 @@ Where:
 
 Logistic regression is typically trained via **maximum likelihood estimation (MLE)**, which seeks the parameter vector $\( \boldsymbol\theta \)$ that **maximizes the probability** of observing the data.
 
+> [!WARNING]
+> If the parameters $\theta$ ($\beta_0$ and $\beta_1$) could be stimated by OLS method, why should we use MLE method? 
+
+---
+### First: MLE for ordinary linear regression (Gaussian error)
+
+Imagine you have a standard linear regression:  
+
+$$y = \theta_0 + \theta_1 x + \epsilon,\quad \epsilon \sim \mathcal{N}(0, \sigma^2)$$ 
+
+What does this mean? For each value of $\(x\)$, the observed $\(y\)$ is a random variable normally distributed around $\(\theta_0 + \theta_1 x\)$.
+
+Thus, the likelihood function (the probability of observing the data given the parameters) is:  
+
+$$L(\theta) \;=\; \prod_{i=1}^m \frac{1}{\sqrt{2\pi\sigma^2}}
+\exp\Biggl(-\frac{\bigl(y^{(i)} - \theta^T x^{(i)}\bigr)^2}{2\sigma^2}\Biggr)$$
+
+Taking the log (because maximizing the log‐likelihood is easier than maximizing the product) gives:  
+
+$$\log L(\theta)
+= -\frac{m}{2}\,\log\bigl(2\pi\sigma^2\bigr)
+  - \frac{1}{2\sigma^2}\sum_{i=1}^m\bigl(y^{(i)} - \theta^T x^{(i)}\bigr)^2$$
+
+Notice that:
+- $\(-\tfrac{m}{2}\log(2\pi\sigma^2)\)$ is constant in $\(\theta\)$,
+- the only $\(\theta\)$ -dependent term is $\(-\tfrac{1}{2\sigma^2}\sum (y^{(i)} - \theta^T x^{(i)})^2\)$.
+
+Maximizing this with respect to \(\theta\) is therefore equivalent to minimizing  
+
+$$\sum_{i=1}^m \bigl(y^{(i)} - \theta^T x^{(i)}\bigr)^2$$
+
+#### **Result:** MLE under Gaussian error is equivalent to Ordinary Least Squares (OLS).  
+The $\(\theta\)$ that maximizes the likelihood is the same that minimizes the sum of squared residuals.
+
+---
+
+### Second: What changes in logistic regression?
+
+In logistic regression, the assumptions differ:
+
+1. **Binary outcomes.**  
+   Now $\(y \in \{0,1\}\)$, not continuous.
+
+2. **Bernoulli distribution.**  
+   Instead of Gaussian noise, assume  
+   
+   $$p = \sigma(\theta^T x),\quad \sigma(z)=\frac{1}{1+e^{-z}},$$
+     
+   so that  
+   
+   $$P(y=1 \mid x) = \sigma(\theta^T x),\quad
+   P(y=0 \mid x) = 1 - \sigma(\theta^T x).$$
+
+4. **Likelihood function.**  
+
+   $$L(\theta)
+   = \prod_{i=1}^m \Bigl[\sigma(\theta^T x^{(i)})\Bigr]^{y^{(i)}}
+     \Bigl[1 - \sigma(\theta^T x^{(i)})\Bigr]^{1 - y^{(i)}}.$$
+
+5. **Log‐likelihood.**  
+   
+   $$\log L(\theta)
+   = \sum_{i=1}^m \bigl[y^{(i)}\log(\sigma(\theta^T x^{(i)}))
+   + (1 - y^{(i)})\log\bigl(1 - \sigma(\theta^T x^{(i)})\bigr)\bigr].$$
+
+This function is **not quadratic** in $\(\theta\)$, and the sigmoid $\(\sigma(\theta^T x)\)$ is a **nonlinear** function.
+
+#### **Result:**  
+- There is **no closed‐form** solution like $\(\theta = (X^TX)^{-1}X^Ty\)$.  
+- You must solve for $\(\theta\)$ **iteratively** (e.g., gradient descent, Newton’s method).
+
+---
+
+### Summary
+
+|                                | Linear Regression  | Logistic Regression   |
+|--------------------------------|---------------------------------|-------------------------------------|
+| **Likelihood function**        | Gaussian                         | Bernoulli                           |
+| **Equation form**              | Quadratic (parabolic)            | Nonlinear (sigmoidal)               |
+| **Solution method**            | Closed‐form (OLS)                | Iterative optimization              |
+| **OLS = MLE?**                  | Yes                              | No                                  |
+
 ---
 
 ### Likelihood Function
