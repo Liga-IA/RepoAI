@@ -1,7 +1,7 @@
 # Logistic Regression at a Glance 🚀
 
 <div align="center">
-  <img src="./Figures/RL.png" alt="logistic-summary-banner" width="800">
+  <img src="./Figures/RL.png" alt="logistic-summary-banner" width="1000">
 </div>
 
 - **Goal**  
