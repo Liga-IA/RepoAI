@@ -280,4 +280,26 @@ There are several metrics used to evaluate the performance of a logistic regress
 
 ## Logistic regression is a **foundational model in supervised machine learning**. It is mathematically elegant, interpretable, and works well as a baseline classifier. It’s also the **basis for many advanced models**, including neural networks and generalized linear models.
 
+## **Where am I?**
+```text
+RepoAI/
+└── Logistic Regression/
+    ├── 1.Concepts/
+        └── Figures/
+    │   └── 1.xxxxx.md
+    |   └── 2.xxxxx.md
+    |   └── 3.xxxxx.md
+    |   └── 4.xxxxx.md
+    ├── 2.Code/
+    |   └── Figures/
+    |   └── 1.xxxxx.md
+    |   └── 2.xxxxx.md
+    |   └── 3.xxxxx.md
+    └── 3.Mathematics/
+    |   └── Figures/
+    |   └── 1.The_Math_behind_the_Mith.md 
+    |   └── 2.xxxxx.md 
+    |   └── 3.xxxxx.md   
+```
+
 
