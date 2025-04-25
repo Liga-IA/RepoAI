@@ -31,7 +31,7 @@
 ## Glossary of Key Terms
 
 - **Sigmoid (Logistic) Function**  
-  A smooth S-shaped curve defined as $\sigma(z) = \frac{1}{1 + e^{-z}}$, which maps any real number to the interval (0,1). It represents the probability output of the logistic regression model.
+  A smooth S-shaped curve defined as $\sigma(z) = \frac{1}{1 + e^{-z}}$, which maps any real number to the interval (0,1). It represents the probability output of the logistic regression model. Easy isn't?
 
 - **Hypothesis**  
   Denoted $h_{\boldsymbol\theta}(x)$, it is the model’s predicted probability that the outcome $y=1$ given input $x$. In logistic regression, it is equal to $\sigma(\boldsymbol\theta^T x)$.
