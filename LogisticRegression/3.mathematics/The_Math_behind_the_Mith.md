@@ -326,28 +326,6 @@ To prevent overfitting, **regularization** is often applied to logistic regressi
 
 ---
 
-## Goodness-of-Fit & Extensions
-
-### Goodness-of-Fit
-
-There are several metrics used to evaluate the performance of a logistic regression model:
-
-- **Deviance**: Measures how well the model fits the data by comparing the log-likelihood of the fitted model to that of a saturated model (perfect fit).
-  
-- **Hosmer–Lemeshow Test**: A statistical test that assesses the goodness-of-fit by comparing observed and expected frequencies across different deciles of predicted probabilities. A significant result (low p-value) suggests poor fit.
-
-- **Pseudo- $\(R^2\)$**: A measure analogous to $\(R^2\)$ in linear regression. It quantifies the proportion of variability in the outcome explained by the model. Common variants include **McFadden's $\(R^2\)$** and **Cox-Snell's $\(R^2\)$**.
-
-### Extensions
-
-- **Multiclass Logistic Regression**: Logistic regression can be extended to handle multiple classes using techniques like the **one-vs-rest** approach or the **softmax function**.
-
-- **Bayesian Logistic Regression**: This is a probabilistic extension of logistic regression where parameters are treated as random variables, and a prior distribution is assumed for the parameters. Inference is then done using Bayesian methods.
-
-- **Regularized Logistic Regression**: Combining regularization with logistic regression (L1 or L2) helps prevent overfitting, especially in high-dimensional spaces.
-
----
-
 ## Final References
 
 - Brunner, E. (2011). *Logistic regression and related methods: Analysis of categorical data*. Springer.
@@ -365,7 +343,7 @@ There are several metrics used to evaluate the performance of a logistic regress
 - Nelder, J. A., & Wedderburn, R. W. M. (1972). *Generalized linear models*. Journal of the Royal Statistical Society: Series A (General), 135(3), 370-384.
 
 
-## Logistic regression is a **foundational model in supervised machine learning**. It is mathematically elegant, interpretable, and works well as a baseline classifier. It’s also the **basis for many advanced models**, including neural networks and generalized linear models.
+## Logistic regression is a **foundational model in supervised machine learning**. It is mathematically elegant, interpretable, and works well as a baseline classifier. It’s also the **basis for many advanced models** as neural networks.
 
 ## **Where am I?**
 ```text
