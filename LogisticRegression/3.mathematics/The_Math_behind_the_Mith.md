@@ -336,7 +336,7 @@ There are several metrics used to evaluate the performance of a logistic regress
   
 - **Hosmer–Lemeshow Test**: A statistical test that assesses the goodness-of-fit by comparing observed and expected frequencies across different deciles of predicted probabilities. A significant result (low p-value) suggests poor fit.
 
-- **Pseudo-\(R^2\)**: A measure analogous to $\(R^2\)$ in linear regression. It quantifies the proportion of variability in the outcome explained by the model. Common variants include **McFadden's $\(R^2\)$** and **Cox-Snell's $\(R^2\)$**.
+- **Pseudo- $\(R^2\)$**: A measure analogous to $\(R^2\)$ in linear regression. It quantifies the proportion of variability in the outcome explained by the model. Common variants include **McFadden's $\(R^2\)$** and **Cox-Snell's $\(R^2\)$**.
 
 ### Extensions
 
