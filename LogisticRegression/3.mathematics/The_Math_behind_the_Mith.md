@@ -342,8 +342,12 @@ To prevent overfitting, **regularization** is often applied to logistic regressi
 
 - Nelder, J. A., & Wedderburn, R. W. M. (1972). *Generalized linear models*. Journal of the Royal Statistical Society: Series A (General), 135(3), 370-384.
 
+---
 
-## Logistic regression is a **foundational model in supervised machine learning**. It is mathematically elegant, interpretable, and works well as a baseline classifier. It’s also the **basis for many advanced models** as neural networks.
+## Summary 
+### Logistic regression is a *foundational model in supervised machine learning*. It is mathematically elegant, interpretable, and works well as a baseline classifier. It’s also the *basis for many advanced models* as neural networks.
+
+---
 
 ## **Where am I?**
 ```text
