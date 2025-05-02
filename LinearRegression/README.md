@@ -39,9 +39,11 @@ RepoAI/
     |   └── 1.Dive_into_the_docs.md 
     |   └── 2.Boston_housing_price_reg.md
     |   └── 3.Student_study_hours_prediction.md
-    └── 3.Mathematics/
+    ├── 3.Mathematics/
     |   └── Figures/
     |   └── 1.General_representation_of_linear_regression.md 
     |   └── 2.The_least_square_method.md 
-    |   └── 3.Equation_based_on_dataset.md   
+    |   └── 3.Equation_based_on_dataset.md
+    ├── README.md
+    └── LICENSE   
 ```
