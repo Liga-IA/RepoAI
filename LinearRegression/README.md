@@ -16,6 +16,10 @@ Este projeto está organizado em 3 partes principais:
 2. **Implementações**  
    - Arquivo: `2.Code.md`  
    - Conteúdo: Documentação do SKLearn e exemplos aplicados ao problema Boston Housing e horas de estudos versus previsão de performance.
+  
+3. **Matemática**  
+   - Arquivo: `3.Mathematics.md`  
+   - Conteúdo: Representação Geral da regressão linear, Método dos mínimo quadrados, Equação baseada num dataset.
 
 ---
 
@@ -23,19 +27,21 @@ Este projeto está organizado em 3 partes principais:
 
 ```text
 RepoAI/
-└── Algoritmos-geneticos/
-    ├── content/
-    │   └── Capa.png
-    ├── code/
-    |   └── Acertando_uma_string.md
-    |   └── Algoritmos_geneticos.md
-    ├── README
-    └── license    
+└── Linear Regression/
+    ├── 1.Concepts/
+        └── Figures/
+    │   └── 1.History.md
+    |   └── 2.Typical_problems.md
+    |   └── 3.Potential_issues.md
+    |   └── 4.Fields_of_use.md
+    ├── 2.Code/
+    |   └── Figures/
+    |   └── 1.Dive_into_the_docs.md 
+    |   └── 2.Boston_housing_price_reg.md
+    |   └── 3.Student_study_hours_prediction.md
+    └── 3.Mathematics/
+    |   └── Figures/
+    |   └── 1.General_representation_of_linear_regression.md 
+    |   └── 2.The_least_square_method.md 
+    |   └── 3.Equation_based_on_dataset.md   
 ```
-
-## Contribuidores
-
- | [<img loading="lazy" src="https://avatars.githubusercontent.com/u/91793807?v=4" width=115><br><sub>Ítalo Silva</sub>](https://github.com/ITA-LOW) |  [<img loading="lazy" src="https://avatars.githubusercontent.com/u/11313404?v=4" width=115><br><sub>Alison R. Panisson</sub>](https://github.com/AlisonPanisson) |
-| :---: | :---: |
-
----
