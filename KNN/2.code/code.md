@@ -1,4 +1,18 @@
 ## Exemplos de KNN com gráficos
+### 1)  Dataset Iris
+
+O código apresenta uma implementação do algoritmo K-Nearest Neighbors (KNN) aplicado ao famoso dataset Iris. Este conjunto de dados contém medidas de três espécies de flores íris (setosa, versicolor e virginica) baseadas em quatro características: comprimento da sépala, largura da sépala, comprimento da pétala e largura da pétala.
+
+   Principais elementos da implementação:
+- Carregamento do dataset Iris e divisão em conjuntos de treino (70%) e teste (30%)
+- Aplicação inicial do KNN com k=10 vizinhos
+- Visualização 3D da separação entre as espécies usando plotly
+- Criação de matriz de confusão para avaliar o desempenho do classificador
+- Uso de pipeline com padronização dos dados (StandardScaler)
+- Busca do valor ótimo de k via GridSearchCV (testando valores de 1 a 15)
+- Avaliação do modelo com métricas de classificação
+
+
 
 ### 3) Recomendação simples com filtragem colaborativa baseada em usuários
 
