@@ -1,6 +1,6 @@
 ## Exemplos de KNN com gráficos
 
-(Link Notebook no Colab)[https://colab.research.google.com/drive/1weSNTv3ZqPqpdrtPQrczzHxfoQMkhLQu#scrollTo=vZfd4X1kdFVe]
+[Link Notebook no Colab](https://colab.research.google.com/drive/1weSNTv3ZqPqpdrtPQrczzHxfoQMkhLQu#scrollTo=vZfd4X1kdFVe)
 ### 1)  Dataset Iris
 
 O código apresenta uma implementação do algoritmo K-Nearest Neighbors (KNN) aplicado ao famoso dataset Iris. Este conjunto de dados contém medidas de três espécies de flores íris (setosa, versicolor e virginica) baseadas em quatro características: comprimento da sépala, largura da sépala, comprimento da pétala e largura da pétala.
