@@ -14,7 +14,7 @@ O código apresenta uma implementação do algoritmo K-Nearest Neighbors (KNN) a
 
 
 
-### 3) Recomendação simples com filtragem colaborativa baseada em usuários
+### 2) Recomendação simples com filtragem colaborativa baseada em usuários
 
 Para este exemplo, a utilização do KNN é realizada para prever a nota que X usuário daria para um filme (ou qualquer outro produto) baseado na preferência de usuários próximos, como por exemplo, grupo de amigos ou pessoas localizadas em X região.
 
@@ -70,7 +70,7 @@ Desta forma, ordenamos os mais similares pelo K escolhido e fazemos a média pon
 Nota prevista do Usuário 1 para o Filme 3: 4.17
 ```
 
-### 4) Detecção de Anomalias com KNN
+### 3) Detecção de Anomalias com KNN
 
 O KNN pode ser usado para identificar **pontos que estão muito distantes de seus vizinhos mais próximos**, o que é um forte indicativo de comportamento anômalo.
 
