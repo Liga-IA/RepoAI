@@ -1,6 +1,7 @@
 # English version
 ## What is logistic regression?
 &nbsp;&nbsp;&nbsp;&nbsp; Logistic regression is one of the most widely used algorithms due to its simplicity and versatility, and it is extensively applied to solve classification problems.
+
 &nbsp;&nbsp;&nbsp;&nbsp; It is a type of statistical model that estimates the probability of an event occuring. Since the model analises a probability the output is a number between zero and one. 
 ## Logistic Regression to predict heart disease 
 ### Objective   
@@ -32,7 +33,7 @@ from sklearn.metrics import confusion_matrix
 ds = pd.read_csv("/content/framingham.csv")
 ds.head()
 ```
-<img src="https://i.postimg.cc/85LV9MRT/Captura-de-tela-2025-05-05-222415.png" alt="heart_disease" width="800">
+<img src="https://i.postimg.cc/85LV9MRT/Captura-de-tela-2025-05-05-222415.png" alt="heart_disease" width="900">
 
 <[Dataset in this example](https://www.kaggle.com/datasets/dileep070/heart-disease-prediction-using-logistic-regression/data)>   
 
@@ -46,7 +47,7 @@ y = ds.iloc[:, 15].values
 X = ds.iloc[:, 0:15].values
 X, y
 ```
-<img src="https://i.postimg.cc/jqwrpVhM/Captura-de-tela-2025-05-05-222837.png" alt="heart_disease" width="400">
+<img src="https://i.postimg.cc/jqwrpVhM/Captura-de-tela-2025-05-05-222837.png" alt="heart_disease" width="500">
 
 ### Defining the column 'TenYearCHD' as the output, and the others as input (predictor variables).
 
@@ -83,7 +84,7 @@ plt.xlabel('TenYearCHD')
 plt.ylabel('Número de Pessoas')
 plt.show()
 ```
-<img src="https://i.postimg.cc/9X4qKS9b/bf17e336-f42a-40c0-a3f9-e9c71726858f.jpg" alt="heart_disease" width="400">
+<img src="https://i.postimg.cc/9X4qKS9b/bf17e336-f42a-40c0-a3f9-e9c71726858f.jpg" alt="heart_disease" width="500">
 
 ### Plotting the count plot, showing how many people had or did not have heart disease in 10 years.
 ```python 
@@ -94,7 +95,7 @@ plt.ylabel('Real')
 plt.title('Matriz de Confusão')
 plt.show()
 ```
-<img src="https://i.postimg.cc/wxkSKfdt/14d309ce-bd94-421a-b494-61aa8386adb6.jpg" alt="heart_disease" width="400">
+<img src="https://i.postimg.cc/wxkSKfdt/14d309ce-bd94-421a-b494-61aa8386adb6.jpg" alt="heart_disease" width="500">
 
 ### Plotting the confusion matrix graph, showing the number of correct and incorrect predictions.
 
