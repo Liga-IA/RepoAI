@@ -30,7 +30,10 @@ from sklearn.metrics import confusion_matrix
 ### Creating/Loading the Dataset
 ```python 
 ds = pd.read_csv("/content/framingham.csv")
+ds.head()
 ```
+<img src="https://i.postimg.cc/85LV9MRT/Captura-de-tela-2025-05-05-222415.png" alt="heart_disease" width="400">
+
 <[Dataset in this example](https://www.kaggle.com/datasets/dileep070/heart-disease-prediction-using-logistic-regression/data)>   
 
 ```python 
@@ -41,7 +44,9 @@ ds = ds.dropna(subset=['TenYearCHD', 'glucose', 'heartRate', 'male', 'age',	'edu
 ```python 
 y = ds.iloc[:, 15].values
 X = ds.iloc[:, 0:15].values
+X, y
 ```
+<img src="https://i.postimg.cc/jqwrpVhM/Captura-de-tela-2025-05-05-222837.png" alt="heart_disease" width="400">
 
 ### Defining the column 'TenYearCHD' as the output, and the others as input (predictor variables).
 
@@ -66,6 +71,8 @@ previsoes = modelo.predict(X_teste)
 ```python 
 modelo.score(X_teste, y_teste)
 ```
+<img src="https://i.postimg.cc/52tgrJB0/Captura-de-tela-2025-05-05-222957.png" alt="heart_disease" width="400">
+
 ### Calculating accuracy
 
 ```python 
