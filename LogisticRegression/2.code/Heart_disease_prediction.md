@@ -76,7 +76,7 @@ plt.xlabel('TenYearCHD')
 plt.ylabel('Número de Pessoas')
 plt.show()
 ```
-<img src="https://i.postimg.cc/9X4qKS9b/bf17e336-f42a-40c0-a3f9-e9c71726858f.jpg" width="300">
+<img src="https://i.postimg.cc/9X4qKS9b/bf17e336-f42a-40c0-a3f9-e9c71726858f.jpg" alt="heart_disease" width="300">
 
 ### Plotting the count plot, showing how many people had or did not have heart disease in 10 years.
 ```python 
