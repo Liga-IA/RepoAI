@@ -76,7 +76,7 @@ plt.xlabel('TenYearCHD')
 plt.ylabel('Número de Pessoas')
 plt.show()
 ```
-<img src="https://i.postimg.cc/9X4qKS9b/bf17e336-f42a-40c0-a3f9-e9c71726858f.jpg" alt="heart_disease" width="300">
+<img src="https://i.postimg.cc/9X4qKS9b/bf17e336-f42a-40c0-a3f9-e9c71726858f.jpg" alt="heart_disease" width="400">
 
 ### Plotting the count plot, showing how many people had or did not have heart disease in 10 years.
 ```python 
@@ -87,6 +87,7 @@ plt.ylabel('Real')
 plt.title('Matriz de Confusão')
 plt.show()
 ```
+<img src="https://i.postimg.cc/wxkSKfdt/14d309ce-bd94-421a-b494-61aa8386adb6.jpg" alt="heart_disease" width="400">
 
 ### Plotting the confusion matrix graph, showing the number of correct and incorrect predictions.
 
