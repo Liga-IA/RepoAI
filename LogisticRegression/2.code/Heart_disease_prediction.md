@@ -32,7 +32,7 @@ from sklearn.metrics import confusion_matrix
 ds = pd.read_csv("/content/framingham.csv")
 ds.head()
 ```
-<img src="https://i.postimg.cc/85LV9MRT/Captura-de-tela-2025-05-05-222415.png" alt="heart_disease" width="500">
+<img src="https://i.postimg.cc/85LV9MRT/Captura-de-tela-2025-05-05-222415.png" alt="heart_disease" width="800">
 
 <[Dataset in this example](https://www.kaggle.com/datasets/dileep070/heart-disease-prediction-using-logistic-regression/data)>   
 
