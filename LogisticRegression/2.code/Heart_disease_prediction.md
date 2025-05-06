@@ -30,29 +30,23 @@ from sklearn.metrics import confusion_matrix
 ### Creating/Loading the Dataset
 ```python 
 ds = pd.read_csv("/content/framingham.csv")
-ds.head()
 ```
 <[Dataset in this example](https://www.kaggle.com/datasets/dileep070/heart-disease-prediction-using-logistic-regression/data)>   
 
 ```python 
 ds = ds.dropna(subset=['TenYearCHD', 'glucose', 'heartRate', 'male', 'age',	'education',	'currentSmoker',	'cigsPerDay',	'BPMeds',	'prevalentStroke',	'prevalentHyp', 'diabetes',	'totChol',	'sysBP',	'diaBP',	'BMI'])
-ds.head()
 ```
 ### Removing the lines containing colunms with empty values on dataset using panda library
 
 ```python 
 y = ds.iloc[:, 15].values
 X = ds.iloc[:, 0:15].values
-
-X, y
 ```
 
 ### Defining the column 'TenYearCHD' as the output, and the others as input (predictor variables).
 
 ```python 
 X_treino, X_teste, y_treino, y_teste = train_test_split(X, y, test_size=.3)
-
-X_treino.shape, X_teste.shape
 ```
 
 ### Splitting the dataset into 30% for testing and 70% for training
@@ -66,7 +60,6 @@ modelo.fit(X_treino, y_treino)
 
 ```python 
 previsoes = modelo.predict(X_teste)
-previsoes
 ```
 ### Making Predictions
 
@@ -83,6 +76,7 @@ plt.xlabel('TenYearCHD')
 plt.ylabel('Número de Pessoas')
 plt.show()
 ```
+<img src="https://i.postimg.cc/9X4qKS9b/bf17e336-f42a-40c0-a3f9-e9c71726858f.jpg" width="300">
 
 ### Plotting the count plot, showing how many people had or did not have heart disease in 10 years.
 ```python 
