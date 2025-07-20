@@ -58,8 +58,6 @@ Facilita o gerenciamento, anotação e exportação de datasets no formato **YOL
 
 ## Estrutura do Repositório
 
-Aqui você deve descrever brevemente a estrutura do repositório
-
 ```text
 RepoAI/
 └── tutorial_yolov11
@@ -76,11 +74,10 @@ RepoAI/
 ### 🚀 Etapas
 
 ```mermaid
-
 flowchart TD;
-    A[🚀 Início] --> B{Escolha do Dataset};
+    A[ Início] --> B{Escolha do Dataset};
 
-    B-->|Usar dataset pronto (Roboflow)| C[📦 Dataset Pronto];
+    B-->|Usar dataset pronto - Roboflow| C[📦 Dataset Pronto];
     B-->|Criar dataset do zero| D[📸 Coleta e Anotação de Imagens];
 
     C-->E[⚙️ Pré-processamento e Augmentação];
