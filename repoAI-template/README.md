@@ -7,6 +7,7 @@ Ao mesmo tempo, ele também é um repositório que demonstra como participar do 
 
 ## Conteúdo
   - [Estrutura do Repositório](#estrutura-do-reposit%C3%B3rio)
+  - [Estilo Visual e Estrutura do Repositório](#estilo-visual-e-estrutura-do-repositório)
   - [Repositório em Construção](#reposit%C3%B3rio-em-constru%C3%A7%C3%A3o)
   - [Pré-Requisitos e Instalações Necessárias](#se%C3%A7%C3%A3o-de-pr%C3%A9-requisitos-e-instala%C3%A7%C3%B5es-necess%C3%A1rias)
   - [Licença 📝](#licen%C3%A7a-📝)
