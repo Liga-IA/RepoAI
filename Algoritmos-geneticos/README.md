@@ -1,6 +1,6 @@
 # Algoritmos Genéticos: Guia e Exemplo
 
-> Bem-vindo(a) a este repositório! Aqui, você encontrará um **tutorial completo** sobre algoritmos genéticos e um **exemplo prático** que evolui uma população de strings para corresponder a uma frase alvo.
+> Bem-vindo(a) ao repositório de Algoritmos Genéticos! Aqui, você encontrará um **tutorial completo** sobre algoritmos genéticos e um **exemplo prático** que evolui uma população de strings para corresponder a uma frase alvo.
 
 ---
 
