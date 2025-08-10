@@ -103,3 +103,5 @@ mean_distances = distances[:, 1:].mean(axis=1)
 Como resultado, podemos por exemplo fazer uma imagem ilustrando a discrepância dos pontos, quanto mais afastado, mais considerado como anomalia:
 
 ![image.png](../../figures/image_anomaly.png)
+
+## Contribuidores
