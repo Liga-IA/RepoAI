@@ -23,7 +23,7 @@ Agora você tem todas as peças de que precisa para montar seu quebra-cabeça. A
 
 ```text
 RepoAI/
-└── Algoritmos-geneticos/
+└── Algoritmos_geneticos/
     ├── content/
     │   └── Capa.png
     ├── code/
