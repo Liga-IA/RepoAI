@@ -19,7 +19,7 @@ This project is organized into three main parts:
    - Content: Scikit-learn documentation and applied examples on the Boston Housing problem and study hours vs. performance prediction.
   
 4. **Mathematics**  
-   - Folder: `3.mathematics.md`  
+   - Folder: `3.mathematics`  
    - Content: General representation of linear regression, the least squares method, equation based on a dataset.
 
 ---
@@ -29,18 +29,18 @@ This project is organized into three main parts:
 ```text
 RepoAI/
 └── linear_regression/
-    ├── 1.concepts/
+    ├── concepts/
         └── figures/
     │   └── 1.history.md
     |   └── 2.typical_problems.md
     |   └── 3.potential_issues.md
     |   └── 4.fields_of_use.md
-    ├── 2.code/
+    ├── code/
     |   └── figures/
     |   └── 1.dive_into_the_docs.md 
     |   └── 2.boston_housing_price_reg.md
     |   └── 3.student_study_hours_prediction.md
-    ├── 3.mathematics/
+    ├── mathematics/
     |   └── figures/
     |   └── 1.general_representation_of_linear_regression.md 
     |   └── 2.the_least_square_method.md 
