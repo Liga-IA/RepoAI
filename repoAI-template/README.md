@@ -6,10 +6,10 @@ Esse repositório é um modelo (template) para a criação de repositórios do p
 Ao mesmo tempo, ele também é um repositório que demonstra como participar do projeto e produzir outros repositórios :D
 
 ## Conteúdo
-  - [Estilo Visual do Repositório](#estilo-visual-do-reposit%C3%B3rio)
+  - [Estrutura do Repositório](#estrutura-do-reposit%C3%B3rio)
   - [Repositório em Construção](#reposit%C3%B3rio-em-constru%C3%A7%C3%A3o)
   - [Pré-Requisitos e Instalações Necessárias](#se%C3%A7%C3%A3o-de-pr%C3%A9-requisitos-e-instala%C3%A7%C3%B5es-necess%C3%A1rias)
-  - [Licença 📝](#licen%C3%A7a-)
+  - [Licença 📝](#licen%C3%A7a-📝)
 
 ## Estrutura do Repositório
 
@@ -25,8 +25,28 @@ RepoAI/
     |   ├── dados
     |   └── implementação
     ├── README.md
-    └── license
-    
+    └── LICENSE
+```
+
+### Estrutura de Repositórios Bilíngues
+
+Para repositórios com mais de uma linguagem, a estrutura de diretórios deve ficar separada. Como alguns elementos como imagens ou códigos podem ser usados em mais de uma versão, eles podem ser colocados em diretórios da pasta base.
+
+```text
+RepoAI/
+└── seu_repositorio/
+    ├── en/
+    │   └── content/
+    │       └── outros
+    ├── pt/
+    │   └── content/
+    │       └── outros
+    ├── code/
+    |   ├── dados
+    |   └── implementação
+    ├── imagens
+    ├── README.md
+    └── LICENSE
 ```
 
 ## Estilo Visual e Estrutura do Repositório
@@ -194,8 +214,8 @@ Link para vídeo online:
 ## Contribuidores
  Você pode listar todos os contribuidores do seu projeto. Adicione a si mesmo. 
 
- | [<img loading="lazy" src="https://avatars.githubusercontent.com/u/49369639?v=4" width=115><br><sub>Matheus Lima</sub>](https://github.com/matheus1103) |  [<img loading="lazy" src="https://avatars.githubusercontent.com/u/11313404?v=4" width=115><br><sub>Alison R. Panisson</sub>](https://github.com/AlisonPanisson) |
-| :---: | :---: |
+ | [<img loading="lazy" src="https://avatars.githubusercontent.com/u/49369639?v=4" width=115><br><sub>Matheus Lima</sub>](https://github.com/matheus1103) |  [<img loading="lazy" src="https://avatars.githubusercontent.com/u/11313404?v=4" width=115><br><sub>Alison R. Panisson</sub>](https://github.com/AlisonPanisson) | [<img loading="lazy" src="https://avatars.githubusercontent.com/u/74020748?v=4" width=115><br><sub>Bernardo Pandolfi Costa</sub>](https://github.com/Butewbr) |
+| :---: | :---: | :---: |
 
 ## Licença 📝
 Ao final edite o arquivo de licença, atualizando o ano e seu nome, depois adicione uma breve descrição de que seu projeto está sobre a licença CC-BY, por exemplo:
