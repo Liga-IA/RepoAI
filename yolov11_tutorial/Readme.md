@@ -7,11 +7,9 @@
 Este projeto demonstra como treinar um modelo de detecção de objetos usando a arquitetura YOLOv11 em um ambiente Google Colab, com foco em aplicações práticas de visão computacional.
 
 
-
 ## 📌 Visão Geral
 
 A visão computacional é uma área da Inteligência Artificial(AI) que permite que computadores analisem, interpretem e compreendam imagens e vídeos. As aplicações de visão computacional usam AI e Machine Learning(ML) para processar esses dados com precisão para identificar objetos com precisão, realizar classificação, recomendação e detecção. Neste tutorial, exploro a detecção de objetos com a poderosa arquitetura YOLO (You Only Look Once), utilizando sua versão mais recente — YOLOv11.
-
 
 
 ## 🧠 Sobre o YOLO e o YOLOv11
@@ -60,7 +58,7 @@ Facilita o gerenciamento, anotação e exportação de datasets no formato **YOL
 
 ```text
 RepoAI/
-└── tutorial_yolov11
+└── yolov11_tutorial
     ├── images/
     │   ├── testes/  -> imagens usadas para teste
     ├── video/
@@ -104,9 +102,6 @@ Durante o vídeo, mostro passo a passo como utilizar um [dataset]( https://unive
 
 ## 🔄 Fases do Processo
  Durante o desenvolvimento de um modelo de detecção de objetos, passamos por três fases principais:
-
-<details>
-<summary>Treinamento, Validação e Inferência</summary>
 
 ### 🎯 Treinamento
 Nesta fase, o modelo é exposto ao conjunto de dados de **treinamento**, onde aprende a reconhecer padrões, formas e contextos dos objetos de interesse (neste caso, placas de veículos). A rede ajusta seus pesos internos com base nos erros que comete, tentando melhorar a cada época.
