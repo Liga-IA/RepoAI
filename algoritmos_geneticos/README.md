@@ -9,11 +9,11 @@
 Este projeto está organizado em duas partes principais:
 
 1. **Explicação Teórica**  
-   - Arquivo: `code/Algoritmos_geneticos.md`  
+   - Arquivo: `code/algoritmos_geneticos.md`  
    - Conteúdo: definição de algoritmos genéticos, componentes principais (cromossomo, população, fitness, operadores genéticos e critérios de parada), fluxo de execução e exemplos de aplicação.
 
 2. **Exemplo Prático: Acertando uma String**  
-   - Arquivo: `code/Acertando_uma_string.md`  
+   - Arquivo: `code/acertando_uma_string.md`  
    - Objetivo: demonstrar, passo a passo, um algoritmo genético em Python que transforma uma população de strings até que ela corresponda exatamente a uma frase alvo.
 
 ---
@@ -25,12 +25,12 @@ Agora você tem todas as peças de que precisa para montar seu quebra-cabeça. A
 RepoAI/
 └── Algoritmos_geneticos/
     ├── content/
-    │   └── Capa.png
+    │   └── capa.png
     ├── code/
-    |   └── Acertando_uma_string.md
-    |   └── Algoritmos_geneticos.md
+    |   └── acertando_uma_string.md
+    |   └── algoritmos_geneticos.md
     ├── README
-    └── license    
+    └── LICENSE    
 ```
 
 ## Contribuidores
