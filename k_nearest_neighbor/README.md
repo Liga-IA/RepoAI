@@ -1,6 +1,3 @@
-      
-# English Version
-
 # K-Nearest Neighbors (KNN): Concepts, Mathematics, and Implementations
 
 Welcome to this repository! Here, you will find an introduction to a widely covered topic in machine learning courses: **K-Nearest Neighbors (KNN)**.
@@ -28,7 +25,7 @@ This project is organized into three main parts:
 ## Repository Structure
 
 ```text
-KNN-Repository/
+KNN-Repository/en/
 ├── concepts/
 │   ├── 1.history.md
 │   ├── 2.classifier_vs_regression.md
