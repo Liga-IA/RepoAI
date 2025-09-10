@@ -1,4 +1,3 @@
-````markdown
 ![banner-inicial](content/RepoAI.png)
 
 # PSO-MPPT com Reset Dinâmico (DMR)
@@ -144,3 +143,4 @@ Comparação entre **PSO-DMR** e métodos clássicos (**P\&O, INC**):
 Este projeto está sob a licença **CC-BY 4.0**.
 
 ```
+
