@@ -23,26 +23,6 @@ O projeto deriva do artigo submetido à **EvoStar 2025**:
 
 ---
 
-## Estrutura do Repositório
-
-```text
-RepoAI/
-└── PSO_MPPT_DMR/
-    ├── content/
-    │   ├── Datasheet_JKM550M-72HL4-V.pdf
-    │   ├── schematic_PLECS.png
-    │   └── RepoAI.png  <- banner inicial
-    ├── code/
-    │   ├── Busca_MPPT.mb
-    │   ├── Busca_MPPT.c
-    │   ├── Busca_MPPT.plecs
-    │   └── Uso_básico_PLECS.mb
-    ├── README.mb
-    └── LICENSE
-```
-
----
-
 ## O que é MPPT e PSO?
 
 ### MPPT – Maximum Power Point Tracking
@@ -95,24 +75,16 @@ Arquivos principais:
 ### Pré-requisitos 💻
 
 * **PLECS** (versão >= 4.8 recomendada)
-* Compilador **C** compatível (GCC ou embutido no MATLAB/PLECS)
-* Opcional: **Matlab/Simulink** para integração com PLECS
 
 ### Instalação 🚀
 
-Linux/macOS:
-
-```bash
-sudo apt-get install gcc
-```
-
 Windows:
+...
 
-```powershell
-choco install mingw
-```
+Após instalar o compilador, abra o projeto `Busca_MPPT.plecs` no **PLECS** e coloque o código do arquivo `Busca_MPPT.c` ao bloco de controle.
+Defina os inputs e outputs corretamente.
 
-Após instalar o compilador, abra o projeto `Busca_MPPT.plecs` no **PLECS** e associe o arquivo `Busca_MPPT.c` ao bloco de controle.
+#### Como definir os inputs e outputs
 
 ---
 
@@ -138,9 +110,30 @@ Comparação entre **PSO-DMR** e métodos clássicos (**P\&O, INC**):
 
 ---
 
+## Estrutura do Repositório
+
+```text
+RepoAI/
+└── PSO_MPPT_DMR/
+    ├── content/
+    │   ├── Datasheet_JKM550M-72HL4-V.pdf
+    │   ├── schematic_PLECS.png
+    │   └── schematic_PLECS.pdf
+    ├── code/
+    │   ├── Busca_MPPT.mb
+    │   ├── Busca_MPPT.c
+    │   ├── Busca_MPPT.plecs
+    │   └── Uso_básico_PLECS.mb
+    ├── README.mb
+    └── LICENSE
+```
+
+---
+
 ## Licença 📝
 
 Este projeto está sob a licença **CC-BY 4.0**.
 
 ```
+
 
