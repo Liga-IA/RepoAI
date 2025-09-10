@@ -38,6 +38,10 @@ O **PSO** é um algoritmo de inteligência de enxame inspirado no movimento cole
 Cada partícula representa uma solução (ponto de operação no conversor), movendo-se no espaço de busca em direção ao melhor valor encontrado individualmente (**Pbest**) e globalmente (**Gbest**).
 Essa característica o torna robusto para encontrar o GMPP mesmo em cenários com múltiplos picos.
 
+<p align="center">
+  <img src="content/PSO_representacao.png" width=60%>
+</p>
+
 ---
 
 ## Dynamic Monitoring Reset (DMR)
@@ -139,6 +143,7 @@ RepoAI/
 ## Licença 📝
 
 Este projeto está sob a licença **CC-BY 4.0**.
+
 
 
 
