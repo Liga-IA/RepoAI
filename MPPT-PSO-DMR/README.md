@@ -1,4 +1,3 @@
-````markdown
 ![banner-inicial](content/RepoAI.png)
 
 # PSO-MPPT com Reset Dinâmico (DMR)
@@ -40,7 +39,7 @@ RepoAI/
     │   └── Uso_básico_PLECS.mb
     ├── README.mb
     └── LICENSE
-````
+```
 
 ---
 
@@ -134,8 +133,8 @@ Comparação entre **PSO-DMR** e métodos clássicos (**P\&O, INC**):
 
 ## Contribuidores
 
-| [<img src="https://avatars.githubusercontent.com/u/49369639?v=4" width=115><br><sub>Igor da Rosa</sub>](https://github.com/) | [<img src="https://avatars.githubusercontent.com/u/11313404?v=4" width=115><br><sub>Alison R. Panisson</sub>](https://github.com/AlisonPanisson) | [<img src="https://avatars.githubusercontent.com/u/74020748?v=4" width=115><br><sub>Lenon Schmitz</sub>](https://github.com/) |
-| :--------------------------------------------------------------------------------------------------------------------------: | :----------------------------------------------------------------------------------------------------------------------------------------------: | :---------------------------------------------------------------------------------------------------------------------------: |
+| [<img src="https://avatars.githubusercontent.com/u/88103676?v=4" width=115><br><sub>Igor da Rosa</sub>](https://github.com/Ig0r-Rosa) |
+| :---------------------------------------------------------------------------------------------------------------------------: |
 
 ---
 
@@ -144,3 +143,4 @@ Comparação entre **PSO-DMR** e métodos clássicos (**P\&O, INC**):
 Este projeto está sob a licença **CC-BY 4.0**.
 
 ```
+
