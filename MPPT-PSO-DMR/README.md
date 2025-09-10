@@ -48,7 +48,7 @@ O **DMR** foi proposto para resolver o problema de **estagnação** do PSO:
 > \[!TIP]
 > O DMR atua **independentemente do PSO**, apenas sinalizando o momento de reinicializar. Isso evita resets desnecessários e mantém o sistema estável.
 
-![Esquemático do sistema](content/schematic_PLECS.png)
+![Esquemático do sistema](content/schematic_PLECS.jpg)
 
 ---
 
@@ -118,7 +118,7 @@ RepoAI/
 └── PSO_MPPT_DMR/
     ├── content/
     │   ├── Datasheet_JKM550M-72HL4-V.pdf
-    │   ├── schematic_PLECS.png
+    │   ├── schematic_PLECS.jpg
     │   └── schematic_PLECS.pdf
     ├── code/
     │   ├── Busca_MPPT.mb
@@ -134,4 +134,5 @@ RepoAI/
 ## Licença 📝
 
 Este projeto está sob a licença **CC-BY 4.0**.
+
 
