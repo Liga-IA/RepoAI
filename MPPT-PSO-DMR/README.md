@@ -1,6 +1,8 @@
 # PSO-MPPT com Reset Dinâmico (DMR)
 
-![banner-inicial](content/PSO.png)
+<p align="center">
+  <img src="content/PSO.png" width=90%>
+</p>
 
 Este repositório apresenta a implementação e estudo de uma técnica de **Maximum Power Point Tracking (MPPT)** baseada no **Particle Swarm Optimization (PSO)** com o mecanismo de **Dynamic Monitoring Reset (DMR)**.  
 O objetivo é maximizar a eficiência de sistemas fotovoltaicos, especialmente sob **condições de sombreamento parcial**, evitando que o algoritmo fique preso em máximos locais.
@@ -48,7 +50,9 @@ O **DMR** foi proposto para resolver o problema de **estagnação** do PSO:
 > \[!TIP]
 > O DMR atua **independentemente do PSO**, apenas sinalizando o momento de reinicializar. Isso evita resets desnecessários e mantém o sistema estável.
 
-![Esquemático do sistema](content/schematic_PLECS.jpg)
+<p align="center">
+  <img src="content/schematic_PLECS.jpg" width=85%>
+</p>
 
 ---
 
@@ -135,6 +139,7 @@ RepoAI/
 ## Licença 📝
 
 Este projeto está sob a licença **CC-BY 4.0**.
+
 
 
 
