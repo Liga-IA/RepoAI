@@ -54,7 +54,7 @@ O **DMR** foi proposto para resolver o problema de **estagnação** do PSO:
 > \[!TIP]
 > O DMR atua **independentemente do PSO**, apenas sinalizando o momento de reinicializar. Isso evita resets desnecessários e mantém o sistema estável.
 
-<p align="left">
+<p align="center">
   <img src="content/schematic_PLECS.jpg" width=85% style="border:2px solid black;">
 </p>
 
@@ -143,6 +143,7 @@ RepoAI/
 ## Licença 📝
 
 Este projeto está sob a licença **CC-BY 4.0**.
+
 
 
 
