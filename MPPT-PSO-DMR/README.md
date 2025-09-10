@@ -65,7 +65,8 @@ Arquivos principais:
 
 * `Busca_MPPT.c` → código do PSO-MPPT com DMR
 * `Busca_MPPT.plecs` → circuito simulado
-* `Uso_básico_PLECS.mb` → exemplo introdutório
+* `Busca_MPPT.md` → como utilizar o codigo para o PLECS
+* `Uso_básico_PLECS.md` → exemplo introdutório
 * `Datasheet_JKM550M-72HL4-V.pdf` → especificações do módulo
 
 ---
@@ -121,11 +122,11 @@ RepoAI/
     │   ├── schematic_PLECS.jpg
     │   └── schematic_PLECS.pdf
     ├── code/
-    │   ├── Busca_MPPT.mb
+    │   ├── Busca_MPPT.md
     │   ├── Busca_MPPT.c
     │   ├── Busca_MPPT.plecs
-    │   └── Uso_básico_PLECS.mb
-    ├── README.mb
+    │   └── Uso_básico_PLECS.md
+    ├── README.md
     └── LICENSE
 ```
 
@@ -134,6 +135,7 @@ RepoAI/
 ## Licença 📝
 
 Este projeto está sob a licença **CC-BY 4.0**.
+
 
 
 
