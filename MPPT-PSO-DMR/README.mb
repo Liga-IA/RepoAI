@@ -1,4 +1,5 @@
-//[banner-inicial](content/RepoAI.png)
+````markdown
+![banner-inicial](content/RepoAI.png)
 
 # PSO-MPPT com Reset Dinâmico (DMR)
 
@@ -6,7 +7,7 @@ Este repositório apresenta a implementação e estudo de uma técnica de **Maxi
 O objetivo é maximizar a eficiência de sistemas fotovoltaicos, especialmente sob **condições de sombreamento parcial**, evitando que o algoritmo fique preso em máximos locais.
 
 O projeto deriva do artigo submetido à **EvoStar 2025**:  
-> A PSO-based MPPT with Dynamic Monitoring Reset for PV Systems
+> *A PSO-based MPPT with Dynamic Monitoring Reset for PV Systems*  
 > Igor de Matos da Rosa, Alison R. Panisson, Lenon Schmitz (UFSC, 2025)
 
 ---
@@ -30,7 +31,7 @@ RepoAI/
 └── PSO_MPPT_DMR/
     ├── content/
     │   ├── Datasheet_JKM550M-72HL4-V.pdf
-    │   ├── schematic_PLECS.pdf
+    │   ├── schematic_PLECS.png
     │   └── RepoAI.png  <- banner inicial
     ├── code/
     │   ├── Busca_MPPT.mb
@@ -39,7 +40,7 @@ RepoAI/
     │   └── Uso_básico_PLECS.mb
     ├── README.mb
     └── LICENSE
-```
+````
 
 ---
 
@@ -60,7 +61,7 @@ Essa característica o torna robusto para encontrar o GMPP mesmo em cenários co
 
 ## Dynamic Monitoring Reset (DMR)
 
-O **DMR** foi proposto para resolver o problema de **estagnação** do PSO.
+O **DMR** foi proposto para resolver o problema de **estagnação** do PSO:
 
 * Quando o algoritmo converge para um ponto que não é mais o ótimo global (devido a mudanças de irradiância ou sombreamento), o DMR detecta essa variação.
 * Caso a potência caia fora de uma **zona de tolerância configurável**, o DMR **reseta** a população de partículas e reinicia a busca pelo GMPP.
@@ -68,7 +69,7 @@ O **DMR** foi proposto para resolver o problema de **estagnação** do PSO.
 > \[!TIP]
 > O DMR atua **independentemente do PSO**, apenas sinalizando o momento de reinicializar. Isso evita resets desnecessários e mantém o sistema estável.
 
-![schematic](content/schematic_PLECS.png)
+![Esquemático do sistema](content/schematic_PLECS.png)
 
 ---
 
@@ -122,8 +123,8 @@ Comparação entre **PSO-DMR** e métodos clássicos (**P\&O, INC**):
 
 | Método      | Potência Média (W) | Convergência (s) | Desempenho em Sombreamento |
 | ----------- | ------------------ | ---------------- | -------------------------- |
-| P\&O        | ~498              | 0.011            | Fica preso em LMPP         |
-| INC         | ~498              | 0.015            | Fica preso em LMPP         |
+| P\&O        | \~498              | 0.011            | Fica preso em LMPP         |
+| INC         | \~498              | 0.015            | Fica preso em LMPP         |
 | **PSO-DMR** | **633**            | 0.139            | Encontra GMPP com sucesso  |
 
 > \[!IMPORTANT]
@@ -143,9 +144,3 @@ Comparação entre **PSO-DMR** e métodos clássicos (**P\&O, INC**):
 Este projeto está sob a licença **CC-BY 4.0**.
 
 ```
-
-
-
-
-
-
