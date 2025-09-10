@@ -14,13 +14,13 @@ O projeto deriva do artigo submetido à **EvoStar 2025**:
 ---
 
 ## Conteúdo
-- [Estrutura do Repositório](#estrutura-do-repositório)
 - [O que é MPPT e PSO?](#o-que-é-mppt-e-pso)
 - [Dynamic Monitoring Reset (DMR)](#dynamic-monitoring-reset-dmr)
 - [Implementação](#implementação)
 - [Pré-Requisitos e Instalações Necessárias](#pré-requisitos-e-instalações-necessárias)
 - [Resultados de Simulação](#resultados-de-simulação)
 - [Contribuidores](#contribuidores)
+- [Estrutura do Repositório](#estrutura-do-repositório)
 - [Licença 📝](#licença-)
 
 ---
@@ -143,6 +143,7 @@ RepoAI/
 ## Licença 📝
 
 Este projeto está sob a licença **CC-BY 4.0**.
+
 
 
 
