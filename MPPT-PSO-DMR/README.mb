@@ -122,8 +122,8 @@ Comparação entre **PSO-DMR** e métodos clássicos (**P\&O, INC**):
 
 | Método      | Potência Média (W) | Convergência (s) | Desempenho em Sombreamento |
 | ----------- | ------------------ | ---------------- | -------------------------- |
-| P\&O        | \~498              | 0.011            | Fica preso em LMPP         |
-| INC         | \~498              | 0.015            | Fica preso em LMPP         |
+| P\&O        | ~498              | 0.011            | Fica preso em LMPP         |
+| INC         | ~498              | 0.015            | Fica preso em LMPP         |
 | **PSO-DMR** | **633**            | 0.139            | Encontra GMPP com sucesso  |
 
 > \[!IMPORTANT]
@@ -143,6 +143,7 @@ Comparação entre **PSO-DMR** e métodos clássicos (**P\&O, INC**):
 Este projeto está sob a licença **CC-BY 4.0**.
 
 ```
+
 
 
 
