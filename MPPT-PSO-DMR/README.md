@@ -39,7 +39,7 @@ Cada partícula representa uma solução (ponto de operação no conversor), mov
 Essa característica o torna robusto para encontrar o GMPP mesmo em cenários com múltiplos picos.
 
 <p align="left">
-  <img src="content/PSO_representacao.png" width=60% style="border:2px solid black;">
+  <img src="content/PSO_representacao.png" width=40% style="border:2px solid black;">
 </p>
 
 ---
@@ -143,6 +143,7 @@ RepoAI/
 ## Licença 📝
 
 Este projeto está sob a licença **CC-BY 4.0**.
+
 
 
 
