@@ -97,10 +97,10 @@ Principais blocos usados:
 
 | Ação                       | Atalho                               |
 | -------------------------- | ------------------------------------ |
-| Rodar simulação            | `Ctrl + T`                           |
-| Pausar simulação           | `Ctrl + Shift + T`                   |
+| Rodar/Parar simulação      | `Ctrl + T`                           |
+| Pausar simulação           | `Space`                              |
 | Ajustar propriedades bloco | `Duplo clique`                       |
-| Inserir componente         | `Clique + Arrastar da barra lateral` |
+| Abrir Library              | `Ctrl + L`                           |
 | Zoom in/out no circuito    | `Ctrl + Scroll`                      |
 
 ---
@@ -118,6 +118,7 @@ RepoAI/
         ├── plecs-new-project.png
         └── plecs-scope.png
 ```
+
 
 
 
