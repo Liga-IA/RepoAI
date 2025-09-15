@@ -35,8 +35,8 @@ float margem =    0.02     // Tolerância do DMR (2% da potência do GMPP)
 * **W (inércia):** controla o quanto cada partícula mantém sua direção atual. Valores menores aceleram a convergência, mas podem reduzir a exploração.
 * **C1 (cognitivo):** peso da experiência individual da partícula. Aumentar esse valor dá mais autonomia a cada partícula.
 * **C2 (social):** peso da informação global. Aumentar esse valor faz com que todas as partículas sigam rapidamente o Gbest.
-* **Np (população):** número de partículas explorando o espaço de busca. Mais partículas aumentam a robustez, mas também o custo computacional.
-* **RESET\_TOL:** define a sensibilidade do DMR para disparar o reset. Valores baixos aumentam a frequência de resets, enquanto valores maiores reduzem a chance de reexploração.
+* **NUM_PARTICULAS (população):** número de partículas explorando o espaço de busca. Mais partículas aumentam a robustez, mas também o custo computacional.
+* **margem:** define a sensibilidade do DMR para disparar o reset. Valores baixos aumentam a frequência de resets, enquanto valores maiores reduzem a chance de reexploração.
 
 > \[!TIP]
 > Para cenários de sombreamento parcial, recomenda-se **valores balanceados** entre `C1` e `C2` e uma **tolerância entre 1% e 3%** para o DMR.
@@ -101,6 +101,7 @@ RepoAI/
         ├── busca-paineis.png
         └── busca-result-reset.png
 ```
+
 
 
 
