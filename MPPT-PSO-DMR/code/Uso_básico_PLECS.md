@@ -29,10 +29,6 @@ Ele é amplamente usado em pesquisas que envolvem **conversores DC-DC, inversore
 > \[!TIP]
 > Diferente do Simulink, o PLECS é mais **leve e focado** em eletrônica de potência para "tempo real".
 
-<p align="center">
-  <img src="../content/PLECS_interface.png" width=80%>
-</p>
-
 ---
 
 ## Abrindo um Projeto
@@ -143,4 +139,5 @@ RepoAI/
         ├── PLECS_components.png
         └── PLECS_boost_example.png
 ```
+
 
