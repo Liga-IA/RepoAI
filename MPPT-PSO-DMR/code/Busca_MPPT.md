@@ -23,11 +23,11 @@ Você terá um exemplo de simulação mostrando o **reset dinâmico** e a conver
 No início do código (`Busca_MPPT.c`), você pode ajustar os parâmetros:
 
 ```c
-#define W   0.15   // Inércia
+#define W   0.2   // Inércia
 #define C1  0.6    // Peso cognitivo
 #define C2  0.6    // Peso social
 #define Np  10     // Número de partículas
-#define RESET_TOL 0.01 // Tolerância do DMR (1%)
+#define RESET_TOL 0.02 // Tolerância do DMR (2%)
 ```
 
 📌 Esses parâmetros podem ser alterados para testar diferentes condições de convergência.
@@ -41,12 +41,12 @@ O arquivo `Busca_MPPT.plecs` já contém um **cenário com sombreamento parcial 
 1. Dê **Run** na simulação.
 2. Observe no **Scope**:
 
-   * A potência do painel (Ppv)
-   * O duty cycle (D)
-   * É possível observar o evento de **reset do DMR**
+   * A potência do painel pelo tempo (Scope)
+   * A curva P-V (XY plot)
+   * É possível observar o evento de **reset do DMR**, alterando a irradiancia em tempo real de algum painel, através dos blocos de controle "Script de entrada".
 
 <p align="center">
-  <img src="../content/PLECS_run_MPPT.png" width=80%>
+  <img src="../content/busca-result-reset.png" width=70%>
 </p>  
 
 ---
@@ -86,6 +86,7 @@ RepoAI/
         ├── PSO_reset_example.png
         └── PSO_block.png
 ```
+
 
 
 
