@@ -16,7 +16,6 @@ O objetivo é ajudar novos usuários a **abrirem, configurarem e rodarem projeto
 * [Executando Simulações](#executando-simulações)
 * [Explorando Resultados](#explorando-resultados)
 * [Edição do Circuito](#edição-do-circuito)
-* [Exemplo Rápido](#exemplo-rápido)
 * [Atalhos Úteis](#atalhos-úteis)
 
 ---
@@ -82,30 +81,15 @@ Após rodar a simulação, clique duas vezes no **Scope** do circuito para abrir
 
 ## Edição do Circuito
 
-O PLECS permite **adicionar, remover e configurar** componentes arrastando-os da barra lateral.
+O PLECS permite **adicionar, remover e configurar** componentes arrastando-os da "Library Browser".
 
-Principais blocos usados em eletrônica de potência:
+Principais blocos usados:
 
 * **Fontes** (voltagem, corrente, irradiância)
 * **Chaves** (MOSFET, IGBT, diodo)
 * **Passivos** (resistor, capacitor, indutor)
 * **Medições** (corrente, tensão, potência)
 * **Controle** (C Script, PI, etc.)
-
-<p align="center">
-  <img src="../content/PLECS_components.png" width=80%>
-</p>
-
----
-
-## Exemplo Rápido
-
-Aqui está um exemplo simples de circuito no PLECS:
-Um **conversor Boost** alimentado por uma fonte DC.
-
-<p align="center">
-  <img src="../content/PLECS_boost_example.png" width=85%>
-</p>
 
 ---
 
@@ -130,14 +114,11 @@ RepoAI/
     │   ├── Uso_básico_PLECS.md  ← este arquivo
     │   └── Busca_MPPT.plecs     ← exemplo prático
     └── content/
-        ├── PLECS_logo.png
-        ├── PLECS_interface.png
-        ├── PLECS_open_project.png
-        ├── PLECS_run.png
-        ├── PLECS_scope.png
-        ├── PLECS_components.png
-        └── PLECS_boost_example.png
+        ├── plecs-logo.jpg
+        ├── plecs-new-project.png
+        └── plecs-scope.png
 ```
+
 
 
 
