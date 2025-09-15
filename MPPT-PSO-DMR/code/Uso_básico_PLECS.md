@@ -43,8 +43,8 @@ Ele é amplamente usado em pesquisas que envolvem **conversores DC-DC, inversore
 code/Busca_MPPT.plecs
 ```
 
-<p align="center">
-  <img src="../content/PLECS_open_project.png" width=70%>
+<p align="left">
+  <img src="../content/plecs-new-project.png" width=40%>
 </p>
 
 ---
@@ -139,5 +139,6 @@ RepoAI/
         ├── PLECS_components.png
         └── PLECS_boost_example.png
 ```
+
 
 
