@@ -203,6 +203,13 @@ RepoAI/
 └── PSO_MPPT_DMR/
     ├── content/
     │   ├── Datasheet_JKM550M-72HL4-V.pdf
+    │   ├── PSO.png
+    │   ├── PSO_representacao.png
+    │   ├── busca-paineis.png
+    │   ├── busca-result-reset.png
+    │   ├── plecs-logo.jpg
+    │   ├── plecs-new-project.png
+    │   ├── plecs-scope.png
     │   ├── schematic_PLECS.jpg
     │   └── schematic_PLECS.pdf
     ├── code/
@@ -219,6 +226,7 @@ RepoAI/
 ## Licença 📝
 
 Este projeto está sob a licença **CC-BY 4.0**.
+
 
 
 
