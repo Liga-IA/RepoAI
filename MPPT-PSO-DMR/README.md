@@ -234,6 +234,3 @@ Este projeto está sob a licença **CC-BY 4.0**.
 
 
 
-
-
-
