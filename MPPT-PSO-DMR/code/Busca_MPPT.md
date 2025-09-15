@@ -23,11 +23,11 @@ Você terá um exemplo de simulação mostrando o **reset dinâmico** e a conver
 No início do código (`Busca_MPPT.c`), encontram-se as constantes que controlam o comportamento do algoritmo **PSO-DMR**.
 
 ```c
-float  W  =       0.20     // Inércia (memória da velocidade anterior)
-float C1  =       0.60     // Peso cognitivo (atração ao melhor individual - Pbest)
-float C2  =       0.60     // Peso social (atração ao melhor global - Gbest)
+float  W  =       0.20;    // Inércia (memória da velocidade anterior)
+float C1  =       0.60;    // Peso cognitivo (atração ao melhor individual - Pbest)
+float C2  =       0.60;    // Peso social (atração ao melhor global - Gbest)
 #define NUM_PARTICULAS  10 // Número de partículas da população
-float margem =    0.02     // Tolerância do DMR (2% da potência do GMPP)
+float margem =    0.02;    // Tolerância do DMR (2% da potência do GMPP)
 ```
 
 📌 **Descrição dos parâmetros:**
@@ -101,6 +101,7 @@ RepoAI/
         ├── busca-paineis.png
         └── busca-result-reset.png
 ```
+
 
 
 
