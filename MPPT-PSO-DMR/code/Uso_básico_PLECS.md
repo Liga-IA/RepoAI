@@ -12,7 +12,7 @@ O objetivo é ajudar novos usuários a **abrirem, configurarem e rodarem projeto
 ## Conteúdo
 
 * [O que é o PLECS?](#o-que-é-o-plecs)
-* [Abrindo um Projeto](#abrindo-um-projeto)
+* [Abrindo um Novo Projeto](#abrindo-um-projeto)
 * [Executando Simulações](#executando-simulações)
 * [Explorando Resultados](#explorando-resultados)
 * [Edição do Circuito](#edição-do-circuito)
@@ -30,7 +30,7 @@ Ele é amplamente usado em pesquisas que envolvem **conversores DC-DC, inversore
 
 ---
 
-## Abrindo um novo Projeto
+## Abrindo um Novo Projeto
 
 1. Abra o **PLECS Standalone**.
 2. Vá em **Create → New model**.
@@ -93,7 +93,7 @@ Principais blocos usados:
 
 ---
 
-## Atalhos Úteis ⌨
+## Atalhos Úteis
 
 | Ação                       | Atalho                               |
 | -------------------------- | ------------------------------------ |
@@ -118,6 +118,7 @@ RepoAI/
         ├── plecs-new-project.png
         └── plecs-scope.png
 ```
+
 
 
 
