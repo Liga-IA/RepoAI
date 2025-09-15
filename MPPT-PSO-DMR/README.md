@@ -71,11 +71,11 @@ O sistema foi implementado no **PLECS**, com o controle embarcado em **C Script*
 
 Arquivos principais:
 
-* `Busca_MPPT.c` → código do PSO-MPPT com DMR
-* `Busca_MPPT.plecs` → circuito simulado
-* `Busca_MPPT.md` → como utilizar o codigo para o PLECS
-* `Uso_básico_PLECS.md` → exemplo introdutório
-* `Datasheet_JKM550M-72HL4-V.pdf` → especificações do módulo
+* [`Busca_MPPT.c`](https://github.com/Ig0r-Rosa/PSO-DMR_RepoAI/blob/main/MPPT-PSO-DMR/code/Busca_MPPT.c) → código do PSO-MPPT com DMR
+* [`Busca_MPPT.plecs`](https://github.com/Ig0r-Rosa/PSO-DMR_RepoAI/blob/main/MPPT-PSO-DMR/code/Busca_MPPT.plecs) → circuito simulado
+* [`Busca_MPPT.md`](https://github.com/Ig0r-Rosa/PSO-DMR_RepoAI/blob/main/MPPT-PSO-DMR/code/Busca_MPPT.md) → como utilizar o codigo para o PLECS
+* [`Uso_básico_PLECS.md`](https://github.com/Ig0r-Rosa/PSO-DMR_RepoAI/blob/main/MPPT-PSO-DMR/code/Uso_b%C3%A1sico_PLECS.md) → exemplo introdutório
+* [`Datasheet_JKM550M-72HL4-V.pdf`](https://github.com/Ig0r-Rosa/PSO-DMR_RepoAI/blob/main/MPPT-PSO-DMR/content/Datasheet_JKM550M-72HL4-V.pdf) → especificações do módulo
 
 ---
 
@@ -219,6 +219,7 @@ RepoAI/
 ## Licença 📝
 
 Este projeto está sob a licença **CC-BY 4.0**.
+
 
 
 
