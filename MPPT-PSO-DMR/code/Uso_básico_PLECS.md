@@ -93,7 +93,7 @@ Principais blocos usados:
 
 ---
 
-## Atalhos Úteis ⌨️
+## Atalhos Úteis ⌨
 
 | Ação                       | Atalho                               |
 | -------------------------- | ------------------------------------ |
@@ -118,6 +118,7 @@ RepoAI/
         ├── plecs-new-project.png
         └── plecs-scope.png
 ```
+
 
 
 
