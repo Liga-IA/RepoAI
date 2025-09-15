@@ -55,11 +55,8 @@ Para abrir o projeto desse repositório:
 ## Executando Simulações
 
 1. Clique no ícone **Play (Run)** ou pressione `Ctrl + T`.
-2. O simulador vai rodar até o tempo final definido nas configurações.
+2. O simulador vai rodar até você interromper.
 3. É possível **pausar ou parar** a simulação a qualquer momento.
-
-> \[!NOTE]
-> O tempo de simulação pode ser ajustado em **Simulation → Parameters → Stop Time**.
 
 ---
 
@@ -119,6 +116,7 @@ RepoAI/
         ├── plecs-new-project.png
         └── plecs-scope.png
 ```
+
 
 
 
