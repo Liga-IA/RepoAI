@@ -1,4 +1,4 @@
-# Tutorial – Implementação do PSO-MPPT com DMR no PLECS
+# Tutorial – Testes e execução do PSO-DMR para MPPT
 
 <p align="center">
   <img src="../content/PSO_block.png" width=75%>
@@ -101,3 +101,4 @@ RepoAI/
         ├── PSO_reset_example.png
         └── PSO_block.png
 ```
+
