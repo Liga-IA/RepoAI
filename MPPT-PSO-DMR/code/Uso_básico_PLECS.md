@@ -12,7 +12,7 @@ O objetivo é ajudar novos usuários a **abrirem, configurarem e rodarem projeto
 ## Conteúdo
 
 * [O que é o PLECS?](#o-que-é-o-plecs)
-* [Abrindo um Novo Projeto](#abrindo-um-projeto)
+* [Abrindo um Novo Projeto](#abrindo-um-novo-projeto)
 * [Executando Simulações](#executando-simulações)
 * [Explorando Resultados](#explorando-resultados)
 * [Edição do Circuito](#edição-do-circuito)
@@ -118,6 +118,7 @@ RepoAI/
         ├── plecs-new-project.png
         └── plecs-scope.png
 ```
+
 
 
 
