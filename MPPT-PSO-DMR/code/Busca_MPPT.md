@@ -1,7 +1,7 @@
 # Tutorial – Testes e execução do PSO-DMR para MPPT
 
 <p align="center">
-  <img src="../content/PSO_block.png" width=75%>
+  <img src="../content/busca-paineis.png" width=75%>
 </p>  
 
 Este documento explica como realizar um teste com o algoritmo **PSO-MPPT com Dynamic Monitoring Reset (DMR)** no **PLECS**.
@@ -101,4 +101,5 @@ RepoAI/
         ├── PSO_reset_example.png
         └── PSO_block.png
 ```
+
 
