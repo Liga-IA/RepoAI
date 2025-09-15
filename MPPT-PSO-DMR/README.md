@@ -88,19 +88,95 @@ Arquivos principais:
 ### Instalação 🚀
 
 Windows:
-...
+Acesse o [site oficial](https://plexim.com/download) e baixe a versão mais recente.
+Para editar, é necessário a licença.
 
-Após instalar o compilador, abra o projeto `Busca_MPPT.plecs` no **PLECS** e coloque o código do arquivo `Busca_MPPT.c` ao bloco de controle.
+
+Após instalar o compilador, abra o projeto `Busca_MPPT.plecs` no **PLECS**. O arquivo `Busca_MPPT.c` contém o código do bloco de controle.
 Defina os inputs e outputs corretamente.
 
 #### Como definir os inputs e outputs
 
+Boa 👌 Dá para deixar essa seção bem mais clara e didática, mantendo a linguagem técnica. Aqui vai uma versão melhorada, já formatada no estilo RepoAI:
+
+---
+
+#### Como definir os **Inputs** e **Outputs**
+
+O bloco **C-Script** do PLECS possui diferentes áreas de código. As mais importantes para este projeto são:
+
+* **Code Declarations** → onde são declaradas variáveis, vetores e estruturas que permanecem entre os ciclos da simulação.
+* **Update Function Code** → executado a cada passo de simulação, é aqui que o algoritmo realmente roda.
+
+---
+
+##### Definição de Inputs
+
+Os **inputs** são sinais vindos do circuito (ex.: tensão, corrente).
+Eles são lidos com a função:
+
+```c
+variavel = InputSignal(n, 0);
+```
+
+* `n` → número da porta de entrada no bloco C-Script (começa em 0).
+* `0` → indica que é o **valor atual** do sinal (sempre usar zero).
+
+**Exemplo:**
+
+```c
+Vpv = InputSignal(0, 0);   // Porta 0 → tensão do painel
+Ipv = InputSignal(1, 0);   // Porta 1 → corrente do painel
+```
+
+---
+
+##### Definição de Outputs
+
+Os **outputs** são os sinais enviados do algoritmo para o circuito.
+São definidos com:
+
+```c
+OutputSignal(n, 0) = variavel;
+```
+
+* `n` → número da porta de saída no bloco C-Script.
+* `0` → índice (sempre usar zero).
+
+**Exemplo:**
+
+```c
+OutputSignal(0, 0) = D;   // Porta 0 → razão cíclica para o PWM
+```
+
+---
+
+##### Code Declarations
+
+Trecho usado para declarar variáveis e estruturas que precisam ser **mantidas entre ciclos**.
+Ideal para armazenar:
+
+* Vetores de partículas do PSO
+* Parâmetros do algoritmo
+* Contadores e flags de reset
+
+---
+
+##### Update Function Code
+
+Trecho executado **a cada passo de simulação**.
+É aqui que o algoritmo:
+
+1. Lê os **inputs** (tensão/corrente).
+2. Atualiza o cálculo do **PSO**.
+3. Verifica condição de **reset do DMR**.
+4. Escreve a saída (**duty cycle**).
+
 ---
 
 ## Resultados de Simulação
-{Colocar os testes}
 
-Comparação entre **PSO-DMR** e métodos clássicos (**P\&O, INC**):
+Em comparação entre **PSO-DMR** (que utiliza IA) e métodos clássicos (**P\&O, INC**):
 
 | Método      | Potência Média (W) | Convergência (s) | Desempenho em Sombreamento |
 | ----------- | ------------------ | ---------------- | -------------------------- |
@@ -143,6 +219,7 @@ RepoAI/
 ## Licença 📝
 
 Este projeto está sob a licença **CC-BY 4.0**.
+
 
 
 
