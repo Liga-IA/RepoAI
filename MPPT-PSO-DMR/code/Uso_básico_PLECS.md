@@ -31,11 +31,14 @@ Ele é amplamente usado em pesquisas que envolvem **conversores DC-DC, inversore
 
 ---
 
-## Abrindo um Projeto
+## Abrindo um novo Projeto
 
-1. Abra o **PLECS Standalone** ou o **PLECS Blockset** (se integrado ao MATLAB).
-2. Vá em **File → Open**.
-3. Selecione o arquivo `.plecs`.
+1. Abra o **PLECS Standalone**.
+2. Vá em **Create → New model**.
+
+<p align="left">
+  <img src="../content/plecs-new-project.png" width=40%>
+</p>
 
 📌 No repositório deste projeto, o arquivo principal é:
 
@@ -43,9 +46,9 @@ Ele é amplamente usado em pesquisas que envolvem **conversores DC-DC, inversore
 code/Busca_MPPT.plecs
 ```
 
-<p align="left">
-  <img src="../content/plecs-new-project.png" width=40%>
-</p>
+Para abrir o projeto desse repositório:
+1. Vá em **File → Open**.
+2. Selecione o arquivo .plecs.
 
 ---
 
@@ -139,6 +142,7 @@ RepoAI/
         ├── PLECS_components.png
         └── PLECS_boost_example.png
 ```
+
 
 
 
