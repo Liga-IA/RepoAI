@@ -79,10 +79,6 @@ O comportamento típico do **PSO-DMR** é:
 3. O **DMR dispara um reset**, reiniciando a população de partículas.
 4. O PSO converge para o **GMPP** corretamente.
 
-<p align="center">
-  <img src="../content/PSO_reset_example.png" width=85%>
-</p>  
-
 > \[!TIP]
 > Esse reset dinâmico garante que o sistema **não fique preso em picos locais**, aumentando a eficiência em condições de sombreamento parcial.
 
@@ -101,6 +97,7 @@ RepoAI/
         ├── busca-paineis.png
         └── busca-result-reset.png
 ```
+
 
 
 
