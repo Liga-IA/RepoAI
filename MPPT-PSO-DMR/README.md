@@ -54,10 +54,6 @@ O **DMR** foi proposto para resolver o problema de **estagnação** do PSO:
 > \[!TIP]
 > O DMR atua **independentemente do PSO**, apenas sinalizando o momento de reinicializar. Isso evita resets desnecessários e mantém o sistema estável.
 
-<p align="center">
-  <img src="content/schematic_PLECS.jpg" width=85% style="border:2px solid black;">
-</p>
-
 ---
 
 ## Implementação
@@ -68,6 +64,10 @@ O sistema foi implementado no **PLECS**, com o controle embarcado em **C Script*
 * **Conversor:** Boost DC-DC conectado a um barramento de 400 V.
 * **Controle:** algoritmo PSO com parâmetros ajustáveis (`ω = 0.2`, `c1 = 0.6`, `c2 = 0.6`).
 * **Reset DMR:** tolerância de 2% sobre a potência do GMPP.
+
+<p align="center">
+  <img src="content/schematic_PLECS.jpg" width=85% style="border:2px solid black;">
+</p>
 
 Arquivos principais:
 
@@ -226,6 +226,7 @@ RepoAI/
 ## Licença 📝
 
 Este projeto está sob a licença **CC-BY 4.0**.
+
 
 
 
