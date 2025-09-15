@@ -1,7 +1,7 @@
 # Uso Básico do PLECS ⚡
 
 <p align="center">
-  <img src="../content/PLECS_logo.png" width=50%>
+  <img src="../content/plecs-logo.jpg" width=60%>
 </p>
 
 Este documento apresenta um **guia rápido e introdutório** para o uso do **PLECS**, com foco na execução de simulações de circuitos eletrônicos de potência.
@@ -143,3 +143,4 @@ RepoAI/
         ├── PLECS_components.png
         └── PLECS_boost_example.png
 ```
+
