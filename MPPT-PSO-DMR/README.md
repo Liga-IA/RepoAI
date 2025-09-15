@@ -91,15 +91,8 @@ Windows:
 Acesse o [site oficial](https://plexim.com/download) e baixe a versão mais recente.
 Para editar, é necessário a licença.
 
-
 Após instalar o compilador, abra o projeto `Busca_MPPT.plecs` no **PLECS**. O arquivo `Busca_MPPT.c` contém o código do bloco de controle.
 Defina os inputs e outputs corretamente.
-
-#### Como definir os inputs e outputs
-
-Boa 👌 Dá para deixar essa seção bem mais clara e didática, mantendo a linguagem técnica. Aqui vai uma versão melhorada, já formatada no estilo RepoAI:
-
----
 
 #### Como definir os **Inputs** e **Outputs**
 
@@ -226,6 +219,7 @@ RepoAI/
 ## Licença 📝
 
 Este projeto está sob a licença **CC-BY 4.0**.
+
 
 
 
