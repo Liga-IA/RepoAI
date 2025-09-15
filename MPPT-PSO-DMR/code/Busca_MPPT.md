@@ -20,34 +20,53 @@ Você terá um exemplo de simulação mostrando o **reset dinâmico** e a conver
 
 ## Configuração dos Parâmetros do PSO
 
-No início do código (`Busca_MPPT.c`), você pode ajustar os parâmetros:
+No início do código (`Busca_MPPT.c`), encontram-se as constantes que controlam o comportamento do algoritmo **PSO-DMR**.
 
 ```c
-#define W   0.2   // Inércia
-#define C1  0.6    // Peso cognitivo
-#define C2  0.6    // Peso social
-#define Np  10     // Número de partículas
-#define RESET_TOL 0.02 // Tolerância do DMR (2%)
+#define W         0.20   // Inércia (memória da velocidade anterior)
+#define C1        0.60   // Peso cognitivo (atração ao melhor individual - Pbest)
+#define C2        0.60   // Peso social (atração ao melhor global - Gbest)
+#define Np        10     // Número de partículas da população
+#define RESET_TOL 0.02   // Tolerância do DMR (2% da potência do GMPP)
 ```
 
-📌 Esses parâmetros podem ser alterados para testar diferentes condições de convergência.
+📌 **Descrição dos parâmetros:**
+
+* **W (inércia):** controla o quanto cada partícula mantém sua direção atual. Valores menores aceleram a convergência, mas podem reduzir a exploração.
+* **C1 (cognitivo):** peso da experiência individual da partícula. Aumentar esse valor dá mais autonomia a cada partícula.
+* **C2 (social):** peso da informação global. Aumentar esse valor faz com que todas as partículas sigam rapidamente o Gbest.
+* **Np (população):** número de partículas explorando o espaço de busca. Mais partículas aumentam a robustez, mas também o custo computacional.
+* **RESET\_TOL:** define a sensibilidade do DMR para disparar o reset. Valores baixos aumentam a frequência de resets, enquanto valores maiores reduzem a chance de reexploração.
+
+> \[!TIP]
+> Para cenários de sombreamento parcial, recomenda-se **valores balanceados** entre `C1` e `C2` e uma **tolerância entre 1% e 3%** para o DMR.
 
 ---
 
 ## Rodando o Exemplo de Reset Dinâmico
 
-O arquivo `Busca_MPPT.plecs` já contém um **cenário com sombreamento parcial dinâmico**.
+O arquivo `Busca_MPPT.plecs` já contém um **cenário configurado com sombreamento parcial dinâmico**.
 
-1. Dê **Run** na simulação.
-2. Observe no **Scope**:
+1. Clique em **Run** para iniciar a simulação.
+2. Monitore no **Scope** e no **XY Plot**:
 
-   * A potência do painel pelo tempo (Scope)
-   * A curva P-V (XY plot)
-   * É possível observar o evento de **reset do DMR**, alterando a irradiancia em tempo real de algum painel, através dos blocos de controle "Script de entrada".
+   * **Potência (Ppv) x tempo** – mostra a evolução do algoritmo e os resets.
+   * **Curva P–V (potência x tensão)** – mostra o rastreamento do ponto de máxima potência.
+   * **Reset do DMR** – ocorre automaticamente quando a irradiância muda, forçando o PSO a reiniciar a busca.
 
 <p align="center">
-  <img src="../content/busca-result-reset.png" width=70%>
+  <img src="../content/busca-result-reset.png" width=75%>
 </p>  
+
+Na figura acima, temos um exemplo do resultado do arquivo `.plecs`:
+
+* Até **1s**, o sistema opera no GMPP inicial, todos os módulos em 1000 W/m².
+* Em **t = 1s**, ocorre uma **mudança de irradiância** (sombreamento simulado via bloco *Script de entrada*).
+* O **DMR detecta a queda de potência** fora da zona de tolerância e **reseta a população**.
+* O **PSO reinicia a busca** e converge novamente para o **novo GMPP**.
+
+> \[!IMPORTANT]
+> Esse mecanismo garante que o sistema **não fique preso em máximos locais (LMPP)** e continue operando de forma eficiente mesmo em condições variáveis de irradiância.
 
 ---
 
@@ -86,6 +105,7 @@ RepoAI/
         ├── PSO_reset_example.png
         └── PSO_block.png
 ```
+
 
 
 
