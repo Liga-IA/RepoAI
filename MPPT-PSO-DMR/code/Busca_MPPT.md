@@ -98,13 +98,10 @@ RepoAI/
     │   ├── Busca_MPPT.c           ← código do PSO com DMR
     │   └── Busca_MPPT.plecs       ← circuito de simulação
     └── content/
-        ├── PLECS_open_MPPT.png
-        ├── PLECS_Cscript.png
-        ├── PLECS_IO_config.png
-        ├── PLECS_run_MPPT.png
-        ├── PSO_reset_example.png
-        └── PSO_block.png
+        ├── busca-paineis.png
+        └── busca-result-reset.png
 ```
+
 
 
 
