@@ -12,24 +12,9 @@ Você terá um exemplo de simulação mostrando o **reset dinâmico** e a conver
 
 ## Conteúdo
 
-* [Abrindo o Arquivo do Projeto](#abrindo-o-arquivo-do-projeto)
 * [Configuração dos Parâmetros do PSO](#configuração-dos-parâmetros-do-pso)
 * [Rodando o Exemplo de Reset Dinâmico](#rodando-o-exemplo-de-reset-dinâmico)
 * [Resultados Esperados](#resultados-esperados)
-
----
-
-## Abrindo o Arquivo do Projeto
-
-No repositório, abra o arquivo principal:
-
-```text
-code/Busca_MPPT.plecs
-```
-
-<p align="center">
-  <img src="../content/PLECS_open_MPPT.png" width=75%>
-</p>  
 
 ---
 
@@ -101,6 +86,7 @@ RepoAI/
         ├── PSO_reset_example.png
         └── PSO_block.png
 ```
+
 
 
 
