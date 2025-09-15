@@ -58,10 +58,6 @@ Para abrir o projeto desse repositório:
 2. O simulador vai rodar até o tempo final definido nas configurações.
 3. É possível **pausar ou parar** a simulação a qualquer momento.
 
-<p align="center">
-  <img src="../content/PLECS_run.png" width=60%>
-</p>
-
 > \[!NOTE]
 > O tempo de simulação pode ser ajustado em **Simulation → Parameters → Stop Time**.
 
@@ -79,7 +75,7 @@ O **PLECS Scope** é usado para visualizar os sinais:
 Após rodar a simulação, clique duas vezes no **Scope** do circuito para abrir os gráficos.
 
 <p align="center">
-  <img src="../content/PLECS_scope.png" width=85%>
+  <img src="../content/plecs-scope.png" width=70%>
 </p>
 
 ---
@@ -142,6 +138,7 @@ RepoAI/
         ├── PLECS_components.png
         └── PLECS_boost_example.png
 ```
+
 
 
 
