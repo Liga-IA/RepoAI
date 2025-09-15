@@ -17,7 +17,7 @@ O objetivo é ajudar novos usuários a **abrirem, configurarem e rodarem projeto
 * [Explorando Resultados](#explorando-resultados)
 * [Edição do Circuito](#edição-do-circuito)
 * [Exemplo Rápido](#exemplo-rápido)
-* [Atalhos Úteis ⌨️](#atalhos-úteis)
+* [Atalhos Úteis](#atalhos-úteis)
 
 ---
 
@@ -142,6 +142,7 @@ RepoAI/
         ├── PLECS_components.png
         └── PLECS_boost_example.png
 ```
+
 
 
 
