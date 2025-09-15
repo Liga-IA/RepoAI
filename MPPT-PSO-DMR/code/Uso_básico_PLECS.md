@@ -17,6 +17,7 @@ O objetivo é ajudar novos usuários a **abrirem, configurarem e rodarem projeto
 * [Explorando Resultados](#explorando-resultados)
 * [Edição do Circuito](#edição-do-circuito)
 * [Atalhos Úteis](#atalhos-úteis)
+* [Estrutura Relacionada](#estrutura-relacionada)
 
 ---
 
@@ -118,6 +119,7 @@ RepoAI/
         ├── plecs-new-project.png
         └── plecs-scope.png
 ```
+
 
 
 
