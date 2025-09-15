@@ -83,7 +83,7 @@ Arquivos principais:
 
 ### Pré-requisitos 💻
 
-* **PLECS** (versão >= 4.8 recomendada)
+* **PLECS** (versão >= 4.5.2 recomendada)
 
 ### Instalação 🚀
 
@@ -219,6 +219,7 @@ RepoAI/
 ## Licença 📝
 
 Este projeto está sob a licença **CC-BY 4.0**.
+
 
 
 
