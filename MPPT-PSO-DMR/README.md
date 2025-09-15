@@ -66,8 +66,8 @@ O sistema foi implementado no **PLECS**, com o controle embarcado em **C Script*
 
 * **Modelo fotovoltaico:** JKM550M-72H (baseado no modelo de diodo único).
 * **Conversor:** Boost DC-DC conectado a um barramento de 400 V.
-* **Controle:** algoritmo PSO com parâmetros ajustáveis (`ω = 0.15`, `c1 = 0.6`, `c2 = 0.6`).
-* **Reset DMR:** tolerância de 1% sobre a potência do GMPP.
+* **Controle:** algoritmo PSO com parâmetros ajustáveis (`ω = 0.2`, `c1 = 0.6`, `c2 = 0.6`).
+* **Reset DMR:** tolerância de 2% sobre a potência do GMPP.
 
 Arquivos principais:
 
@@ -219,6 +219,7 @@ RepoAI/
 ## Licença 📝
 
 Este projeto está sob a licença **CC-BY 4.0**.
+
 
 
 
