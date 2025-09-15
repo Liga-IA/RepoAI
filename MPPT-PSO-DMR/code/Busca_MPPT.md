@@ -1,4 +1,4 @@
-# Tutorial – Testes e execução do PSO-DMR para MPPT
+# Tutorial – Execução e testes do PSO-DMR para MPPT
 
 <p align="center">
   <img src="../content/busca-paineis.png" width=75%>
@@ -101,5 +101,6 @@ RepoAI/
         ├── PSO_reset_example.png
         └── PSO_block.png
 ```
+
 
 
