@@ -210,7 +210,7 @@ RepoAI/
     │   ├── Busca_MPPT.c
     │   ├── Busca_MPPT.plecs
     │   └── Uso_básico_PLECS.md
-    ├── README.md
+    ├── README.md <-- Este arquivo.
     └── LICENSE
 ```
 
@@ -219,6 +219,7 @@ RepoAI/
 ## Licença 📝
 
 Este projeto está sob a licença **CC-BY 4.0**.
+
 
 
 
