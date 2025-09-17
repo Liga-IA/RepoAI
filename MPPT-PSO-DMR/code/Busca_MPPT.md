@@ -15,6 +15,7 @@ Você terá um exemplo de simulação mostrando o **reset dinâmico** e a conver
 * [Configuração dos Parâmetros do PSO](#configuração-dos-parâmetros-do-pso)
 * [Rodando o Exemplo de Reset Dinâmico](#rodando-o-exemplo-de-reset-dinâmico)
 * [Resultados Esperados](#resultados-esperados)
+* [Estrutura do Repositório](#estrutura-do-repositório)
 
 ---
 
@@ -84,19 +85,31 @@ O comportamento típico do **PSO-DMR** é:
 
 ---
 
-## Estrutura Relacionada
+## Estrutura do Repositório
 
 ```text
 RepoAI/
 └── PSO_MPPT_DMR/
+    ├── content/
+    │   ├── Datasheet_JKM550M-72HL4-V.pdf
+    │   ├── PSO.png
+    │   ├── PSO_representacao.png
+    │   ├── busca-paineis.png
+    │   ├── busca-result-reset.png
+    │   ├── plecs-logo.jpg
+    │   ├── plecs-new-project.png
+    │   ├── plecs-scope.png
+    │   ├── schematic_PLECS.jpg
+    │   └── schematic_PLECS.pdf
     ├── code/
-    │   ├── Busca_MPPT.md          ← este arquivo
-    │   ├── Busca_MPPT.c           ← código do PSO com DMR
-    │   └── Busca_MPPT.plecs       ← circuito de simulação
-    └── content/
-        ├── busca-paineis.png
-        └── busca-result-reset.png
+    │   ├── Busca_MPPT.md <-- Você está aqui!
+    │   ├── Busca_MPPT.c
+    │   ├── Busca_MPPT.plecs
+    │   └── Uso_básico_PLECS.md
+    ├── README.md
+    └── LICENSE
 ```
+
 
 
 
