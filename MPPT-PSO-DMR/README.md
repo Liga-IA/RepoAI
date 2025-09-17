@@ -9,7 +9,8 @@ O objetivo é maximizar a eficiência de sistemas fotovoltaicos, especialmente s
 
 O projeto deriva do artigo submetido à **EvoStar 2025**:  
 > *A PSO-based MPPT with Dynamic Monitoring Reset for PV Systems*  
-> Igor de Matos da Rosa, Alison R. Panisson, Lenon Schmitz (UFSC, 2025)
+> Igor de Matos da Rosa, Alison R. Panisson, Lenon Schmitz (UFSC, 2025)  
+> doi: 10.1007/978-3-031-90065-5_16
 
 ---
 
@@ -219,6 +220,7 @@ RepoAI/
 ## Licença 📝
 
 Este projeto está sob a licença **CC-BY 4.0**.
+
 
 
 
