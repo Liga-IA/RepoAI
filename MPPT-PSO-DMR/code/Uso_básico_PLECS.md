@@ -123,10 +123,11 @@ RepoAI/
     │   ├── Busca_MPPT.md
     │   ├── Busca_MPPT.c
     │   ├── Busca_MPPT.plecs
-    │   └── Uso_básico_PLECS.md
+    │   └── Uso_básico_PLECS.md <-- Você está aqui!
     ├── README.md <-- Este arquivo.
     └── LICENSE
 ```
+
 
 
 
