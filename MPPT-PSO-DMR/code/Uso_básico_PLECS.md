@@ -17,7 +17,7 @@ O objetivo é ajudar novos usuários a **abrirem, configurarem e rodarem projeto
 * [Explorando Resultados](#explorando-resultados)
 * [Edição do Circuito](#edição-do-circuito)
 * [Atalhos Úteis](#atalhos-úteis)
-* [Estrutura Relacionada](#estrutura-relacionada)
+* [Estrutura do Repositório](#estrutura-do-repositório)
 
 ---
 
@@ -103,19 +103,31 @@ Principais blocos usados:
 
 ---
 
-## Estrutura Relacionada
+## Estrutura do Repositório
 
 ```text
 RepoAI/
 └── PSO_MPPT_DMR/
+    ├── content/
+    │   ├── Datasheet_JKM550M-72HL4-V.pdf
+    │   ├── PSO.png
+    │   ├── PSO_representacao.png
+    │   ├── busca-paineis.png
+    │   ├── busca-result-reset.png
+    │   ├── plecs-logo.jpg
+    │   ├── plecs-new-project.png
+    │   ├── plecs-scope.png
+    │   ├── schematic_PLECS.jpg
+    │   └── schematic_PLECS.pdf
     ├── code/
-    │   ├── Uso_básico_PLECS.md  ← este arquivo
-    │   └── Busca_MPPT.plecs     ← exemplo prático
-    └── content/
-        ├── plecs-logo.jpg
-        ├── plecs-new-project.png
-        └── plecs-scope.png
+    │   ├── Busca_MPPT.md
+    │   ├── Busca_MPPT.c
+    │   ├── Busca_MPPT.plecs
+    │   └── Uso_básico_PLECS.md
+    ├── README.md <-- Este arquivo.
+    └── LICENSE
 ```
+
 
 
 
