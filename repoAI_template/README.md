@@ -223,4 +223,4 @@ Ao final edite o arquivo de licença, atualizando o ano e seu nome, depois adici
 
 "Esse projeto está sob licença CC-BY 4.0." 
 
-Veja o arquivo [Licença](LICENSE) para mais detalhes.
+Veja o arquivo [Licença](../LICENSE) para mais detalhes.
