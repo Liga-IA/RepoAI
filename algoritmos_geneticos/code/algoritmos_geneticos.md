@@ -1,4 +1,4 @@
-![banner-inicial](../content/Capa.png)
+![banner-inicial](../content/capa.png)
 
 # Guia prático para algoritmos genéticos
 
@@ -7,7 +7,6 @@ Neste tutorial você encontrará o passo-a-passo para a implementação do seu a
 
 ## Conteúdo
   - [Principais peças do quebra-cabeças](#principais-pe%C3%A7as-do-quebra-cabe%C3%A7as)
-  - [Estrutura do Repositório](#estrutura-do-reposit%C3%B3rio)
 ## Principais peças do quebra-cabeças
 Um algoritmo genético é composto por elementos fundamentais que simulam o processo de evolução natural. Aqui estão os principais:  
 
@@ -144,23 +143,3 @@ O algoritmo para quando a população atinge um nível de convergência, ou seja
 Se uma solução ótima ou satisfatória for encontrada (isto é, uma solução que atenda aos critérios de qualidade ou um valor de aptidão que ultrapasse um limiar pré-estabelecido), o algoritmo é interrompido. Esse critério busca garantir que o algoritmo não execute mais do que o necessário quando uma boa solução já foi alcançada.
 
 ---
-
-Agora você tem todas as peças de que precisa para montar seu quebra-cabeça. Abaixo você pode conferir na estrutura desse repositório vários exemplos de aplicação de algoritmos genéticos.
-## Estrutura do Repositório
-
-```text
-RepoAI/
-└── Algoritmos-geneticos/
-    ├── content/
-    │   └── Capa.png
-    ├── code/
-    |   └── Acertando_uma_string.md
-    |   └── Algoritmos_geneticos.md <- Você está aqui!
-    ├── README.md
-    └── license    
-```
-
-## Contribuidores
-
- | [<img loading="lazy" src="https://avatars.githubusercontent.com/u/91793807?v=4" width=115><br><sub>Ítalo Silva</sub>](https://github.com/ITA-LOW) |  [<img loading="lazy" src="https://avatars.githubusercontent.com/u/11313404?v=4" width=115><br><sub>Alison R. Panisson</sub>](https://github.com/AlisonPanisson) |
-| :---: | :---: |
