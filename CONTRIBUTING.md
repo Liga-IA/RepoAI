@@ -15,7 +15,7 @@
 
 ![create_fork](./base_assets/image1.png)
 
-Dessa forma, será criada uma uma cópia do RepoAI dentro do seu perfil do Github, possibilitando que você realize suas contribuições de acordo com nosso [template](https://github.com/Liga-IA/RepoAI/tree/main/repoAI-template)!
+Dessa forma, será criada uma uma cópia do RepoAI dentro do seu perfil do Github, possibilitando que você realize suas contribuições de acordo com nosso [template](https://github.com/Liga-IA/RepoAI/tree/main/repoAI_template)!
 
 Assim que realizar contribuições, em seu perfil você poderá seguir esses passos:
 
