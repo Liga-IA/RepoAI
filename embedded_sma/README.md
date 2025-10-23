@@ -74,3 +74,6 @@ This project is developed using **PlatformIO** with the Arduino framework.
 4.  To monitor the output, use the **Serial Monitor** at a baud rate of **115200**.
 
 ---
+Authors
+
+[<img loading="lazy" src="https://avatars.githubusercontent.com/u/91793807?v=4" width=115>](https://github.com/ITA-LOW)
