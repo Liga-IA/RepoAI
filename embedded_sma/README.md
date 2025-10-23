@@ -1,7 +1,6 @@
 # Cooperative Multi-Agent System with BDI for ESP32
 
-![Cooperation Demo](https://via.placeholder.com/800x400.png?text=Insert+a+GIF+of+the+Cooperation+here)
-> **GIF Suggestion:** Showcase the sensor agent detecting darkness, the LED agent lighting up, and then the ultrasonic agent detecting an object, prompting the main agent's buzzer to sound.
+![Cooperation Demo](img/bsl2.png)
 
 This repository contains the implementation of a **Cooperative Multi-Agent System** using the **BDI (Beliefs, Desires, Intentions)** reasoning architecture. The agents, running on microcontrollers of the family **ESP32**, form a distributed intelligence network capable of perceiving their environment and collaborating to achieve goals.
 
@@ -16,7 +15,7 @@ This repository contains the implementation of a **Cooperative Multi-Agent Syste
 
 The system is composed of a network of independent agents. Communication is the backbone of the architecture, allowing the perceptions of one agent to trigger actions in another.
 
-![Agent Network Diagram](https://via.placeholder.com/800x300.png?text=Agent+Network+Diagram)
+![Agent Network Diagram](img/overview.png)
 > **Diagram Suggestion:** Draw nodes for each agent (`central-agent`, `led-agent`, `sonic-agent`). Connect them with arrows indicating "ESP-NOW Broadcast (Discovery)" and "ESP-NOW Unicast (Cooperation)".
 
 ## The Agents
