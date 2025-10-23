@@ -1,16 +1,15 @@
-# Cooperative Multi-Agent System with BDI for ESP32/ESP8266
+# Cooperative Multi-Agent System with BDI for ESP32
 
 ![Cooperation Demo](https://via.placeholder.com/800x400.png?text=Insert+a+GIF+of+the+Cooperation+here)
 > **GIF Suggestion:** Showcase the sensor agent detecting darkness, the LED agent lighting up, and then the ultrasonic agent detecting an object, prompting the main agent's buzzer to sound.
 
-This repository contains the implementation of a **Cooperative Multi-Agent System** using the **BDI (Beliefs, Desires, Intentions)** reasoning architecture. The agents, running on microcontrollers like the **ESP32** and **ESP8266**, form a distributed intelligence network capable of perceiving their environment and collaborating to achieve goals.
+This repository contains the implementation of a **Cooperative Multi-Agent System** using the **BDI (Beliefs, Desires, Intentions)** reasoning architecture. The agents, running on microcontrollers of the family **ESP32**, form a distributed intelligence network capable of perceiving their environment and collaborating to achieve goals.
 
 ## Key Features
 
 -   **Autonomous Reasoning (BDI)**: Each agent uses the BDI cycle to deliberate on its beliefs (what it knows about the world) and execute plans to achieve its goals.
 -   **ESP-NOW Mesh Network**: Agents discover and communicate with each other efficiently and with low latency, without the need for a central router.
 -   **Intelligent Cooperation**: Agents can request help and delegate tasks to others that possess the necessary capabilities (e.g., "turn on your LED," "sound your alarm").
--   **Hardware Heterogeneity**: The system supports different platforms (ESP32, ESP32-S3, ESP8266), each with its own set of sensors and actuators.
 -   **Persistent Goal-Oriented Behavior**: Implementation of goal-driven logic that allows agents to maintain continuous behaviors until a specific condition is met.
 
 ## System Architecture
@@ -26,7 +25,7 @@ The network currently consists of:
 
 1.  **Central Agent (ESP32)**: The main "brain," equipped with multiple sensors (LDR, Potentiometer) and actuators (Buzzer). It can coordinate actions and respond to requests.
 2.  **Actuator Agent (ESP32-S3)**: Specialized in acting upon the environment, primarily with a high-intensity LED.
-3.  **Sonic Sensor Agent (ESP8266)**: A lightweight, low-cost agent focused on a single task: detecting object proximity with an ultrasonic sensor (HC-SR04).
+3.  **Sonic Sensor Agent (ESP32)**: A lightweight, low-cost agent focused on a single task: detecting object proximity with an ultrasonic sensor (HC-SR04).
 
 ## Development Journey & Roadmap
 
@@ -36,12 +35,11 @@ This section details the project's evolution and future objectives.
 
 -   [x] **BDI Foundation**: Implemented the core reasoning cycle and basic plans.
 -   [x] **ESP-NOW Communication**: Created a robust module for neighbor discovery and management.
--   [x] **Multi-Platform Expansion**: Ported the codebase to the **ESP8266**, creating the `sonic-agent` and validating cooperation between different hardware types.
 -   [x] **Goal-Oriented Reasoning**: Implemented "recursive" plans that enable persistent behaviors, such as an alarm that sounds intermittently until deactivated.
 -   [ ] **Multi-Hop Routing**: Allow agents to forward messages, creating a true mesh network where cooperation can occur even between agents that are not in direct range.
 -   [x] **Capability Expansion**: Integrate new sensors (DHT11, LM35) and develop more complex use-case scenarios.
 -   [x] **Network Resilience Testing**: Validate the system's ability to self-heal when agents leave and rejoin the network.
--   [ ] **Context-Based Plan Selection**: Implement multiple plans for the same trigger, allowing an agent to choose the best strategy based on a broader context (e.g., a power-saving mode).
+-   [x] **Context-Based Plan Selection**: Implement multiple plans for the same trigger, allowing an agent to choose the best strategy based on a broader context (e.g., a power-saving mode, presence or absence of an agent with certain capabilities).
 
 ## Design Patterns and Technical Solutions
 
@@ -66,7 +64,7 @@ This enables the creation of complex, self-sustaining behaviors by leveraging th
 | :--- | :--- |
 | **Central Agent** | ESP32-S3 Board |
 | **LED Agent** | ESP32 Board |
-| **Sonic Agent**| ESP8266 NodeMCU |
+| **Sonic Agent**| ESP32 Board |
 
 ## How to Get Started
 
