@@ -35,7 +35,7 @@ This section details the project's evolution and future objectives.
 -   [x] **ESP-NOW Communication**: Created a robust module for neighbor discovery and management.
 -   [x] **Goal-Oriented Reasoning**: Implemented "recursive" plans that enable persistent behaviors, such as an alarm that sounds intermittently until deactivated.
 -   [ ] **Multi-Hop Routing**: Allow agents to forward messages, creating a true mesh network where cooperation can occur even between agents that are not in direct range.
--   [x] **Capability Expansion**: Integrate new sensors (DHT11, LM35) and develop more complex use-case scenarios.
+-   [x] **Capability Expansion**: Integrate sensors (DHT11, LM35, LDR) and develop more complex use-case scenarios.
 -   [x] **Network Resilience Testing**: Validate the system's ability to self-heal when agents leave and rejoin the network.
 -   [x] **Context-Based Plan Selection**: Implement multiple plans for the same trigger, allowing an agent to choose the best strategy based on a broader context (e.g., a power-saving mode, presence or absence of an agent with certain capabilities).
 
