@@ -76,4 +76,5 @@ This project is developed using **PlatformIO** with the Arduino framework.
 ---
 Authors
 
-[<img loading="lazy" src="https://avatars.githubusercontent.com/u/91793807?v=4" width=115>](https://github.com/ITA-LOW)
+[<img loading="lazy" src="https://avatars.githubusercontent.com/u/91793807?v=4" width=115><br><sub>Ítalo Silva</sub>](https://github.com/ITA-LOW)
+| :---: |
