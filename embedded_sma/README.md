@@ -15,7 +15,7 @@ This repository contains the implementation of a **Cooperative Multi-Agent Syste
 
 The system is composed of a network of independent agents. Communication is the backbone of the architecture, allowing the perceptions of one agent to trigger actions in another.
 
-![Agent Network Diagram](img/overview.png)
+![Agent Network Diagram](img/image.png)
 
 ## The Agents
 
