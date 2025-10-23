@@ -16,7 +16,6 @@ This repository contains the implementation of a **Cooperative Multi-Agent Syste
 The system is composed of a network of independent agents. Communication is the backbone of the architecture, allowing the perceptions of one agent to trigger actions in another.
 
 ![Agent Network Diagram](img/overview.png)
-> **Diagram Suggestion:** Draw nodes for each agent (`central-agent`, `led-agent`, `sonic-agent`). Connect them with arrows indicating "ESP-NOW Broadcast (Discovery)" and "ESP-NOW Unicast (Cooperation)".
 
 ## The Agents
 
