@@ -21,9 +21,9 @@ The system is composed of a network of independent agents. Communication is the 
 
 The network currently consists of:
 
-1.  **Central Agent (ESP32)**: The main "brain," equipped with multiple sensors (LDR, Potentiometer) and actuators (Buzzer). It can coordinate actions and respond to requests.
-2.  **Actuator Agent (ESP32-S3)**: Specialized in acting upon the environment, primarily with a high-intensity LED.
-3.  **Sonic Sensor Agent (ESP32)**: A lightweight, low-cost agent focused on a single task: detecting object proximity with an ultrasonic sensor (HC-SR04).
+1.  **Sensor Agent (ESP32)**: Equipped with multiple sensors (LDR, Potentiometer, LM35...) and actuators (Buzzer). It can coordinate actions and respond to requests.
+2.  **Actuator Agent (ESP32-S3)**: Act in coordination with Sensor Agent turning on a LED when LDR sensor detects low light.
+3.  **Sonic Sensor Agent (ESP32)**: Act in coordination with Sensor Agent send a cooperation request when proximity is detected.
 
 ## Development Journey & Roadmap
 
@@ -35,7 +35,7 @@ This section details the project's evolution and future objectives.
 -   [x] **ESP-NOW Communication**: Created a robust module for neighbor discovery and management.
 -   [x] **Goal-Oriented Reasoning**: Implemented "recursive" plans that enable persistent behaviors, such as an alarm that sounds intermittently until deactivated.
 -   [ ] **Multi-Hop Routing**: Allow agents to forward messages, creating a true mesh network where cooperation can occur even between agents that are not in direct range.
--   [x] **Capability Expansion**: Integrate sensors (DHT11, LM35, LDR) and develop more complex use-case scenarios.
+-   [x] **Capability Expansion**: Integrate sensors (DHT11, LM35, LDR...) and develop more complex use-case scenarios.
 -   [x] **Network Resilience Testing**: Validate the system's ability to self-heal when agents leave and rejoin the network.
 -   [x] **Context-Based Plan Selection**: Implement multiple plans for the same trigger, allowing an agent to choose the best strategy based on a broader context (e.g., a power-saving mode, presence or absence of an agent with certain capabilities).
 
