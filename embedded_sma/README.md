@@ -78,3 +78,16 @@ Authors
 
 [<img loading="lazy" src="https://avatars.githubusercontent.com/u/91793807?v=4" width=115><br><sub>Ítalo Silva</sub>](https://github.com/ITA-LOW)
 | :---: |
+
+## References
+If you use this work, please refers the authors
+
+    @inproceedings{ronzani2026bdi,
+      author = {Ronzani, M. D. and Firmino da Silva, I. and Lau, J. and Rodrigues-Filho, R. and Ourique, F. and Panisson, A. R.},
+      title = {Towards a BDI Architecture for Cooperative Agents on Resource-Constrained Microcontrollers},
+      booktitle = {Proceedings of the 18th International Conference on Agents and Artificial Intelligence - Volume 1},
+      year = {2026},
+      pages = {294--301},
+      isbn = {978-989-758-796-2},
+      issn = {2184-433X}
+    }
