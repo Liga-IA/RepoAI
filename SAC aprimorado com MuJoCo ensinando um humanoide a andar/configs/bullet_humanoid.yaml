@@ -1,0 +1,31 @@
+env:
+  name: "HumanoidBulletEnv-v0"
+  vec_envs: 8
+  max_steps: 1000
+  domain_randomization: true
+  curriculum: true
+
+algo:
+  seed: 123
+  gamma: 0.99
+  tau: 0.005
+  lr_actor: 0.0003
+  lr_critic: 0.0003
+  lr_alpha: 0.0003
+  n_step: 3
+  utd: 1
+  replay_size: 1000000
+  batch_size: 256
+  warmup_steps: 10000
+  target_entropy: auto
+  clip_grad_norm: 1.0
+  obs_norm: true
+  reward_norm: false
+
+log:
+  experiment_name: "bullet_humanoid"
+  tensorboard: true
+  wandb: false
+  eval_interval: 20000
+  eval_episodes: 5
+  checkpoint_interval: 50000

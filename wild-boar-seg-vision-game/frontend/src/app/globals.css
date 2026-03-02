@@ -1,0 +1,278 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-forest-primary: #16a34a;
+  --color-forest-dark: #14532d;
+  --color-earth-primary: #9a6d3a;
+  --color-earth-dark: #2d2219;
+}
+
+/* Temporariamente desabilitado para debug */
+/* * {
+  cursor: none !important;
+} */
+
+body {
+  background: linear-gradient(
+    135deg,
+    #0a1a0f 0%,
+    #14281b 25%,
+    #1a2f1f 50%,
+    #0f1f14 75%,
+    #0a1a0f 100%
+  );
+  background-color: #0a1a0f; /* Fallback caso o gradiente não carregue */
+  min-height: 100vh;
+  overflow-x: hidden;
+  color: #f0fdf4; /* Cor padrão do texto */
+}
+
+/* Padrão de camuflagem sutil no fundo */
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: 
+    radial-gradient(ellipse at 20% 30%, rgba(22, 163, 74, 0.08) 0%, transparent 50%),
+    radial-gradient(ellipse at 80% 70%, rgba(154, 109, 58, 0.06) 0%, transparent 50%),
+    radial-gradient(ellipse at 50% 50%, rgba(34, 197, 94, 0.04) 0%, transparent 70%);
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* Ruído sutil para textura */
+body::after {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
+  opacity: 0.015;
+  pointer-events: none;
+  z-index: 0;
+}
+
+@layer components {
+  .btn-primary {
+    @apply px-8 py-4 bg-gradient-to-r from-forest-600 to-forest-700 
+           text-white font-display text-2xl tracking-wider
+           rounded-lg border-2 border-forest-500
+           shadow-lg shadow-forest-900/50
+           hover:from-forest-500 hover:to-forest-600
+           hover:shadow-xl hover:shadow-forest-800/50
+           active:scale-95 transition-all duration-200
+           relative overflow-hidden;
+  }
+
+  .btn-primary::before {
+    content: '';
+    @apply absolute inset-0 bg-gradient-to-t from-transparent to-white/10;
+  }
+
+  .btn-secondary {
+    @apply px-6 py-3 bg-earth-800/80 text-earth-100 
+           font-semibold rounded-lg border border-earth-600
+           hover:bg-earth-700 transition-all duration-200
+           backdrop-blur-sm;
+  }
+
+  .btn-danger {
+    @apply px-6 py-3 bg-gradient-to-r from-danger-600 to-danger-500
+           text-white font-semibold rounded-lg
+           shadow-lg shadow-danger-900/30
+           hover:from-danger-500 hover:to-danger-400
+           transition-all duration-200;
+  }
+
+  .card {
+    @apply bg-gradient-to-br from-earth-950/90 to-forest-950/90
+           border border-forest-800/30 rounded-xl
+           backdrop-blur-md shadow-2xl;
+  }
+
+  .card-glow {
+    @apply card relative;
+    box-shadow: 
+      0 0 30px rgba(22, 163, 74, 0.1),
+      inset 0 1px 0 rgba(255, 255, 255, 0.05);
+  }
+
+  .score-display {
+    @apply font-mono text-4xl font-bold tracking-tight;
+  }
+
+  .target-area {
+    @apply relative w-full aspect-video rounded-xl overflow-hidden
+           border-4 border-forest-700/50 shadow-2xl;
+    background: linear-gradient(180deg, #0a1510 0%, #0f1f15 100%);
+  }
+
+  /* Mira customizada */
+  .crosshair {
+    @apply fixed pointer-events-none z-50;
+    width: 48px;
+    height: 48px;
+    transform: translate(-50%, -50%);
+  }
+
+  .crosshair-inner {
+    @apply absolute inset-0;
+  }
+
+  .crosshair-inner::before,
+  .crosshair-inner::after {
+    content: '';
+    @apply absolute bg-forest-400;
+  }
+
+  .crosshair-inner::before {
+    width: 2px;
+    height: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .crosshair-inner::after {
+    height: 2px;
+    width: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .crosshair-ring {
+    @apply absolute inset-1 border-2 border-forest-400 rounded-full
+           opacity-70 animate-crosshair-pulse;
+  }
+
+  .crosshair-dot {
+    @apply absolute w-2 h-2 bg-danger-500 rounded-full
+           top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2;
+  }
+
+  /* Hit markers */
+  .hit-marker {
+    @apply absolute pointer-events-none;
+    width: 40px;
+    height: 40px;
+    transform: translate(-50%, -50%);
+  }
+
+  .hit-marker.success::before,
+  .hit-marker.success::after {
+    content: '';
+    @apply absolute bg-forest-400;
+  }
+
+  .hit-marker.success::before {
+    width: 3px;
+    height: 100%;
+    left: 50%;
+    transform: translateX(-50%) rotate(45deg);
+  }
+
+  .hit-marker.success::after {
+    width: 3px;
+    height: 100%;
+    left: 50%;
+    transform: translateX(-50%) rotate(-45deg);
+  }
+
+  .hit-marker.fail {
+    @apply border-4 border-danger-500 rounded-full;
+  }
+
+  /* Bounding boxes */
+  .detection-box {
+    @apply absolute border-2 rounded transition-all duration-200;
+  }
+
+  .detection-box.boar {
+    @apply border-forest-400 bg-forest-400/10;
+  }
+
+  .detection-box.human {
+    @apply border-danger-500 bg-danger-500/10;
+  }
+
+  .detection-box.other {
+    @apply border-warning-400 bg-warning-400/10;
+  }
+
+  .detection-label {
+    @apply absolute -top-6 left-0 px-2 py-0.5 text-xs font-bold
+           rounded-t uppercase tracking-wider;
+  }
+
+  /* Animação de pontuação flutuante */
+  .floating-score {
+    @apply absolute font-display text-3xl font-bold pointer-events-none;
+    animation: floatUp 1s ease-out forwards;
+  }
+
+  @keyframes floatUp {
+    0% {
+      opacity: 1;
+      transform: translateY(0) scale(1);
+    }
+    100% {
+      opacity: 0;
+      transform: translateY(-60px) scale(1.2);
+    }
+  }
+
+  /* Progresso do tempo */
+  .time-bar {
+    @apply h-2 rounded-full overflow-hidden bg-earth-900;
+  }
+
+  .time-bar-fill {
+    @apply h-full rounded-full transition-all duration-100;
+    background: linear-gradient(90deg, #ef4444, #f59e0b, #22c55e);
+  }
+
+  /* Stats cards */
+  .stat-card {
+    @apply bg-earth-900/50 rounded-lg p-4 border border-earth-800/50
+           flex flex-col items-center gap-1;
+  }
+
+  .stat-value {
+    @apply text-3xl font-display text-forest-400;
+  }
+
+  .stat-label {
+    @apply text-xs text-earth-400 uppercase tracking-wider;
+  }
+}
+
+/* Scrollbar customizada */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #14281b;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #16a34a;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #22c55e;
+}
+
+/* Selection */
+::selection {
+  background: rgba(22, 163, 74, 0.3);
+  color: #f0fdf4;
+}
+

@@ -1,0 +1,21 @@
+[project]
+name = "sac-humanoid-enhanced"
+version = "0.1.0"
+requires-python = ">=3.10"
+
+[tool.setuptools.packages.find]
+include = ["sac_rl*"]
+
+[tool.black]
+line-length = 100
+target-version = ['py310']
+skip-string-normalization = true
+
+[tool.ruff]
+line-length = 100
+select = ["E", "F", "W", "B", "C", "N"]
+ignore = ["E501"]
+
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"

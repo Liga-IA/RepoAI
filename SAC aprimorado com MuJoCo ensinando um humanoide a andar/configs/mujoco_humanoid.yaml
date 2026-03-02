@@ -1,0 +1,32 @@
+env:
+  name: "Humanoid-v5"
+  vec_envs: 16
+  max_steps: 625000
+  domain_randomization: true
+  curriculum: true
+
+algo:
+  seed: 2024
+  gamma: 0.99
+  tau: 0.005
+  lr_actor: 0.0003
+  lr_critic: 0.0003
+  lr_alpha: 0.0003
+  n_step: 3
+  utd: 2
+  replay_size: 1000000
+  batch_size: 512
+  warmup_steps: 5000
+  target_entropy: auto
+  clip_grad_norm: 1.0
+  obs_norm: true
+  reward_norm: true
+
+log:
+  experiment_name: "mujoco_humanoid_dr_curriculum"
+  tensorboard: true
+  wandb: false
+  eval_interval: 20000
+  eval_episodes: 5
+  checkpoint_interval: 200000
+  save_replay: false

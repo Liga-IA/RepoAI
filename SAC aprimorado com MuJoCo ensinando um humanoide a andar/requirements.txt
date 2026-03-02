@@ -1,0 +1,14 @@
+gymnasium==0.29.1
+pybullet==3.2.7
+mujoco==3.3.7
+numpy>=1.26,<2.0
+tensorboard>=2.14,<3
+pandas>=1.5,<2.1
+matplotlib>=3.7,<3.9
+tqdm>=4.66,<5
+pyyaml>=6.0,<7
+rich>=13.5,<14
+pytest>=7.4,<9
+black==23.7.0
+ruff==0.1.6
+wandb>=0.16,<1

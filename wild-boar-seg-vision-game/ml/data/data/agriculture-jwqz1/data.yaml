@@ -1,0 +1,25 @@
+# Dataset YAML para treinamento YOLOv8-seg
+# HTW Agriculture - Wild Boar Instance Segmentation
+
+# Caminho absoluto para o dataset
+path: /home/manzine/Italo/Faculdade/Tópicos Avançados em Inteligência Artificial/trabalho-final/ml/data/data/agriculture-jwqz1
+train: train
+val: valid
+test: test
+
+# Classes do dataset conforme COCO JSON original
+# Classes presentes nas labels: 0 (boar), 3 (monkey), 4 (person)
+names:
+  0: boar       # javali - ALVO PRINCIPAL (290 anotações em train)
+  1: wild-boar  # javali selvagem (possivelmente não usado)
+  2: dog        # cachorro (possivelmente não usado neste subset)
+  3: monkey     # macaco - distrator (396 anotações em train)
+  4: person     # pessoa - penalidade (598 anotações em train)
+
+# Número de classes
+nc: 5
+
+# Notas para o jogo:
+# - "boar" (0) e "wild-boar" (1) são ALVOS válidos (+100 pontos)
+# - "person" (4) = human - PENALIDADE (-50 pontos)
+# - "dog" (2) e "monkey" (3) = other/distradores (+10 pontos)
