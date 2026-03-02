@@ -1,0 +1,22 @@
+sweep:
+  - name: 'nstep1_utd1'
+    overrides:
+      algo.n_step: 1
+      algo.utd: 1
+  - name: 'nstep3_utd2'
+    overrides:
+      algo.n_step: 3
+      algo.utd: 2
+  - name: 'obsnorm'
+    overrides:
+      algo.obs_norm: true
+      algo.reward_norm: false
+  - name: 'rewardnorm'
+    overrides:
+      algo.obs_norm: false
+      algo.reward_norm: true
+  - name: 'randomized'
+    overrides:
+      env.domain_randomization: true
+      env.curriculum: true
+      algo.target_entropy: auto
