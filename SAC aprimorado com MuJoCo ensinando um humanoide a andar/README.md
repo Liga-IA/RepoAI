@@ -10,8 +10,7 @@ Neste repositório, revisitamos o clássico problema de ensinar um robô a andar
 
 Como ponto de partida, um humanoide sem treinamento simplesmente colapsa repetidas vezes ao tentar dar os primeiros passos.
 
-Vídeo baseline (sem treino)
-<iframe width="560" height="315" src="https://youtu.be/hDH2jA9cpYw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+[Vídeo: baseline sem treino](https://youtu.be/hDH2jA9cpYw)
 
 ## Locomoção humanoide como desafio de RL
 
@@ -82,10 +81,7 @@ Definir sementes de forma determinística é essencial para resultados reproduz�
 
 Depois de cerca de dez milhões de passos no ambiente, o agente SAC aprimorado aprende a levantar, se equilibrar e, por fim, dar passos para frente. Você pode gerar um gráfico parecido com o script de diagnósticos após sua execução. A política final mostra um caminhar estável.
 
-Vídeo: humanoide treinado
-<iframe width="560" height="315" src="https://youtu.be/YBWMGkf241c" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-
+[Vídeo: humanoide treinado](https://youtu.be/YBWMGkf241c)
 
 As melhorias de engenharia fazem diferença de forma bem concreta no treinamento:
 
