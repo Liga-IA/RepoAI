@@ -149,6 +149,5 @@ plt.show()
   - Avaliação com métrica e matriz.
 
 ## 👾 **Contribuidores**  
-| [<img loading="lazy" src="https://avatars.githubusercontent.com/u/112569754?v=4" width=115><br><sub>Alice Motin</sub>](https://github.com/AliceMotin) | [<img loading="lazy" src="https://avatars.githubusercontent.com/u/206122594?v=4" width=115><br><sub>Arthur Janing</sub>](https://github.com/Arthur-Janing) | [<img loading="lazy" src="https://avatars.githubusercontent.com/u/147776134?v=4" width=115><br><sub>Caroline Lanzuolo</sub>](https://github.com/carol-lanzu) | [<img loading="lazy" src="https://avatars.githubusercontent.com/u/171816351?v=4" width=115><br><sub>Mateus Kramer</sub>](https://github.com/mateuskramer) 
-| :---: | :---: | :---: | :---: |
-
+| [<img loading="lazy" src="https://avatars.githubusercontent.com/u/112569754?v=4" width=115><br><sub>Alice Motin</sub>](https://github.com/AliceMotin) |  
+| :---: | 
