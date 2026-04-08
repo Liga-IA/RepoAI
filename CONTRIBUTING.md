@@ -11,7 +11,7 @@
 
 ![fork_button](./base_assets/image.png)
 
-- Escolha o nome e clique em **Create Fork:**
+- Utilize o mesmo nome cadastrado no formulário e clique em **Create Fork:**
 
 ![create_fork](./base_assets/image1.png)
 
@@ -23,7 +23,7 @@ Assim que realizar contribuições, em seu perfil você poderá seguir esses pas
 
 ![open_pull](./base_assets/image2.png)
 
-- Adicione um título e uma descrição e clique em **Create pull request**:
+- Adicione um título, com o mesmo nome do projeto, e uma descrição e clique em **Create pull request**:
 
 ![create_pull](./base_assets/image3.png)
 
