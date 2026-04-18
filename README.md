@@ -1,4 +1,4 @@
-![banner-inicial](/repoAI_template/content/RepoAI.png)
+![banner-inicial](util_ml_project_template/content/RepoAI.png)
 
 # Welcome to Repo AI 🚀
 
