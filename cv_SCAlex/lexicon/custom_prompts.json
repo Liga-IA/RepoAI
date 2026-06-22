@@ -1,0 +1,31 @@
+{
+    "armas": [
+        "a physical metallic handgun or pistol on a surface",
+        "a real revolver seized by police in a forensic scene"
+    ],
+    "drogas": [
+        "a cigarette or hand-rolled joint in someone's hand",
+        "closed packs of cigarettes on a table",
+        "bags with tobacco or rolling paper",
+        "marijuana leaves or dried cannabis buds",
+        "suspicious white powder in small plastic bags"
+    ],
+    "dinheiro": [
+        "bundles of paper bank notes spread on a table",
+        "thick stacks of physical currency seized by police"
+    ],
+    "outros": [
+        "industrial paint cans with labels",
+        "metallic buckets of paint",
+        "a frog inside a muddy hole in the ground",
+        "red strawberry-shaped gummy candy or sweet",
+        "a food tray or lunch box with a plastic soda bottle",
+        "electric hair clipper or hair trimming machine",
+        "people riding motorcycles in the mud",
+        "shaving or trimming animal hair with a machine",
+        "a person using a hair clipper on someone",
+        "a smartphone or mobile phone",
+        "a person speaking into a microphone",
+        "everyday household objects and non-forensic items"
+    ]
+}
