@@ -39,9 +39,9 @@ Processa um único vídeo.
       A["<b>1. Geração (IA)</b><br/>--video FILE --only-srt"] --> B["<b>2. Revisão (Humana)</b><br/>Corrigir FILE.srt"]
       B --> C["<b>3. Queima (Finalização)</b><br/>--video FILE --srt FILE.srt"]
       
-      style A fill:#f9f,stroke:#333
-      style B fill:#bbf,stroke:#333,stroke-width:4px
-      style C fill:#bfb,stroke:#333
+      style A fill:#0000,stroke:#00000
+      style B fill:#0000,stroke:#00000,stroke-width:4px
+      style C fill:#0000,stroke:#00000
 ```
 
 ---
@@ -61,9 +61,9 @@ Ideal para processar vários vídeos de uma só vez, mantendo a possibilidade de
       A[<b>1. Geração Inicial</b><br/>--batch DIR --only-srt] --> B(<b>2. Revisão Multi-pasta</b><br/>Corrigir arquivos .srt nas subpastas)
       B --> C[<b>3. Processamento Final</b><br/>--batch DIR]
       
-      style A fill:#f9f,stroke:#333
-      style B fill:#bbf,stroke:#333,stroke-width:4px
-      style C fill:#bfb,stroke:#333
+      style A fill:#0000,stroke:#333
+      style B fill:#0000,stroke:#333,stroke-width:4px
+      style C fill:#0000,stroke:#333
 ```
 
 ---
