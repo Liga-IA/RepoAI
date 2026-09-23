@@ -2,7 +2,7 @@
 
 ## Como conseguir acesso ao repositório?
 
-- Preencha o formulário - [Formulário de participação RepoAI](https://docs.google.com/forms/d/1hncyEsmRBqeYctbW2eGtkHaUFTZhZSvo8pAAXShCxz4/viewform?pli=1&edit_requested=true&edit_requested=true)
+- Preencha o formulário - [Formulário de participação RepoAI](https://docs.google.com/forms/d/e/1FAIpQLSfp3TTLoYhxZDoNV0R1RwE6tzWu0VJ9jXD0i_lGPVAVcs3Jug/viewform?usp=sharing&ouid=104280230802863778144)
 - acesse o link do repositório no GitHub - [Liga-IA/RepoAI](https://github.com/Liga-IA/RepoAI)
 
 ## Como contribuir?
